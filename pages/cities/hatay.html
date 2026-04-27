@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="00-ANASAYFA.css">
+    <title>Hatay</title>
+
+    <style>
+        p{
+            text-align: left;
+        }
+        body{
+            background-image: url(RESİM\ DOSYALARI/arkaplanşehir.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #yemek-hover:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        #yer-hover:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        .soltaraf{
+            border: 5px;
+            border-width: 10%;
+            border-style: solid;
+            border-color: black;
+            width: 200px;
+            height: 300px;
+            position:fixed;
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 0px;
+            opacity: 0.4;
+        }
+
+        .soltaraf:hover{
+            opacity: 1;
+        }
+        .soltaraf1:hover{
+            opacity: 1;
+        }
+
+        .soltaraf1{
+            margin-left: 84%;
+            border: 5px;
+            border-width: 10%;
+            border-style: solid;
+            border-color: black;
+            width: 200px;
+            height: 300px;
+            position:fixed;
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 0px;
+            margin-top: 4%;
+            opacity: 0.4;
+        }
+        .kısayol{
+            text-decoration: none;
+            color: rgb(238, 169, 8);
+        }
+    </style>
+
+<header class="header">
+   
+    <!-- <a class="GirisButonu" style="float: right;" href="2-girişekranı.html">Giriş Yap</a> -->
+    <h1 class="Siteİsmi">TÜRKİYE GEZİ REHBERİ</h1> 
+  <hr>
+
+<center>
+    <ul class="menu">
+        <li><a href="anasayfa.html">Anasayfa</a></li>
+        <li><a href="11-TÜRKİYEHARİTASI.html">Şehirler</a>
+            <ul>
+                <li><a href="ankarasecme.html">Ankara</a></li>
+                <li><a href="MelihinSayfaları/aydın.html">Aydın</a></li>
+                <li><a href="MelihinSayfaları/bursa.html">Bursa</a></li>
+                <li><a href="d-çanakkale.html">Çanakkale</a></li>
+                <li><a href="erzurumsecme.html">Erzurum</a></li>
+                <li><a href="f-gaziantep.html">Gaziantep</a></li>
+                <li><a href="giresunsecme.html">Giresun</a></li>
+                <li><a href="gumushanesecme.html">Gümüşhane</a></li>
+                <li><a href="h-hatay.html">Hatay</a></li>
+                <li><a href="i-istanbul.html">İstanbul</a></li>
+                <li><a href="MelihinSayfaları/konya.html">Konya</a></li>
+                <li><a href="samsunsecme.html">Samsun</a></li>
+                <li><a href="MelihinSayfaları/siirt.html">Siirt</a></li>
+            </ul>
+        </li>
+            <li><a href="12-HAKKIMIZDA.html">Hakkımızda</a></li>
+            <li><a href="11-TÜRKİYEHARİTASI.html">Bölgeler</a></li>
+        </ul>
+    </center>
+    
+</header>
+</head>
+<body>
+
+
+    <br><br><br>
+    <div class="soltaraf1" style="background-color: rgb(8, 57, 100);">
+        <h2 style="color: white;margin-right: 10px;" class="kısayol">Gezilecek Yerler</h2>
+    <a class="kısayol" href="#x1" >Titus Tüneli</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#x2" >Asi Nehri</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#x3" >Hatay Arkeoloji Müzesi</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#x4" >Vakıflı Köyü</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#x5" >Musa Ağacı</a><br>
+    <hr style="margin-right: 20px;">
+    </div>
+    
+
+    <br><br><br>
+    <div class="soltaraf" style="background-color: rgb(8, 57, 100);">
+        <h2 style="color: white;margin-right: 3px;" class="kısayol">Yemekler</h2>
+    <a class="kısayol" href="#y1" >Biberli Ekmek</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#y2" >Tepsi Kebabı</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#y3" >Kağıt Kebabı</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#y4" >Humus</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#y5" >Kaytaz Böreği</a><br>
+    <hr style="margin-right: 20px;">
+    </div>
+
+    <center>
+        <h1 style="text-align: center;">HATAY</h1>
+                    <!-- https://hatay.ktb.gov.tr/TR-201494/genel-bilgiler.html -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fhatay.ktb.gov.tr%2FTR-205529%2Fdogal-kulturel-ve-tarihi-turizm-degerler.html&psig=AOvVaw2by4enrfdGZUAoCBGJVlrU&ust=1716817381046000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjEjqS5q4YDFQAAAAAdAAAAABAE -->
+                    <hr style="border-color:darkgreen;width: 800px;">
+                    <h3>GENEL BİLGİ</h3>
+                    <hr style="border-color:darkgreen;width: 800px;">
+                    <br>
+                    <img style="height: 400px;width: 800px;" src="RESİM DOSYALARI/hatay genel bilgi.jpg" alt="hatay">
+                    <div style="width: 800px;">
+                    <p>Hatay, İ.Ö. 300 tarihinde Selevkos. I. Nikator tarafından "Antiokheia" adıyla kuruldu. İ.Ö. 64 yılında serbest şehir statüsü ile Roma İmparatorluğu'na katılan Antakya, İmparatorluğun Suriye eyaletinin başkenti oldu. Hatay, İslam Dönemi, Bizans Dönemi, Haçlılar ve Selçuklular Döneminde de önemli bir merkezdi.</p>
+                    <p>1516 yılında Yavuz Sultan Selim'in Mısır Seferi sırasında Osmanlı hakimiyetine giren Hatay, dört asır Osmanlı hakimiyetinde, Halep Vilayeti Merkez Sancağı'na bağlı bir "Kaza Merkezi" olarak yönetilmiştir. Birinci Dünya Savaşı sonrası belli bir dönem Fransız İşgalinde kalan Hatay, 7 Temmuz 1939'da Anavatana katılmıştır.</p>
+                    <p>Hatay'da, merkez ilçe (Antakya) dahil 15 ilçe ve bunlara bağlı 362 köy bulunmaktadır. İlin nüfusu yaklaşık 1 milyon 500 bindir. </p>
+                    </div>
+                    <br><br>
+    
+                    <!-- https://www.antakyatb.gov.tr/AntakyaTanitim/EkonomikveCografiYapi/tabid/4251/Default.aspx -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.toplumsal.com.tr%2Fhataya-nasil-gidilir-hatayin-gezilecek-yerleri&psig=AOvVaw1csX18cN9LK27Ng8hODXud&ust=1716818260906000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCYrce8q4YDFQAAAAAdAAAAABAE -->
+                    <hr style="border-color:darkgreen;width: 800px;">
+                    <h3>İKLİMİ</h3>
+                    <hr style="border-color:darkgreen;width: 800px;">
+                    <br>
+                    <img style="height: 400px;width: 800px;" src="RESİM DOSYALARI/hatay iklimi.webp" alt="hatay iklimi">
+                    <div style="width: 800px;">
+                    <p>Hatay ilinde Akdeniz iklimi hüküm sürer. Senede ancak bir kaç gün kar yağar. Antakya, Dörtyol, İskenderun, Samandağ ilçelerinde kışlar ılık ve bol yağışlı, yazlar sıcak ve kurak geçer. Yayladağı’nda ve iç kesimlerde iklim, kıyı bölgelerine oranla daha serttir. Ortalama yıllık sıcaklık 16-21 0C arasındadır. Ortalama yıllık yağış miktarı 570-1174 mm. arasında değişmektedir. İlimizde görülen en yüksek sıcaklık değeri 43.9 0C ile 26 Ağustos 1962’de, en düşük sıcaklık da -14.6 0C ile 15 Ocak 1950’de yaşanmıştır. Donlu gün sayıları en fazla 7 gün, karlı gün sayıları ise 2 gün kadardır. Yıllık ortalama deniz suyu sıcaklığı 22.1 0C’dir. 2001 yılında en yüksek ortalama yağış, Mayıs ayında gerçekleşmiştir (638,5 mm). Antakya’da yıllık ortalama nem oranı ise % 70’tir. Antakya’da hakim rüzgar yönü güneybatı olup, ortalama hızı 4.7 m/sn’dir.</p>
+                    </div>
+                    <br><br>
+    
+                    <!-- https://www.tatilbudur.com/blog/hatayin-meshur-yemekleri/ -->
+                    <!-- ChatGPT -->
+                    <hr style="border-color:darkgreen;width: 800px;">
+                    <h3>HATAY MUTFAĞI</h3>
+                    <hr style="border-color:darkgreen;width: 800px;">
+                    <br>
+                    <div style="width: 800px;">
+                    <b style="color: red;">Not:Yemek Tarifi İçin Yemek Resmine Tıklayınız.</b>
+                    </div>
+                    <br>
+                    <!-- 1.YEMEK -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aa.com.tr%2Ftr%2Fturkiyenin-ekmek-kulturu%2Fgastronomi-kenti-hatayin-aci-lezzeti-biberli-ekmek%2F2565034&psig=AOvVaw3_DPPoMdtCaZHwj6_ZTJk2&ust=1716820225456000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCu1O_Dq4YDFQAAAAAdAAAAABAE -->
+                    <a id="y1" href="t-hatay-biberliekmek.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\biberli ekmek.jpg" alt="biberli ekmek"></a>
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Biberli Ekmek</b>
+                    <p>Hatay mutfağı denildiğinde akla gelen pek çok farklı hamur işi olduğunu söylemek mümkün. Ancak Biberli Ekmek, Hatay için çok önemli bir yere sahip. Hem kahvaltılarda hem gün içerisinde tüketilen Biberli Ekmek, yöre halkı tarafından yaz aylarında pikniğe giderken yanlarında götürülecek kadar seviliyor. Tıpkı bir lahmacun ve pizza gibi kendine ait sosu ile hazırlanan bu lezzet, susam taneleri ile süsleniyor. Sosunda baharat, biber, salça ve soğan gibi pek çok farklı malzeme var. Hatay’da neredeyse her evde kahvaltı sofralarını süsleyen Biberli Ekmek, hem sıcak hem soğuk olarak tüketilebiliyor. Siz de bu lezzeti merkezde yer alan lokantalarda bulabilirsiniz.</p>
+                    </div>
+                    <br><br>
+                    <!-- 2.YEMEK -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fharbiyiyorum.com%2Fumraniyede-en-iyi-hatay-tepsi-kebabi-nerede-yenir-hatay-cop-sis-kunefe-umraniye-istanbul%2F&psig=AOvVaw2rNKxhBoOBGVBUzA3pviVE&ust=1716820451978000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICZw9rEq4YDFQAAAAAdAAAAABBI -->
+                    <a id="y2" href="t-hatay-tepsikebabı.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\tepsi kebabı.jpg" alt="tepsi kebabı"></a>
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Tepsi Kebabı</b>
+                    <p>Hatay denildiğinde akla gelen en nadire lezzetlerden bir diğeri ise Tepsi Kebabı. Tepsi kebabını Hatay haricinde ülkenin pek çok farklı şehrinde görmüş olabilirsiniz. Ancak tepsi kebabının orijinal versiyonunun Hatay’da yenmesi gerektiğini söylemek gerek. Evlerde sıklıkla hazırlanan Tepsi Kebabı; kıyma, soğan, patates, biber ve domates ile hazırlanıyor. Kebap kendine ait yağı ile pişiyor olması sebebiyle unutulmayacak bir lezzet yaratıyor. Ancak içeriğinden dolayı ağır bir yemek olduğunu söylemek gerek. Dolayısıyla akşam saatlerinde ve genellikle soğuk havalarda tercih edildiğini dile getirmekte fayda var!</p>
+                    </div>
+                    <br><br>
+                    <!-- 3.YEMEK -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DcnMi-w5--lY&psig=AOvVaw01OOqy_yNrXyWGKx_VfsrL&ust=1716820667076000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjTvcLFq4YDFQAAAAAdAAAAABAp -->
+                    <a id="y3" href="t-hatay-kağıtkebabı.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\kağıt kebabı.jpg" alt="kağıt kebabı"></a>
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Kağıt Kebabı</b>
+                    <p>Hatay usulü Kâğıt Kebabı, diğer kebaplardan oldukça farklı özelliklere sahip. Tamamen yöreye has şekilde hazırlanan bu kebap, Hatay mutfağının öne çıkan yöresel lezzetlerinden biri. Kültürünün Arap mutfağına dayandığı bilinse de Hatay usulü hazırlanan Kâğıt Kebabı’nın oldukça zengin bir yemek olduğunu söylemek gerekiyor.</p>
+                    </div>
+                    <br><br>
+                    <!-- 4.YEMEK -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.yoremantakya.com%2Fblog%2Ficerik%2Fhumus-tarifi&psig=AOvVaw1eS32kIBF27mVgFjYkPulm&ust=1716820836466000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCJ95LGq4YDFQAAAAAdAAAAABAE -->
+                    <a id="y4" href="t-hatay-humus.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\humus.webp" alt="humus"></a>
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Humus</b>
+                    <p>Günümüzde neredeyse her şehirde bulunan restoran ve meyhanelerde kolaylıkla bulabileceğiniz humus, Hatay’a ait eşsiz bir meze. Orta Doğu’dan ülkemize gelen ve orijinali mutlaka Hatay’da tüketilmesi gereken Humus, nohut ile hazırlanan bir meze. İçerisinde tahin, limon suyu ve zeytinyağı gibi malzemeler de yer alıyor. Farklı versiyonları ile karşılaşmanın mümkün olduğu bu mezeyi Hatay’da mutlaka denemeniz gerekiyor.</p>
+                    </div>
+                    <br><br>
+                    <!-- 5.YEMEK -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.taskoprupostasi.com%2Fhatayin-ara-sicaklari-bile-ana-yemek-iste-meshur-kaytaz-boregi-tarifi&psig=AOvVaw3QoYk-pVLIINswP_9tkB_h&ust=1716820977708000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJCUoNvGq4YDFQAAAAAdAAAAABAJ -->
+                    <a id="y5" href="t-hatay-kaytazböreği.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\kaytaz böreği.webp" alt="kaytaz böreği"></a>
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Kaytaz Böreği</b>
+                    <p>Antakya mutfağının en lezzetli hamur işi olması ile dikkat çeken Kaytaz Böreği, günümüzde Hatay’da yenilecek lezzetler listelerin başında yer alıyor. Tıpkı fındık lahmacunu andıran bir görüntüye sahip olan kaytaz böreği tamamen yöresel bir lezzet. Küçük boy hamurların elle açılmasından sonra ortasına bol kıyma yerleştirilmesi ile hazırlanan Kaytaz Böreği, Hatay’ın en meşhur hamur işi lezzetlerinden biri.</p>
+                    </div>
+                    <br><br>
+                    <!-- 6.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hurriyet.com.tr%2Flezizz%2Fasur-tarifi-41248059&psig=AOvVaw3KpHGuZGVUpe4zIBsA5NlH&ust=1716821168613000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjH3LPHq4YDFQAAAAAdAAAAABAJ
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\aşur.webp" alt="aşur">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Aşur</b>
+                    <p>Aşşur, aşur ya da aşür olarak anılan ve Hatay mutfağına ait olan bu yemek; genellikle buğday ve dana eti ile hazırlanıyor. Yerel halk tarafından dövme ismi ile de anladığını dile getirmek mümkün. Buğdayın uzun süre pişirilmesinin ardından ezilmesi ve ardından diğer malzemelerin eklenmesi ile hazırlanan bu yemek zengin içeriği sebebiyle oldukça doyurucu. Dolayısıyla diyette olanlar tarafından da yoğun bir ilgi gördüğünü ve tüketildiği takdirde uzun süre tok tuttuğunu söylemek yanlış olmaz.</p>
+                    </div>
+                    <br><br>
+                    7.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fwww.antakyayemekleri.biz%2Fphotos%2Fhatay-usul%25C3%25BC-borani-tarifimalzemeler-s%25C4%25B1v%25C4%25B1-ya%25C4%259F-1-adet-orta-boy-so%25C4%259Fan-2-%25C3%25A7ay-barda%25C4%259F%25C4%25B1%2F1500160733405644%2F&psig=AOvVaw1fGjU_loDO9INXWyJnEZnF&ust=1716821482924000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjRhMfIq4YDFQAAAAAdAAAAABAE
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\böraniye.jpg" alt="böraniye">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Böraniye</b>
+                    <p>Günümüzde Hatay için en önemli yemeklerden biri olan Ispanaklı Borani, genellikle akşam sofralarını süsleyen bir lezzet olarak hazırlanıyor. Pirinç, nohut ve ekşi sos ile hazırlanan bu yemek yoğurt ve ceviz ile süslenerek servis ediliyor. Eşsiz lezzeti ile ıspanak sevmeyenlerin bile yoğun bir ilgi duyduğu ıspanaklı borani, zengin içeriği ve enfes tadıyla unutulmaz bir deneyim yaşatıyor. Mutlaka sıcak tüketilmesi gereken ıspanaklı borani için en uygun vakit aralığı ise akşam yemekleri.</p>
+                    </div>
+                    <br><br>
+                    8.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.yoreselyasam.com%2Fhatay-usulu-oruk-icli-kofte-tarifi.html&psig=AOvVaw0ju4qlthdq0FKUOmLTzQuC&ust=1716833367264000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIjU9Oz0q4YDFQAAAAAdAAAAABAJ
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\oruk.webp" alt="oruk">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Oruk</b>
+                    <p>Hatay’da içli köfte, Oruk ismi ile anılıyor. Ancak Oruk adlı bu içli köftenin herhangi bir yerde yediğiniz klasik bir içli köfte ile tamamen aynı olduğunu düşünmek büyük bir hata olur. Klasik İçli Köfte ile Oruk arasındaki en büyük fark, Oruk’un içerisine konulan dövülmüş et.Bunun yanı sıra her içli köfte yapımında olduğu gibi Oruk yapımında da büyük bir ustalık gerekiyor. Ceviz, soğan, bulgur, et, zeytinyağı ve çeşitli baharatlar kullanılarak zengin bir içeriğe sahip hâle getirilen oruk, genellikle akşam yemeklerinde tüketiliyor. Ancak yöresel lezzetler sunan restoranlar da gündüz saatlerinde de tüketebilirsiniz.</p>
+                    </div>
+                    <br><br>
+                    9.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cumhuriyet.com.tr%2Fgurme%2Fsihil-mahsi-nasil-yapilir-puf-noktalari-ile-sihil-mahsi-tarifi-2105646&psig=AOvVaw2bM19uhS3RCg0nu9sKBhZ4&ust=1716834408254000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNj9p9v4q4YDFQAAAAAdAAAAABAo
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\şıhıl mahşi.jpg" alt="şıhıl mahşi">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Şıhıl Mahşi</b>
+                    <p>Şıhıl Mahşi ismi ile anılan ve kendine ait farklı ismi ile dikkat çeken bu lezzet, görüntü olarak dolmaya benziyor. Ancak klasik dolma yemeklerinden kesinlikle farklı bir deneyim olduğunu söylemek gerekiyor. Kabak ile hazırlanan dolayısıyla kabak dolmasını andıran bu lezzet, hem içeriği hem tüketildiği esnada ağızda bıraktığı enfes aroma ile adeta büyülüyor.Şıhıl Mahşi, Hatay’da unutulmaz bir deneyim yaşamak için mutlaka denemeniz gereken lezzetlerden biri. Alışılmışın dışında bir dolma yemeği olan Şıhıl Mahşi’yi yöresel restoranlarda bulabilirsiniz.</p>
+                    </div>
+                    <br><br>
+                    10.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cumhuriyet.com.tr%2Fgurme%2Fiftar-sofrasinda-farkli-lezzet-pembe-pilav-tarifi-2186120&psig=AOvVaw3bKCOKln5bKmw1dKt9WRUC&ust=1716834799870000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMia9JT6q4YDFQAAAAAdAAAAABA3
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\keşşir pilavı.jpg" alt="keşşir pilavı">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Keşşir Pilavı</b>
+                    <p>Hatay yemekleri denildiğinde akla gelen lezzetlerden biri olan Keşşir Pilavı, mor havuç ismiyle de anılıyor. Antioksidan kaynağı ve sağlıklı bir besin olduğu için tercih edilen mor havuç, Keşşir Pilavı’nın ham maddelerinden biri.Eşsiz lezzeti ile damak çatlatan bir pilav çeşidi olarak anılan Keşşir Pilavı; uzun basmati pirinç, tereyağı, kırmızı soğan, zeytinyağı, uzun mor havuç, tuz, sarımsak ve baharatlar ile hazırlanıyor. Genellikle et ve tavuk yemeklerinin yanına yeni yapılan ve bir arada servis edilen keşşir pilavını deneyimlemek için merkezde bunlar restoranları tercih edebilirsiniz.</p>
+                    </div>
+                    <br><br>
+                    11.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fru.freepik.com%2Fpremium-photo%2Ftraditional-food-of-antakya-turkey-oruk-in-the-tray-turkish-name-tepside-icli-kofte-tepside-oruk-tepsi-orugu-sini-kofte-hatay-oruk-food_31979205.htm&psig=AOvVaw0MVNCI0qriOsXV6gBoUONd&ust=1716839474466000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCAvtiLrIYDFQAAAAAdAAAAABBf
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\tepsi oruğu.jpg" alt="tepsi oruğu">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Tepsi Oruğu</b>
+                    <p>Tepsi Oruğu ya da Sini Köfte ismi ile anılmakta olan bu lezzet, Hatay yöresine ait ve en sevilen yöresel yemeklerden biri. İçli köfte hamurunun oyularak değil, tepsiye bastırılarak yapılan versiyonu olarak ele alınabilecek Tepsi Oruğu; genellikle baklava dilimi şeklinde kesilerek pişiriliyor. Hatay yemeklerinin diğerleri gibi bu yemek de kendine ait eşsiz bir lezzet ve aromaya sahip olduğu için yiyenler tarafından çok yoğun bir ilgi görüyor. Genellikle akşam yemekleri için tercih edilen tepsi oruğunu restoranlarda bulabilirsiniz. Soğuk kış günlerinde gündüz saatlerinde de tüketilen bir lezzet olduğunu dile getirmek yanlış olmaz.</p>
+                    </div>
+                    <br><br>
+                    12.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aspor.com.tr%2Fhaberler%2F2022%2F05%2F31%2Fbelen-tava-nasil-yapilir-belen-tavanin-malzemeleri-ve-puf-noktasi-nedir-iste-evde-belen-tava-tarifi&psig=AOvVaw2VSgSmdUcdAXN9fPmY_z6b&ust=1716839784601000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIjJnd6MrIYDFQAAAAAdAAAAABAv
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\belen tava.jpg" alt="belen tava">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Belen Tava</b>
+                    <p>Hatay seyahatimiz esnasında mutlaka denemeniz gereken bir lezzet olan Belen Tava, ekmek ile lezzeti bütünleşen yöresel bir tat. En önemli özelliği arasında yalnızca lezzeti değil bunun yanı sıra çok doyurucu olması da var. Hatay’ın en yüksek ilçesi olan Belen’de ortaya çıkan dolayısıyla bugün ilçe sınırlarını aşarak bütün Hatay’a ulaşmış olan Belen Tava, ilçenin ismi ile anılıyor. İçerisinde kuzu kuşbaşı, biber, soğan, sarımsak baharatlar bulunuyor. Özellikle soğuk kış günlerinin en sevilen lezzetlerinden biri olan Belen Tava, Hatay’ın merkezi noktalarında yer alan lokantalarda tadabileceğiniz bir lezzet.</p>
+                    </div>
+                    <br><br>
+                    13.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hataykoy.com%2Fblog%2Ficerik%2Fhatay-kunefe-tarifi&psig=AOvVaw0yFXL8Y3Q4YXmF54r8OD-T&ust=1716840093071000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNiPnfGNrIYDFQAAAAAdAAAAABAv
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\hatay künefe.jpg" alt="hatay künefe">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Hatay Künefe</b>
+                    <p>Hatay denildiğinde akla gelen tatlıların başında elbette Künefe var. Künefe, Türkiye için en önemli lezzetlerden biri haline geldiği için Türkiye’nin pek çok farklı noktasında karşılaşabileceğiniz bir lezzet. Ancak Hatay’da tadacağınız Künefe’yi hayat boyu unutamayacağınızı söylemek gerekiyor. Tuzsuz Antakya Peyniri, kadayıf, fıstık ve şerbet ile hazırlanan künefe; yiyenlerin bir daha unutamayacağı bir lezzet oluyor. Künefe lezzetini deneyimlemek için seyyar satıcıları tercih edebileceğiniz gibi merkezde bulunan restoranları da tercih edebilirsiniz.</p>
+                    </div>
+                    <br><br>
+                    14.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fyemek.com%2Ftarif%2Fseyh-mualla%2F&psig=AOvVaw3Oj4R_rb3b0DtfcEAq32qs&ust=1716840354889000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJi5p-2OrIYDFQAAAAAdAAAAABAQ
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\şeyh mualla.jpg" alt="şeyh mualla">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Şeyh Mualla</b>
+                    <p>Şeyh Mualla, Hatay mutfağının özgün ve lezzetli yemeklerinden biridir. Patlıcan, kıyma, soğan, sarımsak, domates ve baharatlarla yapılan bu yemek, genellikle tencerede veya fırında pişirilir. Kızartılmış patlıcan dilimlerinin üzerine kıymalı karışım eklenir ve lezzetlerin iyice harmanlanması için pişirilir. Şeyh Mualla, hem sıcak hem de soğuk olarak servis edilebilir ve yanında genellikle pilav veya ekmekle tüketilir. Bu yemek, Hatay'ın zengin mutfağının önemli örneklerinden biridir.</p>
+                    </div>
+                    <br><br>
+                    15.YEMEK
+                    https://www.lezzet.com.tr/lezzetten-haberler/yoresel-hatay-yemekleri/8
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\kumbursiye çorbası.webp" alt="kumbursiye çorbası">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Kumbursiye Çorbası</b>
+                    <p>Kumbursiye çorbası, Hatay mutfağından gelen besleyici ve lezzetli bir çorbadır. Temel malzemeleri yeşil mercimek, erişte veya kesme makarna, soğan, sarımsak, domates ve biber salçası, nane ve baharatlardır. Soğan ve sarımsak kavrulup salçalar eklenir, ardından haşlanmış mercimek ve erişte ilave edilerek pişirilir. Kumbursiye çorbası, özellikle kış aylarında sıcak ve doyurucu bir seçenek olarak tercih edilir.</p>
+                    </div>
+                    <br><br>
+                    16.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fyemek.com%2Ftarif%2Fmutebbel%2F&psig=AOvVaw3VvqGZ0Mgx8CtfV1px0CbY&ust=1716841608970000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjNicOTrIYDFQAAAAAdAAAAABAE
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\mütebbel.jpg" alt="mütebbel">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Mütebbel</b>
+                    <p>Müebbet, Hatay mutfağının özgün ve lezzetli bir mezesi olup, közlenmiş patlıcan, yoğurt, tahin, sarımsak ve limon suyu ile yapılır. Közlenmiş patlıcanlar püre haline getirilip yoğurt, tahin, sarımsak ve limon suyu ile karıştırılır, üzerine zeytinyağı gezdirilerek kırmızı pul biber ve maydanozla süslenir. Soğuk servis edilen bu meze, özellikle taze ekmek veya lavaşla tüketilir. Müebbet, Hatay'ın zengin ve çeşitli mutfak kültürünün önemli bir parçasıdır.</p>
+                    </div>
+                    <br><br>-->
+
+                    <!-- ************************************************************************** -->
+
+                <!-- https://www.enuygun.com/bilgi/hatay-da-gezilecek-yerler-1/ -->
+                <hr style="border-color:darkgreen;width:800px">
+                <h3>HATAY TURU</h3>
+                <hr style="border-color:darkgreen;width:800px">
+                <br>
+                <div style="width: 800px;">
+                <b style="color: red;">Not:Konum Linki İçin Resme Tıklayınız.</b>
+                </div>
+                <br>
+                <!-- 1.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fsumbulsokak.com%2Ftitus-vespasianus-tuneli%2F&psig=AOvVaw0Ctt3VqOAXHLEnGbDy1HfJ&ust=1717162930835000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJCuosfAtYYDFQAAAAAdAAAAABA4 -->
+                <a id="x1" href="https://maps.app.goo.gl/L4ReqVP67NwQc1Gh9"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Vespasianus ve Titus Tüneli.jpeg" alt="Vespasianus ve Titus Tüneli"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Vespasianus ve Titus Tüneli</b>
+                <p>Antik dünyanın mühendislik harikası olarak kabul edilen Vespasianus ve Titus Tüneli, Hatay'ın en bilinen ve çok ziyaret edilen tarihi hazinelerinden biri. Samandağ ilçesine 5 kilometre uzaklıkta yer alan ve Roma İmparatorluğu döneminde M.S. 69 yılında İmparator Vespasian tarafından yapımına başlanan devasa tünel, 81 yılında Vespasian’ın oğlu Titus tarafından bitirilebilmiş.380 metre uzunluk, 6 metre genişlik ve 7 metre yükseklikle görülmeye değer bir manzara sunan Titus Tüneli, Roma dönemi su tüneli mühendisliğinin en başarılı örneklerinden biri olarak kabul ediliyor. Devasa kayalar arasında sellere ve su baskınlarına karşı inşa edilen Titus Tüneli, günümüzde çevresini saran endemik bitki türleri ve büyüleyici doğal güzelliklerle çok sevilen bir gezi alanı. 2014 yılında UNESCO Dünya Mirası Geçici Listesi’ne dahil edilen Titus Tüneli’ni gezdikten sonra yaklaşık 100 metre uzaklıkta yer alan ve onlarca Roma dönemi kaya mezarına ev sahipliği yapan büyüleyici Beşikli Mağarası’nı da mutlaka uğramanızı öneririz.</p>
+                </div>
+                <br><br>
+                <!-- 2.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ozyurtgazetesi.com%2Fasi-nehri-efsanesi&psig=AOvVaw11nA_yi_GZNROIq_6-KB13&ust=1717163448308000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJiXk7_CtYYDFQAAAAAdAAAAABAE -->
+                <a href="https://maps.app.goo.gl/AwGsnghMo9xC6Fmb6"><img id="yer-hover" id="x2" style="height: 400px;width: 800px;" src="ŞEHİRLER\Asi Nehri.jpg" alt="Asi Nehri"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Asi Nehri</b>
+                <p>Her mevsim sunduğu kartpostal güzelliğinde manzaralarla Hatay’ın çok sevilen gezi alanlarından biri olan Asi Nehri, 380 kilometre boyunca uzanıyor ve Antakya'nın tarım alanlarına hayat veriyor. Hatay sınırından geçen nehir; üzerinde inşa edilmiş etkileyici taş köprüleri, nehir çevresinde sıralanan kır bahçeleri, mesire alanları ve balık restoranları ile her yıl binlerce insanı kendine çekiyor. Akşamları rengarenk ışıklandırılan ve çevresi yüzlerce yıllık tarihi Antakya evleriyle süslü olan Asi Nehri, fotoğraf çekmeyi seviyorsanız Hatay’da ilk uğramanız gereken adreslerinden biri.</p>
+                </div>
+                <br><br>
+                <!-- 3.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Faslibora.blogspot.com%2F2016%2F05%2Fhatay-arkeoloji-muzesinde-bir-gun.html&psig=AOvVaw0U_XaL7BxbyZzmj3fjMdfG&ust=1717163554866000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOi9jfbCtYYDFQAAAAAdAAAAABAx -->
+                <a id="x3" href="https://maps.app.goo.gl/AXWK6tP3Z1hcmZaC9"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Hatay Arkeoloji Müzesi (Antakya Mozaik Müzesi).jpg" alt="Hatay Arkeoloji Müzesi (Antakya Mozaik Müzesi)"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Hatay Arkeoloji Müzesi (Antakya Mozaik Müzesi)</b>
+                <p>Sadece Hatay'ın değil, Türkiye'nin de en etkileyici müzelerinden biri olan Hatay Arkeoloji Müzesi, şehrin binlerce yıllık zengin tarihi mirasını görmek için mutlaka uğramanızı önerdiğimiz yerlerden biri. Dünyanın en büyük mozaik sergileme alanına ev sahipliği yaptığı için Antakya Mozaik Müzesi olarak da bilinen müzede büyüleyici mozaiklerin yanı sıra Cilalı Taş Devri, Bakır Çağı, Tunç Çağı, Hitit, Roma, Bizans, Selçuklu ve Osmanlı dönemlerine ait binlerce paha biçilmez eseri de yakından görme şansı bulacaksınız.</p>
+                </div>
+                <br><br>
+                <!-- 4.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Ftr.wikipedia.org%2Fwiki%2FHatay_Surp_Asdvadzadzin_Kilisesi&psig=AOvVaw3NCE9XgCDwRpsCLGzGCcdz&ust=1717163780430000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLjAgN3DtYYDFQAAAAAdAAAAABAZ -->
+                <a id="x4" href="https://maps.app.goo.gl/JDe8r17AdE4fy9hz9"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Vakıflı Köyü.jpg" alt="Vakıflı Köyü"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Vakıflı Köyü</b>
+                <p>Arkası Musa Dağı, önü ise masmavi Akdeniz manzaraları ile çevrili olan Vakıflar Köyü, Hatay’da günübirlik geziler yapmak için çok ziyaret edilen yerler arasında. Türkiye’nin tek Ermeni köyü olmasıyla ayrı bir öneme sahip olan ve Suriye sınırına sadece 30 dakika uzaklıkta yer alan köy, yüzlerce yıllık taş evleriyle fotoğrafçıların da çok ilgisini çekiyor.</p>
+                </div>
+                <br><br>
+                <!-- 5.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.islamveihsan.com%2F3-bin-yillik-musa-agacina-buyuk-ilgi.html&psig=AOvVaw01o4n6qUo0oohdsoZsJZLk&ust=1717163912998000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODXppvEtYYDFQAAAAAdAAAAABAR -->
+                <a id="x5"  href="https://maps.app.goo.gl/KXWVeLSKSvWTj1Lp6"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Musa Ağacı.jpg" alt="Musa Ağacı"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Musa Ağacı</b>
+                <p>3000 yıllık geçmişi ve etkileyici efsaneleriyle her yıl binlerce kişinin ziyaret ettiği Hıdırbey Musa Ağacı, Hatay'ın Samandağ ilçesin bağlı Hıdırbey Köyü’nde yer alıyor. Efsanelere göre Hz. Musa'nın toprağa diktiği asasının ölümsüzlük suyuyla yeşermesiyle oluşan, 7,5 metre çapında ve 7 metre yükseklikteki anıtsal ağaç, dallarıyla birlikte yaklaşık 1000 metrekarelik geniş bir alanı kapsıyor. Anıtlar kurulu tarafından koruma altına alınan Musa Ağacı’nın çevresinde sıralanan çay bahçeleri ve dinlenme alanlarında bu anıt ağacın büyüleyici manzarasını izleyebilir ve binlerce yıllık ağacın harika fotoğraflarını çekebilirsiniz.</p>
+                </div>
+                <br><br>
+                <!-- 6.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bilgiustam.com%2Famanos-daglari%2F&psig=AOvVaw1dZmnHtQRnfAlDN1C6rwmu&ust=1717164010322000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPi178vEtYYDFQAAAAAdAAAAABAR
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Amanos Dağları.jpg" alt="Amanos Dağları">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Amanos Dağları</b>
+                <p>Avrupa'nın korunması gereken 100 ormanından birine ev sahipliği yapan, Doğu Karadeniz ve Akdeniz bitki türlerini bir arada görme şansı bulabileceğiniz Amanos Dağları; ak pelikan, kara leylek, yoz atmaca ve orman kartalı gibi yüzlerce kuş türünün yanı sıra vahşi yaşam zenginliğiyle de doğa severleri büyüyor. Dağ eteklerinde büyüleyici bir manzara sunan Kapalı Değirmenli Şelalesi ile yaz aylarının adreslerini değişmez adreslerinden biri haline gelen Amanos Dağları’nda yine dağ eteklerindeki bir mağara içine inşa edilen Aziz Pierre Kilisesi, doğal güzellikler arasında gizlenen Sarıseki Mağarası ve Hatay'ın önemli tarihi yapılarından biri olan Aziz Simeon Manastırı gibi pek çok etkileyici yeri de keşfe çıkabilirsiniz.</p>
+                </div>
+                <br><br>
+                7.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ntv.com.tr%2Fgaleri%2Fseyahat%2Fakdenizde-korsanlarin-saklandigi-karamagara-koyu-turist-akinina-ugruyor%2CM83Ob01fwkm2m1uiT8iEsg&psig=AOvVaw2sEDUV6FyvR0wZW0_DCB6y&ust=1717164467942000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODHq6PGtYYDFQAAAAAdAAAAABAZ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Kara Mağara.webp" alt="Kara Mağara">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Kara Mağara</b>
+                <p>Akdeniz'in gizli cennetlerinden biri olarak gösterilen ve deniz kenarında çarpıcı bir manzara sunan Kara Mağara, hem doğa yürüyüşleri hem de tekne turlarıyla keşfe çıkabileceğiniz bir tabiat harikası. Yayıkdamlar Köyü’ne sadece 7 kilometre uzaklıkta yer alan mağaranın bulunduğu konumdan yeşilin ve mavinin her tonunu rahatlıkla görebilirsiniz.Deniz seviyesinden yaklaşık 100 metre yükseklikte bulunan ve 200 metrekarelik geniş bir alanı kapsayan Kara Mağara, içerisinden fışkıran ve denize karışan şifalı kaynak suları için de sıkça ziyaret ediliyor. Mağaranın içinde binlerce yılda oluşmuş sarkıtlar ve dikitler arasında keyifle gezebilir; cilt sorunlarından eklem rahatsızlıklarına kadar pek çok hastalığa iyi geldiği bilinen şifalı mağara sularında rahatlayabilirsiniz.</p>
+                </div>
+                <br><br>
+                8.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Ftr.wikipedia.org%2Fwiki%2FKel_Da%25C4%259F%25C4%25B1&psig=AOvVaw2jmPiC_vBjk-8fLYprghVB&ust=1717165190335000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLjOlf3ItYYDFQAAAAAdAAAAABA3
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Kel Dağı (Kılıç Dağı).jpg" alt="Kel Dağı (Kılıç Dağı)">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Kel Dağı (Kılıç Dağı)</b>
+                <p>Halk arasında Kılıç Dağı olarak da bilinen ve Antakya ilçesinin güneybatı ucunda yer alan volkanik bir dağ olan Kel Dağı, yılın her mevsimi doğa sporu meraklılarını misafir ediyor. Samandağ'ın kilometrelerce uzanan sahilinin bittiği noktadan başlayan ve Suriye sınırına kadar uzanan Kel Dağı; kireç taşından oluşmuş yamaçları, büyüleyici doğal güzelliği, vahşi yaşam zenginliği ve panoramik manzaralar sunan doğal seyir teraslarıyla çok ilgi görüyor.</p>
+                </div>
+                <br><br>
+                9.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.altinozu.bel.tr%2Fproje%2Faltinozu-altin-zeytin-cam-seyir-teras%2F40%2F&psig=AOvVaw0ZBu4dSrJTUQx0sduy3RnN&ust=1717164938378000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCCqoTItYYDFQAAAAAdAAAAABAX
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Altınözü Altın Zeytin Cam Seyir Terası.jpg" alt="Altınözü Altın Zeytin Cam Seyir Terası">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Altınözü Altın Zeytin Cam Seyir Terası</b>
+                <p>Hatay'ın Altınözü ilçesinde Mehmet Dönmez Caddesi üzerinde yer alan ve Beyazdere Vadisi'nin büyüleyici panoramik manzaralarını sunan Altınözü Altın Zeytin Cam Seyir Terası, panoramik fotoğraflar çekmek isteyen yerli ve yabancı turistlerin sık uğradığı yerler arasında. Hatay'ın ilk ve tek cam terası olmasıyla dikkat çeken, 75 metre yükseklik ile 16 metre uzunlukta tasarlanan Altınözü Altın Zeytin Cam Seyir Terası’nda özellikle gün doğumu ve gün batımlarında büyüleyici manzaralara şahit olabilirsiniz.</p>
+                </div>
+                <br><br>
+                10.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aa.com.tr%2Ftr%2Fasrin-felaketi%2Faltinozunde-tarihi-yapilar-depremde-ayakta-kaldi%2F2861279&psig=AOvVaw0Eov9CzptXYB986FCuVaPo&ust=1717165494311000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCa-IvKtYYDFQAAAAAdAAAAABAp
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Koz Kalesi.jpg" alt="Koz Kalesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Koz Kalesi</b>
+                <p>Hatay'a yaklaşık 50 kilometre uzaklıkta Altınözü ilçesi sınırlarında yer alan Koz Kalesi, Antakya yoluna hakim yüksek bir tepede inşa edilmiş etkileyici bir yapı. Antakya Prensliği döneminde yapılan ve pek çok medeniyet tarafından kullanılan kalede Helenistik dönemden kalan hamam, su depoları, cephanelikler ve yaşam alanlarını da görebilirsiniz. Koz Kalesi’nin kesme taşlarla tasarlanmış devasa kulesinden ise bölgenin panoramik fotoğraflarını çekebilirsiniz. Uzun tarihinde pek çok önemli savaşa ev sahipliği yapan Koz Kalesi, büyüleyici manzarasıyla Hatay’ın keşfedilmeye değer yerleri arasında.</p>
+                </div>
+                <br><br>
+                11.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fseyyahdefteri.com%2Fhabibi-neccar-cami-nerede-nasil-gidilir-hatay%2F&psig=AOvVaw2wI29MnYBTYh17FJJxHb3L&ust=1717165628881000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPitj8zKtYYDFQAAAAAdAAAAABAW
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Habibi Neccar Camii.webp" alt="Habibi Neccar Camii">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Habibi Neccar Camii</b>
+                <p>Hatay’ın en eski ve en güzel camilerinden biri olan Habibi Neccar Camii, şehri gezerken mutlaka görmeniz gereken tarihi yapılardan biri. Roma döneminden kalan bir şaman mabedi üzerine şehri ele geçiren Halife Ömer tarafından 636 yılında fetih simgesi olarak inşa edildiği düşünülen ve Türkiye’nin eski camilerinden olmasıyla özel bir öneme sahip olan Habibi Neccar Camii, Osmanlı döneminde çeşitli eklemeler yapılarak geliştirilmiş.</p>
+                </div>
+                <br><br>
+                12.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.yaz-tatili.com%2Fharbiye-selalesi%2F&psig=AOvVaw3uEhO9pFw-RBC65JGZYnjb&ust=1717165738220000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOC47IDLtYYDFQAAAAAdAAAAABAh
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Harbiye Şelaleleri.jpg" alt="Harbiye Şelaleleri">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Harbiye Şelaleleri</b>
+                <p>Hatay'ın en çok bilinen ve ziyaret edilen doğa harikalarından biri olan Harbiye Şelaleleri, halk arasında Daphne Şelaleleri olarak da biliniyor. Antakya'ya sadece 6 kilometre uzaklıkta yer alan ve sularının Asi Nehri ile buluştuğu şelale, endemik bitki türleri ve yemyeşil doğal güzellikleri arasından dökülen bembeyaz sularıyla yılın her mevsimi tablo güzelliğinde manzaralar sunuyor.Yaz aylarında buz gibi kaya göletlerinde yüzebileceğiniz, çevresindeki kır bahçeleri ve mesire alanlarında yılın yorgunluğunu atabileceğiniz Harbiye Şelaleleri’nin seyir terasları, yürüyüş parkurları ve ahşap köprülerinden ise harika fotoğraflar çekebilirsiniz. Çevresi antik Roma döneminden kalan tarihi yapılarla süslü Harbiye Şelaleleri, tarih gezileriyle de sıkça ziyaret ediliyor.</p>
+                </div>
+                <br><br>
+                13.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripadvisor.com.tr%2FAttraction_Review-g1672829-d3643312-Reviews-Alexandria_Troas_Antik_Kenti-Ezine_Canakkale_Province_Turkish_Aegean_Coast.html&psig=AOvVaw3pckE3-4rqXrbzoXDK0T4V&ust=1717166637004000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNDU-qzOtYYDFQAAAAAdAAAAABAE
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Alexandretta Antik Kenti.jpg" alt="Alexandretta Antik Kenti">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Alexandretta Antik Kenti</b>
+                <p>İskenderun ilçesinin en önemli tarihi hazinelerinden biri olan Alexandretta Antik Kenti, ilçe girişindeki liman kalıntıları ve merkeze yayılan surlar ve tarihi yapılarıyla dikkat çekiyor. Büyük İskender döneminde M.Ö. 300’lü yıllarda inşa edildiği düşünülen antik yerleşimde yapılan kazılarda Büyük İskender’in etkileyici bir büstü de bulundu. Hem kendi başınıza hem de rehberli tarih turlarıyla kalıntılarını gezebileceğiniz Alexandretta Antik Kenti’nin devasa sur parçaları arasında harika fotoğraflar çekebilir, gezinizden sonra ise kısa bir yürüyüşle İskenderun sahiline uğrayarak büyüleyici gün batımı manzaraları eşliğinde yöresel Hatay lezzetleri tadabilirsiniz.</p>
+                </div>
+                <br><br>
+                14.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.devletialiyyei.com%2FZaman-Tuneli%2Fsokullu-mehmet-pasa-kulliyesi&psig=AOvVaw0AIT5EQla6pKbLVUnd_TXQ&ust=1717166733929000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKjrztrOtYYDFQAAAAAdAAAAABAo
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Sokullu Mehmet Paşa Külliyesi.jpg" alt="Sokullu Mehmet Paşa Külliyesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Sokullu Mehmet Paşa Külliyesi</b>
+                <p>Hatay'ın Osmanlı döneminden kalan görülmeye değer bir şaheseri olan Sokullu Mehmet Paşa Külliyesi, Dörtyol ilçesinde İnönü Caddesi üzerinde hemen dikkatini çekecek tarihi bir yapı. 1574 yılında Osmanlı döneminin ünlü sadrazamı Sokullu Mehmet Paşa tarafından Mimar Sinan'a yaptırılan ve Osmanlı külliye örneklerinin en güzelleri arasında kabul edilen Sokullu Mehmet Paşa Külliyesi; inanç, tarih ve kültür gezileriyle çok ziyaret edilen Hatay tarihi hazineleri arasında. Hamam, cami, medrese, kervansaray ve pazar alanı gibi farklı bölümleri bulunan, kesme taşlarla inşa edilmiş surları ve kuleleri ile adeta bir kaleyi andıran Sokullu Mehmet Paşa Külliyesi’nin iç bölümlerini de keşfe çıkabilir ve Osmanlı dönemine unutulmaz bir yolculuk yapabilirsiniz.</p>
+                </div>
+                <br><br>
+                15.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Faproje.com.tr%2Fen%2Fportfolio%2Fpayas-kalesi-hatay%2F&psig=AOvVaw0rJf7QSKBDVCpZ5eODi0pA&ust=1717166881361000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNiBlKHPtYYDFQAAAAAdAAAAABAY
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Payas Kalesi.png" alt="Payas Kalesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Payas Kalesi</b>
+                <p>Hatay'da mutlaka ziyaret etmenizi önerdiğimiz etkileyici tarihi hazinlerden biri olan Payas Kalesi, şehir merkezine yaklaşık 70 kilometre uzaklıktaki Payas ilçesi sınırlarında yer alıyor. Mimar Sinan'ın bölgedeki en önemli eserlerden biri olan Sokullu Mehmet Paşa Külliyesi’nin de konumuna hizalandığı Payas Kalesi, 8 tane kulesi ve günümüze kadar sağlam kalmış devasa surlarıyla görülmeye değer güzellikte.Avrupa kalelerini andıran büyüleyici bir manzara sunan Payas Kalesi, Haçlı Seferleri sırasında Cenevizliler döneminde inşa edilmiş ve bir süre Tapınak Şövalyeleri’ne de ev sahipliği yapmış. Osmanlı döneminde geliştirmeler yapılarak kullanılmaya devam eden ve çevresindeki ticaret yollarını koruyan Payas Kalesi’nde iç kale bölümlerini gezebilir ve surlardan panoramik fotoğraflar çekebilirsiniz.</p>
+                </div>
+                <br><br>
+                16.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fotofilm.com.tr%2Fhabibi-neccar-dagi-ve-antakya-kalesi%2F&psig=AOvVaw3xIGTH15osq_8n1iQH8euD&ust=1717167071564000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPjgvvvPtYYDFQAAAAAdAAAAABAJ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Antakya Kalesi.jpg" alt="Antakya Kalesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Antakya Kalesi</b>
+                <p>Hatay Kalesi olarak da bilinen Antakya Kalesi, İstanbul'un devasa surlarından sonra Türkiye'nin en uzun sur duvarlarına sahip olmasıyla ünlü. Uzun tarihi M.Ö. 300’lü yıllara Büyük İskender dönemine kadar uzanan görkemli kale; Roma, Bizans, Haçlı, Selçuklu ve Osmanlılar dönemlerinde de çeşitli değişikliklere uğrayarak kullanılmaya devam edilmiş.12 kilometre uzunluğundaki surları ve iç bölümlerini rehberli turlarla çıkarak harika fotoğraflar çekebileceğiniz Antakya Kalesi'nde bir zamanlar 360 tane kule bulunduğu söyleniyor. Asi Nehri’ne kadar geniş bir alanı kapsayan surlarında Halep Kapısı, Demir Kapı, Şam Kapısı, Köprü Kapısı ve Köpek Kapısı isimli 5 tane anıtsal kapısı bulunan Antakya Kalesi, her tarih ve kültür meraklısının mutlaka görmesi gereken etkileyici yapılardan biri.</p>
+                </div>
+                <br><br>
+                17.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iskenderungazetesi.com%2Fnihal-atakas-cami-yarin-ibadete-aciliyor%2F&psig=AOvVaw38rAUkWrS3WQlSxBUHfmjJ&ust=1717167280224000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCUn-LQtYYDFQAAAAAdAAAAABBY
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Nihal Atakaş Camii.jpg" alt="Nihal Atakaş Camii">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Nihal Atakaş Camii</b>
+                <p>Macaristan'ın başkenti Budapeşte'de bir benzeri bulunan Nihal Atakaş Camii, Hatay’ın en yeni simgesel yapılarından biri olarak dikkat çekiyor. Akdeniz sahili kenarında 3000 kişi kapasite ile hizmet veren cami, Selçuklu ve Osmanlı dönemi mimarisini modern mimari ile buluşturmuş çarpıcı tasarımıyla ilgi görüyor. 2019 yılı ocak ayında halka açılan Nihal Atakaş Camii, kutsal günler ve dini bayramlarda binlerce insanla doluyor. Hem etkileyici mimarisi hem de bulunduğu konumdan sunduğu büyüleyici Akdeniz manzaralarıyla görülmeye değer yapılardan olan Nihal Atakaş Camii’ne kısa bir yürüyüşle kolayca ulaşabilirsiniz.</p>
+                </div>
+                <br><br>
+                18.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fkadirbekci53.blogspot.com%2F2018%2F08%2Fmusa-agaci-ve-ab-i-hayat-cesmesi.html&psig=AOvVaw2IVgHP-9q4itwgUzkhjfeV&ust=1717167498565000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKjXycfRtYYDFQAAAAAdAAAAABAJ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Ab-ı Hayat Çeşmesi.jpg" alt="Ab-ı Hayat Çeşmesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Ab-ı Hayat Çeşmesi</b>
+                <p>Samandağ ilçesine bağlı tarihi Hızırbey Köyü’nde Musa Ağacı ile birlikte ziyaret edebileceğiniz başka bir önemli nokta da ölümsüzlük suyunun aktığı yer olarak bilinen Ab-ı Hayat Çeşmesi. Efsanelerde Hz. Musa'nın asasını toprağa gömdükten sonra ölümsüzlük suyuyla asanın yeşermesiyle oluştuğu söylenen Musa Ağacı’na kısa bir yürüyüş mesafesinde yer alan ve her yıl binlerce kişi tarafından ziyaret edilen Ab-ı Hayat Çeşmesi’nin şifalı olduğuna inanılan sularını günümüzde de tadabilirsiniz. Huzurlu atmosferleri ve yemyeşil güzellikleriyle dikkat çeken dere kenarında kurulan kır bahçelerinde yılın yorgunluğunuzu atabileceğiniz gezinizde Hızırbey Köyü’nün tarihi evlerle süslü sokaklarını da keşfe çıkarak harika fotoğraflar çekebilirsiniz.</p>
+                </div>
+                <br><br>
+                19.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fkulturenvanteri.com%2Ftr%2Fyer%2Faziz-simon-manastiri%2Fmrt_0676%2F&psig=AOvVaw3dPtKIpzklP08trDjrjEOf&ust=1717167585190000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLC-ivHRtYYDFQAAAAAdAAAAABAE
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Aziz Simeon Manastırı (St. Simon Manastırı).jpg" alt="Aziz Simeon Manastırı (St. Simon Manastırı)">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Aziz Simeon Manastırı (St. Simon Manastırı)</b>
+                <p>Hatay’da tarih ve inanç turlarıyla en çok ziyaret edilen tarihi yapılarından biri olan Aziz Simeon Manastırı, Samandağ ile Defne ilçeleri arasındaki 480 metrelik bir tepe üzerinde etkileyici bir manzara sunuyor. Antakya'ya sadece 19 kilometre uzaklıkta yer alan ve Stilitler Tarikatı kurucusu Aziz Simeon tarafından M.S. 6. yüzyılda inşa edilen çarpıcı yapı, ilk Hristiyanlık dönemlerinde Hatay'ın en önemli hac merkezi konumundaydı. Antik efsanelerde Aziz Simeon'un bir kaya üstünde 45 yıl inzivaya çekildiği anlatılan manastır; kilise, sarnıçlar, vaftizhane ve yaşam alanlarının yanı sıra devasa kesme taşlarla haç şeklinde inşa edilmiş olmasıyla da dikkat çekiyor.</p>
+                </div>
+                <br><br>
+                20.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.trthaber.com%2Ffoto-galeri%2Fhataydaki-tarihi-bakras-kalesi-de-depremlerde-hasar-gordu%2F54710.html&psig=AOvVaw1mwJUTCkTex6iea8cGDJwj&ust=1717167647461000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNi0oY7StYYDFQAAAAAdAAAAABAJ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Bakras Kalesi.jpg" alt="Bakras Kalesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Bakras Kalesi</b>
+                <p>İlk çağlardan günümüze kalan tarihi hazinelerimizden biri olan Bakras Kalesi’ni hem kendi başınıza hem de tarih gezileri ve doğa yürüyüşleriyle keşfe çıkabilirsiniz. Hatay’a sadece 15 kilometre uzaklıkta yer alan etkileyici kalenin Ammuri Kralı Dakianus tarafından inşa edildiği tahmin ediliyor.Bölgeye hakim yüksek bir konumda bulunan ve 1183 yılında Selahattin Eyyubi’nin haçlılardan ele geçirdiği kale, Haçlı Seferleri’nde aktif olarak kullanıldığı için Tapınakçılar Kalesi olarak da biliniyor. Osmanlı döneminde de geliştirilerek kullanılan Bakras Kalesi, mimari yapısını günümüze kadar korumayı başarmış ve sağlam kesme taşlarla inşa edilmiş bölümleri ayakta kalmış. Özellikle gün doğumu ve gün batımlarında çarpıcı manzaralarını izleyebileceğiniz kalenin iç bölümlerini ve surlarını keyifle gezebilirsiniz.</p>
+                </div>
+                <br><br>
+                21.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fhaberton.com%2Fcehennem-kayikcisi-kharon-maski-sapasaglam%2F&psig=AOvVaw0_nvKEtlemXw1iK3ougUSD&ust=1717188116227000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMC0zbKetoYDFQAAAAAdAAAAABAg
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Kharon Cehennem Kayıkçısı.jpg" alt="Kharon Cehennem Kayıkçısı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Kharon Cehennem Kayıkçısı</b>
+                <p>Hatay'a sadece 35 kilometre uzaklıkta yer alan ve Haron Kabartması olarak da bilinen Kharon Cehennem Kayıkçısı, 175 ile 164 yılları arasında yapıldığı tahmin edilen çarpıcı bir taş eser. Aziz Pierre Kilisesi’ne sadece 5 dakika yürüyüş mesafesinde yer alan ve Yunan mitolojisinde ölüleri Stiyks Nehri’nden yer altı ülkesine götürmekle görevli kayıkçı Kharon’un (Charonion) tasvir edildiği taş kabartma, tarih ve arkeoloji meraklılarının çok ilgisini çekiyor. 4 metreye 1,5 buçuk metre boyutlarında olan ve dağ eteğinde çarpıcı bir manzara sunan Kharon Cehennem Kayıkçısı’nın fotoğraflarını çektikten sonra bölgedeki en etkileyici yapılardan biri olan Aziz Pierre Kilisesi’ni ziyaret etmeyi de unutmayın.</p>
+                </div>
+                <br><br>
+                22.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fsinandogan%2F48750017251&psig=AOvVaw2eN-f_ofBqr7JW-nMS6sOK&ust=1717188193953000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCy-tmetoYDFQAAAAAdAAAAABAE
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Dor Mabedi.jpg" alt="Dor Mabedi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Dor Mabedi</b>
+                <p>Samandağ ilçesinde Çevlik mevkiinde yer alan Dor Mabedi’nin tarihi M.Ö. 300’lü yıllara kadar uzanıyor. Ülkemizde ender görülen dorik tarzda tasarlanmış az sayıdaki mabetten biri olmasıyla dikkat çeken ve 1930'lu yıllarda yapılan kazı çalışmalarında İssos ve Afrodit heykellerinin bulunduğu Dor Mabedi’nin bazı bölümleri günümüze sağlam kalmayı başarmış. Bölgeden çıkarılan eserleri Hatay Arkeoloji Müzesi'nde inceleyebilir, rehberli turlar ise bu gizemli mabet hakkında ilginç bilgiler alabilirsiniz.</p>
+                </div>
+                <br><br>
+                23.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.neredekal.com%2Fblog%2Fbesikli-magara-hatayin-en-ilgi-cekici-kesif-noktasi%2F&psig=AOvVaw0eNzFPLvBERLdUTthNmXxv&ust=1717188277732000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMj7hf6etoYDFQAAAAAdAAAAABAJ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Beşikli Mağarası.webp" alt="Beşikli Mağarası">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Beşikli Mağarası</b>
+                <p>M.Ö. 1. yüzyılda Romalılar tarafından inşa edilen büyüleyici Beşikli Mağarası; tarih, arkeoloji ve kültür meraklılarının Hatay'da mutlaka uğraması gereken önemli yerler arasında. Titus Tüneli ile birlikte yapıldığı tahmin edilen ve bölgedeki en büyük kaya mezarlarına ev sahipliği yapan Beşikli Mağarası, Roma döneminin bölgedeki en büyük liman kenti Seleucia Pieria Antik Kenti'nin sınırları içinde yer alıyor. 250'ye yakın kaya mezarı, kayalar içine oyulmuş gizli tünelleri, sunakları ve tapınaklarıyla büyüleyici bir manzaraya sahip olan Beşikli Mağarası’nda yapılan kazı çalışmalarında ise pek çok farklı döneme ait paha biçilmez eserler bulundu. Görkemli kaya mezarlarını inceledikten sonra yaklaşık 100 metre uzaklıktaki Titus Tüneli’ni de keşfe çıkabilirsiniz.</p>
+                </div>
+                <br><br>
+                24.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aa.com.tr%2Ftr%2Fyasam%2Famanoslarin-yanan-taslari-turizme-kazandirilacak%2F1899381&psig=AOvVaw3lbA5ZKM1mS1Q7hpSvWNJK&ust=1717188353552000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJCai6CftoYDFQAAAAAdAAAAABAE
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Hatay Yanan Taş.jpg" alt="Hatay Yanan Taş">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Hatay Yanan Taş</b>
+                <p>Antalya Olimpos'ta da bir örneğini görebileceğiniz ve yer altı gazlarından dolayı her mevsim 24 saat boyunca yanmaya devam eden bir tabiat harikası olan Hatay yanar taş, görülmeye değer çarpıcı bir manzara sunuyor. Son yıllarda turizme kazandırılması için çalışmaların devam ettiği yanar taş, Amanos Dağları rehberli doğa yürüyüşleri ve fotoğraf gezilerinin sevilen mola noktalarından biri konumunda.</p>
+                </div>
+                <br><br>
+                25.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fefkansinan%2F42473026544&psig=AOvVaw0e6CqSirCPEOl3nSKGgIIn&ust=1717188438455000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNiJ1cyftoYDFQAAAAAdAAAAABAR
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Antakya Ulu Camii (Hatay Ulu Camii).jpg" alt="Antakya Ulu Camii (Hatay Ulu Camii)">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Antakya Ulu Camii (Hatay Ulu Camii)</b>
+                <p>Antakya'nın en eski ve en büyük camisi olan Antakya Ulu Camii, 1271 yılında şehri ele geçiren Memlük Sultanı I. Baybars tarafından yaptırıldığı tahmin edilen ve Selçuklar tarafından geliştirilen etkileyici bir yapı. Selçuklu mimarisi özelliklerinin yanı sıra Memlükler döneminden de özellikleri de olan caminin iç mekanları, paha biçilmez halılar ve altın harflerle yazılmış ayetlerle süslü.Külliye, cami, medrese, şadırvan, türbeler, çeşme, imaret gibi bölümlere ve geniş bir taş avluya sahip tarihi cami, 1800’lü yıllarda yaşanan büyük depremde belirli bölümleri yıkıldıktan sonra aslına uygun olarak yenilendi. Antakya Ulu Camii, huzurlu atmosferi ve çarpıcı mimarisiyle şehir merkezinden kolayca ulaşarak ziyaret edebileceğiniz tarihi hazinelerden biri.</p>
+                </div>
+                <br><br>
+                26.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fhatayup.web.arizona.edu%2Fnearbysites.htm&psig=AOvVaw32C0VJv54_ljE_cU1xSpkC&ust=1717188600965000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCrxpegtoYDFQAAAAAdAAAAABAR
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Üçağızlı Mağarası.jpg" alt="Üçağızlı Mağarası">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Üçağızlı Mağarası</b>
+                <p>Samandağ ilçesinde Akdeniz kıyısında yer alan ve insanlık tarihi için büyük bir öneme sahip olan Üçağızlı Mağarası'nı hem rehberli mağaracılık gezileri hem de doğa yürüyüşleriyle keşfe çıkabilirsiniz. M.Ö. 15.000 yıllarında yerleşik hayata geçen insanların ilk yaşadığı yerlerden biri olarak gösterilen mağaraya oldukça zorlu bir yürüyüşten sonra ulaşılabiliyor. Yapılan arkeolojik kazılarda binlerce yıllık taştan yapılmış malzemelerin bulunduğu Üçağızlı Mağarası, bulunduğu konumdan sunduğu panoramik Akdeniz manzaralarıyla da görülmeye değer güzellikte.</p>
+                </div>
+                <br><br>
+                27.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.forumadasi.com%2Fturkiye-uzerindeki-tarihi-yerler%2F13854-issos-antik-kenti-epiphaneia-erzin-hatay.html&psig=AOvVaw37mN_2ry_E_M6Rq2WBc5FK&ust=1717188788011000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPio3fCgtoYDFQAAAAAdAAAAABAx
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\İssos Antik Kenti ve İssos Harabeleri.jpg" alt="İssos Antik Kenti ve İssos Harabeleri">
+                <br><br>
+                <div style="width: 800px;">
+                <b>İssos Antik Kenti ve İssos Harabeleri</b>
+                <p>Hatay'ın her yıl binlerce tarih ve kültür meraklısı tarafından ziyaret edilen başka bir önemli antik yerleşim bölgesi de Erzin ilçesi sınırlarında yer alan İssos Antik Kenti, M.Ö. 500’lü yıllarında kurulan ve üç tane büyük savaşa ev sahipliği yapan antik kentin tarihi kaynaklarda M.Ö. 5. ile 6. yüzyıllar arasında Kilikya bölgesinin en önemli şehirlerinden biri olduğu söyleniyor.</p>
+                </div>
+                <br><br>
+                28.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fsinandogan%2F48537509012&psig=AOvVaw3dvqcfO8WYzqmzzrWe59Fg&ust=1717189052369000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNDIu-2htoYDFQAAAAAdAAAAABAJ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Kanuni Sultan Süleyman Camii.jpg" alt="Kanuni Sultan Süleyman Camii">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Kanuni Sultan Süleyman Camii</b>
+                <p>Hatay'ın Belen ilçesinde Mareşal Çakmak Caddesi üzerinde ziyaret edebileceğiniz Kanuni Sultan Süleyman Camii, Osmanlı döneminden Hatay'da kalan çarpıcı yapılardan biri. Kanuni Sultan Süleyman tarafından hamam ve kervansaray olarak inşa ettirilen, klasik Osmanlı kesme taş mimari özelliklerini yansıtan Kanuni Sultan Süleyman Camii, tarihi İpek Yolu rotası üzerinde yer almasıyla da dikkat çekiyor. Sade dekorasyonları, huzurlu ve otantik atmosferini günümüze kadar korumayı başaran etkileyici cami günümüzde de hizmet vermeye devam ediyor.</p>
+                </div>
+                <br><br>
+                29.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Ftr.m.wikipedia.org%2Fwiki%2FDosya%3ASt._Pierre_Kilisesi.jpg&psig=AOvVaw1M-nVs5l1aAn8JEqRUEShp&ust=1717189164045000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJD0yaKitoYDFQAAAAAdAAAAABAI
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Saint Pierre Kilisesi.jpg" alt="Saint Pierre Kilisesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Saint Pierre Kilisesi</b>
+                <p>Binlerce yıllık tarihi boyunca pek çok dine ve medeniyete ev sahipliği yapan Hatay'da yabancı turistlerin en çok ziyaret ettiği yerlerden biri de Saint Pierre Kilisesi. Habibi Neccar Tepesi eteklerinde Antakya'ya yaklaşık 2 kilometre uzaklıkta yer alan ve binlerce yıllık bir mağaranın kiliseye dönüştürülmesiyle inşa edilen Saint Pierre Kilisesi, İsa'nın 12 havarisinden biri olan Aziz Petrus'un ilk vaaz verdiği yer olmasından dolayı da Hristiyanlık tarihinde özel bir öneme sahip.İlk Hristiyan kiliselerinden biri olduğu için günümüzde binlerce yabancı turist tarafından ziyaret edilen mağara kiliseye Hristiyanlık resmi din olarak kabul edilmesinden sonra Roma döneminde de çeşitli eklemeler yapılmış. Hem kendi başınıza hem de rehberli tarih, kültür ve arkeoloji turlarıyla keşfe çıkabileceğiniz, günümüzde anıt müze olarak hizmet veren Saint Pierre Kilisesi’nin 5. yüzyılda yapılmış mozaik eserlerini, Aziz Petrus heykelini, şifalı suların aktığı düşünülen çeşmeleri ve gizli tünellerini keşfe çıkarak harika fotoğraflar çekebilirsiniz. Tarihi kilisede her yıl 29 Haziran'da Katolik kilisesi tarafından büyük ayinler de düzenleniyor.</p>
+                </div>
+                <br><br>
+                30.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fhatay.bel.tr%2Frehber%2Fbarlaam-manastiri&psig=AOvVaw1x0X4W-iDpzYOi7l0glEhO&ust=1717189284199000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMD06duitoYDFQAAAAAdAAAAABA-
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Barlaam Manastırı.jpg" alt="Barlaam Manastırı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Barlaam Manastırı</b>
+                <p>Günümüzde büyük bölümü harabe halde bulunan Barlaam Manastırı, Yayladağı ilçesinde bölgeye hakim yüksek bir nokta inşa edilmiş bir Gürcü Ortodoks kilisesi. Dağ eteğinde çarpıcı bir manzara sunan ve Roma döneminde kutsal bir yer olarak kabul edilen Barlaam Manastırı’na zorlu bir tırmanışla ulaşılabiliyor. Uzun tarihinde birçok kez yıkılarak tekrar inşa edilen ve en son M.S. 950 yıllarında Gürcü papazlar tarafından tekrar inşa edildikten sonra 1268 yılına kadar aktif olarak kullanılan manastır, günümüzde kaderine terk edilmiş durumda. Bulunduğu konumdan sunduğu çarpıcı manzarayla tarih gezileri ve doğa yürüyüşlerinin adreslerinden biri olan Barlaam Manastırı’nın günümüze kalan bölümlerini inceleyebilirsiniz.</p>
+                </div>
+                <br><br>
+                31.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kulturportali.gov.tr%2Fturkiye%2Fhatay%2Fgezilecekyer%2Fortodoks-kilisesi&psig=AOvVaw1PHlXK1xVtEZtPKu_UDb5I&ust=1717189499782000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKiplMajtoYDFQAAAAAdAAAAABAo
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Maryo Hanna Kilisesi.jpg" alt="Maryo Hanna Kilisesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Maryo Hanna Kilisesi</b>
+                <p>Dinlerin kardeşliği konusunda simgesel şehirlerinden biri olan Hatay'da başka bir önemli tarihi yapı da ilk Hristiyanlık dönemlerinde dinini yaymak için Arsuz'a yerleşen din adamları tarafından inşa edilen Maryo Hanna Kilisesi. 1514 yılında Aziz Hanna tarafından yaptırılan ve günümüzde de hizmet vermeye devam eden kilise, etkileyici dini sahnelerle süslü iç dekorasyonuyla da dikkat çekiyor</p>
+                </div>
+                <br><br> -->
+        </center>
+
+        <footer>
+            <center>
+        <table style="padding: 10px;">
+            <tr>    
+                <td><label for="">E-mail:</label></td>        
+                <td><a href="mailto:hazimablak1453@gmail.com"><button class="footerbuton" onclick="eposta()">gezirehberi@gmail.com</button></a></td>
+                <td><label for="">İrtibat No:</label></td>  
+                <td><a href="tel:90530361150"><button class="footerbuton" onclick="telefon()">905789871650</button></a></td>
+                <td><label for="">İnstagram:</label></td>  
+                <td><a href="https://www.instagram.com/hazim.ablak?igsh=MTg0aDFmMnBwcHp3eA=="><button class="footerbuton" onclick="instagram()">@hazim.ablak</button></a></td>
+            </tr>
+        </table>
+            </center>
+        </footer>
+
+</body>
+</html>

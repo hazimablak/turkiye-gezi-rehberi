@@ -1,0 +1,48 @@
+*{
+    margin-top: 0px;
+}
+.soltaraf{
+    background-color: white;
+    border: 5px;
+   
+    border-width: 10%;
+    border-style: solid;
+    border-color: black;
+    width: 290px;
+    height: 3550px;
+    position:fixed;
+    text-align: left;
+    
+
+
+}
+.entry{
+    background-color:turquoise;
+    border: 5px;
+   
+    border-width: 10%;
+    border-style: solid;
+    border-color: black;
+    width: 884px;
+    height: 8450px;
+    margin-left: 20%;
+    position: absolute;
+   
+
+
+}
+.entry2{
+    background-color:turquoise;
+    border: 5px;
+   
+    border-width: 10%;
+    border-style: solid;
+    border-color: black;
+    width: 290px;
+    height: 6770px;
+    margin-left: 79%;
+    position: fixed;
+    
+
+
+}

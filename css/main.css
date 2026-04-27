@@ -1,0 +1,773 @@
+/* ==========================================================================
+   TÜRKİYE GEZİ REHBERİ - PREMIUM STİL DOSYASI (MAIN.CSS)
+   ========================================================================== */
+
+/* --- 1. DEĞİŞKENLER VE SIFIRLAMA --- */
+:root {
+    --dark-bg: #0F172A;       /* Gece Yarısı Arduvaz - Premium Karanlık */
+    --accent-red: #E11D48;    /* Nar Çiçeği / Canlı Kırmızı Vurgu */
+    --text-light: #F8FAFC;    /* Buz Beyazı - Okunaklı Metinler */
+    --text-muted: #94A3B8;    /* Gri - Alt Metinler */
+    --white: #ffffff;
+    --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.15);
+    --shadow-glow: 0 4px 20px rgba(225, 29, 72, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif; /* Ana fontumuz Outfit */
+}
+
+/* Başlıklar için asil Playfair Display fontu */
+h1, h2, h3, h4, .logo {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--dark-bg);
+    overflow-x: hidden; 
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- 2. HEADER VE NAVİGASYON (GLASSMORPHISM) --- */
+.navbar {
+    background-color: rgba(15, 23, 42, 0.85); /* Saydam koyu zemin */
+    -webkit-backdrop-filter: blur(15px); /* Safari / iOS Desteği */
+    backdrop-filter: blur(15px); /* Cam efekti */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo i {
+    color: var(--accent-red);
+    margin-right: 10px;
+}
+
+/* Menü Öğeleri */
+.nav-menu ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: var(--text-light);
+    font-weight: 500;
+    font-size: 1.05rem;
+    padding: 8px 0;
+    position: relative;
+}
+
+/* Modern Alt Çizgi Hover Efekti */
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-red);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after, 
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+.nav-menu a:hover, 
+.nav-menu a.active {
+    color: var(--accent-red);
+}
+
+/* --- 3. KUSURSUZ AÇILIR MENÜ (DROPDOWN) --- */
+.dropdown {
+    position: relative;
+    padding: 30px 0; /* Fare menüden çıkarken hemen kapanmasın diye tolerans */
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background-color: var(--dark-bg);
+    min-width: 220px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--shadow-soft);
+    padding: 15px 0;
+    
+    /* Gizleme ve Animasyon */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-content a {
+    color: var(--text-light);
+    padding: 12px 25px;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.dropdown-content a::after {
+    display: none; /* Alt çizgiyi burada kapatıyoruz */
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(225, 29, 72, 0.1);
+    color: var(--accent-red);
+    padding-left: 32px; /* Hoverda şık kayma efekti */
+}
+
+/* --- 4. GİRİŞ YAP BUTONU --- */
+.btn-login {
+    background-color: var(--accent-red);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-login:hover {
+    background-color: var(--white);
+    color: var(--accent-red);
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+}
+
+/* --- 5. HERO (KAPAK) BÖLÜMÜ --- */
+.hero-section {
+    height: 100vh;
+    background: url('../assets/images/arkaplan.gif') center/cover no-repeat; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.4) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: var(--white);
+    max-width: 850px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    color: var(--white);
+    margin-bottom: 25px;
+    line-height: 1.1;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 45px;
+    opacity: 0.9;
+}
+
+.btn-explore {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--accent-red);
+    color: var(--white);
+    padding: 18px 45px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn-explore:hover {
+    transform: translateY(-5px); 
+    box-shadow: var(--shadow-glow);
+    background-color: #BE123C; /* Biraz daha koyu kırmızı */
+}
+
+/* --- 6. FOOTER (ALT BİLGİ) --- */
+.footer {
+    background-color: var(--dark-bg);
+    color: var(--text-muted);
+    padding: 60px 0 20px 0;
+    border-top: 4px solid var(--accent-red);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.footer-item i {
+    font-size: 35px;
+    color: var(--accent-red);
+    background: rgba(225, 29, 72, 0.1);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.footer-item h4 {
+    font-size: 1.1rem;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.footer-item a {
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.footer-item a:hover {
+    color: var(--accent-red);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.95rem;
+}
+
+
+
+/* ==========================================================================
+   7. ALT SAYFALAR (HAKKIMIZDA & BENTO GRID EKLENTİLERİ)
+   ========================================================================== */
+
+/* İç Sayfa Kapağı (Ana sayfadaki kadar büyük olmayan şık başlık alanı) */
+.page-hero {
+    height: 40vh; /* Ekranın sadece %40'ını kaplar */
+    background: url('../assets/images/arkaplan.gif') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 90px; /* Navbar yüksekliği kadar aşağı it */
+}
+
+.page-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.7));
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 1;
+    color: var(--white);
+    padding: 0 20px;
+}
+
+.page-hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--accent-red);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.page-hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    opacity: 0.9;
+}
+
+/* Hakkımızda İçerik Alanı */
+.about-section {
+    padding: 80px 20px;
+}
+
+/* BENTO GRID SİSTEMİ */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.bento-box {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.bento-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+}
+
+.bento-box i {
+    font-size: 2.5rem;
+    color: var(--accent-red);
+    margin-bottom: 20px;
+}
+
+.bento-box h2 {
+    font-size: 1.8rem;
+    color: var(--dark-bg);
+    margin-bottom: 15px;
+}
+
+.bento-box p {
+    font-size: 1.1rem;
+    color: #475569;
+    line-height: 1.8;
+}
+
+/* Bento Kutu Genişlik Ayarları */
+.mission-box { grid-column: 1 / 2; }
+.vision-box { grid-column: 2 / 3; }
+.story-box { grid-column: 1 / -1; } /* Tüm satırı kapla */
+
+/* GELİŞTİRİCİ EKİP ALANI */
+.team-section {
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    color: var(--dark-bg);
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.team-section h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: var(--accent-red);
+    bottom: -10px;
+    left: 25%;
+    border-radius: 2px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: var(--dark-bg);
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    border-bottom: 4px solid var(--accent-red);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-avatar {
+    width: 100px;
+    height: 100px;
+    background: rgba(225, 29, 72, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    color: var(--accent-red);
+    font-size: 2.5rem;
+}
+
+.team-card h3 {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.team-card span {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.team-socials a {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin: 0 10px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.team-socials a:hover {
+    background: var(--accent-red);
+    transform: scale(1.1);
+}
+
+/* Mobil Uyum (Responsive) */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+    .mission-box, .vision-box, .story-box {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* ==========================================================================
+   8. BÖLGE VE ŞEHİR KARTLARI GALERİSİ
+   ========================================================================== */
+
+.region-cities-section {
+    padding: 80px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--dark-bg);
+    margin-bottom: 10px;
+}
+
+.title-line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-red);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.city-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.city-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: block;
+    color: inherit;
+}
+
+.city-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+}
+
+.city-image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    background-color: var(--dark-bg); /* Resim yüklenene kadar koyu zemin */
+}
+
+/* Şimdilik resimler olmadığı için boş kutulara stil verelim */
+.city-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.city-card:hover .city-image img {
+    transform: scale(1.1);
+}
+
+.city-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(225, 29, 72, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.city-card:hover .city-overlay {
+    opacity: 1;
+}
+
+.city-overlay i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.city-card:hover .city-overlay i {
+    transform: translateY(0);
+}
+
+.city-overlay span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+    transition-delay: 0.1s;
+}
+
+.city-card:hover .city-overlay span {
+    transform: translateY(0);
+}
+
+.city-info {
+    padding: 25px;
+    background: var(--white);
+    position: relative;
+    z-index: 2;
+}
+
+.city-info h3 {
+    font-size: 1.5rem;
+    color: var(--dark-bg);
+    margin-bottom: 8px;
+    font-family: 'Playfair Display', serif;
+}
+
+.city-info p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+
+/* ==========================================================================
+   9. İNTERAKTİF BÖLGELER PANOSU (DASHBOARD)
+   ========================================================================== */
+
+.regions-dashboard {
+    padding: 120px 0 60px 0; /* Navbardan kurtulmak için üst boşluk */
+    min-height: 100vh;
+    background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
+}
+
+.dashboard-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Sol Menü: İnteraktif Liste */
+.interactive-map-list {
+    flex: 0 0 350px;
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 24px;
+    box-shadow: var(--shadow-soft);
+}
+
+.region-selectors {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.region-btn {
+    padding: 18px 25px;
+    background: #F1F5F9;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--dark-bg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid transparent;
+}
+
+.region-btn i {
+    color: var(--text-muted);
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+.region-btn:hover {
+    background: var(--white);
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-color: rgba(225, 29, 72, 0.2);
+}
+
+.region-btn.active {
+    background: var(--accent-red);
+    color: var(--white);
+    box-shadow: var(--shadow-glow);
+    transform: translateX(10px);
+}
+
+.region-btn.active i {
+    color: var(--white);
+}
+
+/* Sağ Taraf: Dinamik Pano (Glassmorphism + Kart) */
+.dynamic-region-info {
+    flex: 1;
+}
+
+.glass-panel {
+    background: var(--white);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+#region-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    background-color: var(--dark-bg); /* Resim yoksa siyah durur */
+}
+
+.panel-content {
+    padding: 40px;
+}
+
+.panel-content h1 {
+    font-size: 3rem;
+    color: var(--dark-bg);
+    margin-bottom: 15px;
+}
+
+.panel-content p {
+    font-size: 1.15rem;
+    color: #475569;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Dinamik Şehir Etiketleri (Tags) */
+.city-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.city-tags .tag {
+    background: rgba(15, 23, 42, 0.05);
+    color: var(--dark-bg);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: 0.3s;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.city-tags .tag:hover {
+    background: var(--dark-bg);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+/* Mobil Tasarım (Telefonlar İçin Alt Alta Dizme) */
+@media (max-width: 992px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+    .interactive-map-list {
+        flex: 1;
+        width: 100%;
+    }
+    #region-image {
+        height: 250px;
+    }
+}

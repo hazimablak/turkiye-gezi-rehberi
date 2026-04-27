@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bölgelerimiz | Türkiye Gezi Rehberi</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="../../index.html" class="logo">
+                <i class="fas fa-map-marked-alt"></i> TÜRKİYE GEZİ REHBERİ
+            </a>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../../index.html">Ana Sayfa</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#">Popüler Şehirler <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="../cities/ankara.html">Ankara</a></li>
+                            <li><a href="../cities/bursa.html">Bursa</a></li>
+                            <li><a href="../cities/canakkale.html">Çanakkale</a></li>
+                            <li><a href="../cities/erzurum.html">Erzurum</a></li>
+                            <li><a href="../cities/gaziantep.html">Gaziantep</a></li>
+                            <li><a href="../cities/hatay.html">Hatay</a></li>
+                            <li><a href="../cities/istanbul.html">İstanbul</a></li>
+                            <li><a href="../cities/konya.html">Konya</a></li>
+                            <li><a href="../cities/siirt.html">Siirt</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="bolgeler.html" class="active">Bölgeler</a></li>
+                    <li><a href="../../hakkimizda.html">Hakkımızda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="regions-dashboard">
+        <div class="container dashboard-container">
+            
+            <div class="interactive-map-list">
+                <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                    <h2>Bölgeleri Keşfet</h2>
+                    <div class="title-line" style="margin: 0;"></div>
+                </div>
+                
+                <ul class="region-selectors">
+                    <li class="region-btn active" data-region="marmara">
+                        <i class="fas fa-water"></i> Marmara Bölgesi
+                    </li>
+                    <li class="region-btn" data-region="ege">
+                        <i class="fas fa-sun"></i> Ege Bölgesi
+                    </li>
+                    <li class="region-btn" data-region="akdeniz">
+                        <i class="fas fa-umbrella-beach"></i> Akdeniz Bölgesi
+                    </li>
+                    <li class="region-btn" data-region="icanadolu">
+                        <i class="fas fa-wheat-awn"></i> İç Anadolu Bölgesi
+                    </li>
+                    <li class="region-btn" data-region="karadeniz">
+                        <i class="fas fa-tree"></i> Karadeniz Bölgesi
+                    </li>
+                    <li class="region-btn" data-region="doguanadolu">
+                        <i class="fas fa-mountain"></i> Doğu Anadolu Bölgesi
+                    </li>
+                    <li class="region-btn" data-region="guneydogu">
+                        <i class="fas fa-mosque"></i> Güneydoğu Anadolu Bölgesi
+                    </li>
+                </ul>
+            </div>
+
+            <div class="dynamic-region-info">
+                <div class="glass-panel" id="region-display">
+                    <img src="../../assets/images/marmara.jpg" alt="Marmara Bölgesi" id="region-image">
+                    <div class="panel-content">
+                        <h1 id="region-title">Marmara Bölgesi</h1>
+                        <p id="region-desc">Tarihin ve kıtaların buluştuğu nokta. İstanbul'un eşsiz boğazından, Bursa'nın yeşiline, Çanakkale'nin destansı topraklarına uzanan bir kültür mozaiği.</p>
+                        
+                        <div class="city-tags" id="region-cities">
+                            <a href="../cities/istanbul.html" class="tag">İstanbul</a>
+                            <a href="../cities/bursa.html" class="tag">Bursa</a>
+                            <a href="../cities/canakkale.html" class="tag">Çanakkale</a>
+                            <a href="../cities/edirne.html" class="tag">Edirne</a>
+                            <a href="../cities/tekirdag.html" class="tag">Tekirdağ</a>
+                            <a href="../cities/kirklareli.html" class="tag">Kırklareli</a>
+                            <a href="../cities/balikesir.html" class="tag">Balıkesir</a>
+                            <a href="../cities/kocaeli.html" class="tag">Kocaeli</a>
+                            <a href="../cities/sakarya.html" class="tag">Sakarya</a>
+                            <a href="../cities/bilecik.html" class="tag">Bilecik</a>
+                            <a href="../cities/yalova.html" class="tag">Yalova</a>
+                        </div>
+                        
+                        <a href="marmara.html" class="btn-explore" style="margin-top: 20px; font-size: 1rem; padding: 12px 30px;" id="region-link">
+                            Bölgeye Git <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // 81 İLİN TAMAMINI İÇEREN DEV VERİTABANI
+        const regionData = {
+            marmara: {
+                title: "Marmara Bölgesi",
+                desc: "Tarihin ve kıtaların buluştuğu nokta. İstanbul'un eşsiz boğazından, Bursa'nın yeşiline, Çanakkale'nin destansı topraklarına uzanan bir kültür mozaiği.",
+                image: "../../assets/images/marmara.jpg",
+                cities: [
+                    { name: "İstanbul", link: "../cities/istanbul.html" }, { name: "Bursa", link: "../cities/bursa.html" }, { name: "Çanakkale", link: "../cities/canakkale.html" }, { name: "Edirne", link: "../cities/edirne.html" }, { name: "Tekirdağ", link: "../cities/tekirdag.html" }, { name: "Kırklareli", link: "../cities/kirklareli.html" }, { name: "Balıkesir", link: "../cities/balikesir.html" }, { name: "Kocaeli", link: "../cities/kocaeli.html" }, { name: "Sakarya", link: "../cities/sakarya.html" }, { name: "Bilecik", link: "../cities/bilecik.html" }, { name: "Yalova", link: "../cities/yalova.html" }
+                ],
+                pageLink: "marmara.html"
+            },
+            ege: {
+                title: "Ege Bölgesi",
+                desc: "Zeytin ağaçlarının gölgesinde, antik kentlerin ve turkuaz koyların diyarı. Efes'ten Pamukkale'ye uzanan tarih kokan topraklar.",
+                image: "../../assets/images/ege.jpg",
+                cities: [
+                    { name: "İzmir", link: "../cities/izmir.html" }, { name: "Aydın", link: "../cities/aydin.html" }, { name: "Muğla", link: "../cities/mugla.html" }, { name: "Denizli", link: "../cities/denizli.html" }, { name: "Manisa", link: "../cities/manisa.html" }, { name: "Afyonkarahisar", link: "../cities/afyonkarahisar.html" }, { name: "Kütahya", link: "../cities/kutahya.html" }, { name: "Uşak", link: "../cities/usak.html" }
+                ],
+                pageLink: "ege.html"
+            },
+            akdeniz: {
+                title: "Akdeniz Bölgesi",
+                desc: "Torosların serinliğinden, Akdeniz'in sıcak sularına uzanan eşsiz bir coğrafya. Antik tiyatrolar, şelaleler ve sıcacık sahiller.",
+                image: "../../assets/images/akdeniz.jpg",
+                cities: [
+                    { name: "Antalya", link: "../cities/antalya.html" }, { name: "Mersin", link: "../cities/mersin.html" }, { name: "Adana", link: "../cities/adana.html" }, { name: "Hatay", link: "../cities/hatay.html" }, { name: "Kahramanmaraş", link: "../cities/kahramanmaras.html" }, { name: "Osmaniye", link: "../cities/osmaniye.html" }, { name: "Isparta", link: "../cities/isparta.html" }, { name: "Burdur", link: "../cities/burdur.html" }
+                ],
+                pageLink: "akdeniz.html"
+            },
+            icanadolu: {
+                title: "İç Anadolu Bölgesi",
+                desc: "Bozkırın kalbi, Selçuklu'nun mirası ve Cumhuriyetin başkenti. Kapadokya'nın peribacalarından Mevlana'nın huzuruna.",
+                image: "../../assets/images/icanadolu.jpg",
+                cities: [
+                    { name: "Ankara", link: "../cities/ankara.html" }, { name: "Konya", link: "../cities/konya.html" }, { name: "Eskişehir", link: "../cities/eskisehir.html" }, { name: "Kayseri", link: "../cities/kayseri.html" }, { name: "Sivas", link: "../cities/sivas.html" }, { name: "Nevşehir", link: "../cities/nevsehir.html" }, { name: "Niğde", link: "../cities/nigde.html" }, { name: "Aksaray", link: "../cities/aksaray.html" }, { name: "Karaman", link: "../cities/karaman.html" }, { name: "Kırıkkale", link: "../cities/kirikkale.html" }, { name: "Kırşehir", link: "../cities/kirsehir.html" }, { name: "Yozgat", link: "../cities/yozgat.html" }, { name: "Çankırı", link: "../cities/cankiri.html" }
+                ],
+                pageLink: "ic-anadolu.html"
+            },
+            karadeniz: {
+                title: "Karadeniz Bölgesi",
+                desc: "Hırçın dalgaların, yemyeşil yaylaların ve sisli dağların nefes kesen uyumu. Çayın ve fındığın anavatanı.",
+                image: "../../assets/images/karadeniz.jpg",
+                cities: [
+                    { name: "Amasya", link: "../cities/amasya.html" }, { name: "Artvin", link: "../cities/artvin.html" }, { name: "Bartın", link: "../cities/bartin.html" }, { name: "Bayburt", link: "../cities/bayburt.html" }, { name: "Bolu", link: "../cities/bolu.html" }, { name: "Çorum", link: "../cities/corum.html" }, { name: "Düzce", link: "../cities/duzce.html" }, { name: "Giresun", link: "../cities/giresun.html" }, { name: "Gümüşhane", link: "../cities/gumushane.html" }, { name: "Karabük", link: "../cities/karabuk.html" }, { name: "Kastamonu", link: "../cities/kastamonu.html" }, { name: "Ordu", link: "../cities/ordu.html" }, { name: "Rize", link: "../cities/rize.html" }, { name: "Samsun", link: "../cities/samsun.html" }, { name: "Sinop", link: "../cities/sinop.html" }, { name: "Tokat", link: "../cities/tokat.html" }, { name: "Trabzon", link: "../cities/trabzon.html" }, { name: "Zonguldak", link: "../cities/zonguldak.html" }
+                ],
+                pageLink: "karadeniz.html"
+            },
+            doguanadolu: {
+                title: "Doğu Anadolu Bölgesi",
+                desc: "Güneşin ilk doğduğu, dağların zirveleriyle gökyüzüne uzandığı heybetli topraklar. Karın en çok yakıştığı bölge.",
+                image: "../../assets/images/doguanadolu.jpg",
+                cities: [
+                    { name: "Ağrı", link: "../cities/agri.html" }, { name: "Ardahan", link: "../cities/ardahan.html" }, { name: "Bingöl", link: "../cities/bingol.html" }, { name: "Bitlis", link: "../cities/bitlis.html" }, { name: "Elazığ", link: "../cities/elazig.html" }, { name: "Erzincan", link: "../cities/erzincan.html" }, { name: "Erzurum", link: "../cities/erzurum.html" }, { name: "Hakkari", link: "../cities/hakkari.html" }, { name: "Iğdır", link: "../cities/igdir.html" }, { name: "Kars", link: "../cities/kars.html" }, { name: "Malatya", link: "../cities/malatya.html" }, { name: "Muş", link: "../cities/mus.html" }, { name: "Tunceli", link: "../cities/tunceli.html" }, { name: "Van", link: "../cities/van.html" }
+                ],
+                pageLink: "dogu-anadolu.html"
+            },
+            guneydogu: {
+                title: "Güneydoğu Anadolu Bölgesi",
+                desc: "Mezopotamya'nın bereketli toprakları. Asırlık lezzetler, taş evler ve medeniyetin doğduğu eşsiz duraklar.",
+                image: "../../assets/images/guneydogu.jpg",
+                cities: [
+                    { name: "Adıyaman", link: "../cities/adiyaman.html" }, { name: "Batman", link: "../cities/batman.html" }, { name: "Diyarbakır", link: "../cities/diyarbakir.html" }, { name: "Gaziantep", link: "../cities/gaziantep.html" }, { name: "Kilis", link: "../cities/kilis.html" }, { name: "Mardin", link: "../cities/mardin.html" }, { name: "Siirt", link: "../cities/siirt.html" }, { name: "Şanlıurfa", link: "../cities/sanliurfa.html" }, { name: "Şırnak", link: "../cities/sirnak.html" }
+                ],
+                pageLink: "guneydogu-anadolu.html"
+            }
+        };
+
+        const buttons = document.querySelectorAll('.region-btn');
+        const titleEl = document.getElementById('region-title');
+        const descEl = document.getElementById('region-desc');
+        const imgEl = document.getElementById('region-image');
+        const citiesEl = document.getElementById('region-cities');
+        const linkEl = document.getElementById('region-link');
+        const panelEl = document.getElementById('region-display');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.region-btn.active').classList.remove('active');
+                btn.classList.add('active');
+
+                const regionKey = btn.getAttribute('data-region');
+                const data = regionData[regionKey];
+
+                panelEl.style.opacity = '0';
+                panelEl.style.transform = 'translateY(10px)';
+
+                setTimeout(() => {
+                    titleEl.textContent = data.title;
+                    descEl.textContent = data.desc;
+                    imgEl.src = data.image;
+                    linkEl.href = data.pageLink;
+
+                    citiesEl.innerHTML = '';
+                    data.cities.forEach(city => {
+                        const a = document.createElement('a');
+                        a.href = city.link;
+                        a.className = 'tag';
+                        a.textContent = city.name;
+                        citiesEl.appendChild(a);
+                    });
+
+                    panelEl.style.opacity = '1';
+                    panelEl.style.transform = 'translateY(0)';
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>

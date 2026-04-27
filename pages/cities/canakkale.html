@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="00-ANASAYFA.css">
+    <title>Çanakkale</title>
+
+    <style>
+        p{
+            text-align: left;
+        }
+        body{
+            background-image: url(RESİM\ DOSYALARI/arkaplanşehir.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #yemek-hover:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        #yer-hover:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        .soltaraf{
+            border: 5px;
+            border-width: 10%;
+            border-style: solid;
+            border-color: black;
+            width: 200px;
+            height: 300px;
+            position:fixed;
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 0px;
+            opacity: 0.4;
+        }
+
+        .soltaraf:hover{
+            opacity: 1;
+        }
+        .soltaraf1:hover{
+            opacity: 1;
+        }
+
+        .soltaraf1{
+            margin-left: 84%;
+            border: 5px;
+            border-width: 10%;
+            border-style: solid;
+            border-color: black;
+            width: 200px;
+            height: 300px;
+            position:fixed;
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 0px;
+            margin-top: 4%;
+            opacity: 0.4;
+        }
+        .kısayol{
+            text-decoration: none;
+            color: rgb(238, 169, 8);
+        }
+    </style>
+
+<header class="header">
+   
+    <!-- <a class="GirisButonu" style="float: right;" href="2-girişekranı.html">Giriş Yap</a> -->
+    <h1 class="Siteİsmi">TÜRKİYE GEZİ REHBERİ</h1> 
+  <hr>
+
+<center>
+    <ul class="menu">
+        <li><a href="anasayfa.html">Anasayfa</a></li>
+        <li><a href="11-TÜRKİYEHARİTASI.html">Şehirler</a>
+            <ul>
+                <li><a href="ankarasecme.html">Ankara</a></li>
+                <li><a href="MelihinSayfaları/aydın.html">Aydın</a></li>
+                <li><a href="MelihinSayfaları/bursa.html">Bursa</a></li>
+                <li><a href="d-çanakkale.html">Çanakkale</a></li>
+                <li><a href="erzurumsecme.html">Erzurum</a></li>
+                <li><a href="f-gaziantep.html">Gaziantep</a></li>
+                <li><a href="giresunsecme.html">Giresun</a></li>
+                <li><a href="gumushanesecme.html">Gümüşhane</a></li>
+                <li><a href="h-hatay.html">Hatay</a></li>
+                <li><a href="i-istanbul.html">İstanbul</a></li>
+                <li><a href="MelihinSayfaları/konya.html">Konya</a></li>
+                <li><a href="samsunsecme.html">Samsun</a></li>
+                <li><a href="MelihinSayfaları/siirt.html">Siirt</a></li>
+            </ul>
+        </li>
+            <li><a href="12-HAKKIMIZDA.html">Hakkımızda</a></li>
+            <li><a href="11-TÜRKİYEHARİTASI.html">Bölgeler</a></li>
+        </ul>
+    </center>
+    
+</header>
+</head>
+<body>
+
+    <br><br><br>
+    <div class="soltaraf1" style="background-color: rgb(8, 57, 100);">
+        <h2 style="color: white;margin-right: 10px;" class="kısayol">Gezilecek Yerler</h2>
+    <a class="kısayol" href="#x1" >Çanakkale Şehitleri Anıtı</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#x2" >Namazgah Tabyası</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#x3" >Rumeli Mecidiye Tabyası</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#x4" >Kilitbahir Kalesi</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#x5" >57. Piyade Alayı Şehitliği</a><br>
+    <hr style="margin-right: 20px;">
+    </div>
+    
+
+    <br><br><br>
+    <div class="soltaraf" style="background-color: rgb(8, 57, 100);">
+        <h2 style="color: white;margin-right: 3px;" class="kısayol">Yemekler</h2>
+    <a class="kısayol" href="#y1" >Melki</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#y2" >Tumbi</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#y3" >Metez</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#y4" >Çırpma</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#y5" >Börülce Köftesi</a><br>
+    <hr style="margin-right: 20px;">
+    </div>
+
+
+    <center>
+             <h1 style="text-align: center;">ÇANAKKALE</h1>
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.akishaber.com.tr%2Fminnettariz-119154h.htm&psig=AOvVaw135rpOhVK60NtNHo8zOXut&ust=1716897412873000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLialrTjrYYDFQAAAAAdAAAAABBe -->
+                    <!-- ChatGPT -->
+                    <hr style="border-color:darkgreen;width: 800px;">
+                    <h3>GENEL BİLGİ</h3>
+                    <hr style="border-color:darkgreen;width: 800px;">
+                    <br>
+                    <img style="height: 400px;width: 800px;" src="RESİM DOSYALARI/çanakkale genel bilgi.jpg" alt="çanakkale">
+                    <div style="width: 800px;">
+                    <P>Çanakkale, Türkiye'nin Marmara Bölgesi'nde yer alan ve hem Asya hem de Avrupa kıtalarını birbirine bağlayan stratejik bir şehirdir. Çanakkale Boğazı'na ev sahipliği yapar ve tarihi önemiyle bilinir. Antik Truva Savaşı'na sahne olmuş, I. Dünya Savaşı sırasında ise 1915 Çanakkale Savaşları ile Türk direnişinin sembolü haline gelmiştir. Ekonomisi tarım, balıkçılık, turizm ve sanayiye dayanır. Truva Antik Kenti, Assos ve Gelibolu Yarımadası gibi tarihi yerleriyle turistik açıdan da büyük öneme sahiptir. 18 Mart Çanakkale Zaferi ve Şehitleri Anma Günü, şehrin en önemli etkinliklerindendir.</P>
+                    </div>
+                    <br><br>
+    
+                <!-- ************************************************************************** -->
+
+                    <!-- https://canakkale.ktb.gov.tr/TR-70467/cografya.html -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aa.com.tr%2Ftr%2Fturkiye%2Fcanakkalede-tarihi-yarimada-beyaza-burundu%2F1402357&psig=AOvVaw1YWT7gUI6cbJKN1WiN2GAh&ust=1716899601117000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNj6psfrrYYDFQAAAAAdAAAAABAE -->
+                    <hr style="border-color:darkgreen;width: 800px;">
+                    <h3>ÇANAKKALE İKLİMİ</h3>
+                    <hr style="border-color:darkgreen;width: 800px;">
+                    <br>
+                    <img style="height: 400px;width: 800px;" src="RESİM DOSYALARI/çanakkale iklim.jpg" alt="hatay iklimi">
+                    <div style="width: 800px;">
+                    <p>Çanakkale İlinin iklimi, bulunduğu yer nedeniyle geçiş iklimi özellikleri gösterir. Genel karakteriyle Akdeniz iklimi özelliklerini yansıtır. Bunun yanında İlin daha kuzeyde bulunması nedeniyle kışları ortalama sıcaklık daha düşüktür. Minimum sıcaklık -4,2 °C ile Şubat ayı, Maksimum sıcaklık +35,8 ile Ağustos ayındadır. Yıllık sıcaklık ortalaması 14.7, ortalama nem oranı ise %72.6′dır. Çanakkale'yi çevre İllerden ayıran diğer bir özelliği de yılın büyük bir kısmının rüzgarlı geçmesidir.</P>
+                    </div>
+                    <br><br>
+    
+            <!-- ************************************************************************** -->
+
+                    <!-- https://www.tatilbudur.com/blog/canakkalenin-meshur-yemekleri/ -->
+                    <!-- https://www.lezzet.com.tr/lezzetten-haberler/canakkalenin-yoresel-yemekleri/2 -->
+                    <hr style="border-color:darkgreen;width: 800px;">
+                    <h3>ÇANAKKALE MUTFAĞI</h3>
+                    <hr style="border-color:darkgreen;width: 800px;">
+                    <br>
+                    <div style="width: 800px;">
+                    <b style="color: red;">Not:Yemek Tarifi İçin Yemek Resmine Tıklayınız.</b>
+                    </div>
+                    <br>
+                    <!-- 1.YEMEK -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Flansetuerqi.com%2Fplace%2F%25E6%25A2%2585%25E5%25B0%2594%25E5%2585%258B%25E8%258F%258C%25E8%258F%2587%25E6%258B%25BC%25E7%259B%2598-melki-mantari-yemegi%2F&psig=AOvVaw1urlVTeKaPIWIlhzlNSCSt&ust=1716898702588000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLjX26PorYYDFQAAAAAdAAAAABAR -->
+                    <a id="y1" href="t-çanakkale-melki.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\melki.jpg" alt="melki"></a>
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Melki</b>
+                    <p>Görünümü ile dikkat çeken ve diğer ana yemeklerden oldukça farklı bir görüntüye sahip Melki Yemeği, ana malzemenin mantar olduğu bir yemek. Mantarın kavrulması ve ardından kızartılması ile hazırlanan bu yemek, mantarın ana malzeme olarak kullanıldığı bir yemek olması sebebiyle dikkat çekiyor. Sulu bir yemek olması sebebiyle oldukça doyurucu olan ve özellikle kış aylarında yaygın olarak tercih edilen Melki Yemeği’nin içerisine bazı yerlerde ette dahil ediliyor. Çanakkale yemekleri arasında bulunan ve özellikle düğün gibi toplu görüşmeler için yaygın olarak tercih edilen bu lezzet, çeşitli baharatlar ile mantarın eşsiz duyguyu bir arada görmenizi sağlıyor.</p>
+                    </div>
+                    <br><br>
+                    <!-- 2.YEMEK -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hurriyet.com.tr%2Flezizz%2Ftumbi-tarifi-41337142&psig=AOvVaw2sSxkgYi7vPkAsqV_AWorm&ust=1716899001067000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDcpKrprYYDFQAAAAAdAAAAABAE -->
+                    <a id="y2" href="t-çanakkale-tumbi.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\tumbi.webp" alt="tumbi"></a>
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Tumbi</b>
+                    <p>Görünüşüyle kurabiyeyi andıran ancak tuzlu bir kurabiye olarak ele alınabilecek Tumbi, Çanakkale’nin en sevilen atıştırmalıklardan biri. İnce bulgur, patlıcan ve maydanoz gibi malzemeler ile hazırlanan hamurun tencerede kavrulduktan sonra fırında pişirilmesiyle hazırlanıyor. İçerisinde besleyici besinler olduğu için uzun süre tok kalmaya yardımcı oluyor.</p>
+                    </div>
+                    <br><br>
+                    <!-- 3.YEMEK -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hurriyet.com.tr%2Flezizz%2Fmetez-tarifi-41337870&psig=AOvVaw31Cd5c2ROILHn09IMVZJ0x&ust=1716899419585000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCOq_HqrYYDFQAAAAAdAAAAABAY -->
+                    <a id="y3" href="t-çanakkale-metez.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\metez.webp" alt="metez"></a>
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Metez</b>
+                    <p>Çanakkale mutfağına özgü bir yemek olan metez, farklı bir şekilde hazırlanan mantı türüdür. Bazı yörelerde kıyma yerine lor peyniri veya haşlanmış patates harcı da kullanılır. 'Pierogi' ve 'haluj' isimleriyle de bilinir. Metez'in en farklı özelliklerinden biri de pekmezle birlikte tüketilmesidir. Hazırlanan metezler pekmeze bandırılarak tüketilir. </p>
+                    </div>
+                    <br><br>
+                    <!-- 4.YEMEK -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hurriyet.com.tr%2Flezizz%2Fcirpma-tarifi-41337034&psig=AOvVaw3coWrrpsi2lDo_K7QpnnwS&ust=1716899693830000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICjp_TrrYYDFQAAAAAdAAAAABAE -->
+                    <a id="y4" href="t-çanakkale-çırpma.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\çırpma.webp" alt="çırpma"></a>
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Çırpma</b>
+                    <p>Ispanağın başrolü olduğu yemeklerden bir diğeri olan Çırpma; soğan, un ve su ile hazırlanan bir harca dahil edilerek pişiriliyor. Mücver adı verilen ve Türkiye’nin birçok yerinde oldukça sevilen yemeğe benzeyen çırpma kabak ile hazırlanan bir çeşide de sahip. Atıştırmalık olarak sunulan Çırpma, kızartılarak ya da fırında pişirilerek servis ediliyor. Hem yaz hem kış aylarında tercih edilebilecek Çırpma’nın fırında pişirilmiş hali ise yaz aylarının en sevilen ve en hafif yemeklerinden biri. Bu lezzet, genellikle yanında süzme yoğurt ile servis ediliyor.</p>
+                    </div>
+                    <br><br>
+                    <!-- 5.YEMEK -->
+                    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hurriyet.com.tr%2Flezizz%2Fborulce-koftesi-tarifi-41337517&psig=AOvVaw0-6oYylB6ciKM0ZuzRjz3q&ust=1716899841998000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDJ17rsrYYDFQAAAAAdAAAAABAx -->
+                    <a id="y5" href="t-çanakkale-börülceköftesi.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\börülce köftesi.jpg" alt="börülce köftesi"></a>
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Börülce Köftesi</b>
+                    <p>Börülce ile yapılmış salataları deneyimlemiş olabilirsiniz. Ancak börülce ile yapılan köfte, tamamen Çanakkale’ye ait bir lezzet. Oldukça farklı ve yöresel bir lezzet olan Börülce Köftesi; börülcenin domates, soğan, un ve çeşitli baharatlar ile zenginleştirilmesi sonucunda hazırlanıyor. Fırında ya da yağda kızartılarak pişirilen hem lezzetli hem de sağlıklı bir alternatif olan bu köfte, hem öğlen hem akşam saatlerinde tüketiliyor. Genellikle maydanoz ve limon ile servis ediliyor.</p>
+                    </div>
+                    <br><br>
+                    <!--6.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fkadinbalikcilardernegi.org%2Fsardalya-salamura-tarif%2F&psig=AOvVaw1q-4od_XA94WVpQzQa4rYA&ust=1716900122716000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMC8q9XtrYYDFQAAAAAdAAAAABAI
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\tuzlu sardalya.png" alt="tuzlu sardalya">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Tuzlu Sardalya</b>
+                    <p>Çanakkale, Ege Denizi'nin zengin balıkçılık alanlarına sahip olması nedeniyle tuzlu sardalya gibi deniz ürünleriyle ünlüdür. Tuzlu sardalya, sardalya balığının tuzlama işleminden geçirilerek yapılan geleneksel bir lezzettir. Çanakkale'nin zengin denizel kaynaklarından elde edilen bu lezzet, bölgenin sahil kasabalarında ve restoranlarında bulunabilir.</p>
+                    </div>
+                    <br><br>
+                    7.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.yenidevir.com.tr%2Fhaber%2F19479003%2Fcanakkale-usulu-iskorpit-corbasi-nasil-yapilir&psig=AOvVaw1bNGSqUTqktnSkcpmfMFbf&ust=1716901073241000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCLt4XxrYYDFQAAAAAdAAAAABA_
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\iskorpit çorbası.jpg" alt="iskorpit çorbası">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>İskorpit Çorbası</b>
+                    <p>Kış aylarında yoğun bir ilgi gören İskorpit Çorbası, besleyici ve kısa süre içerisinde ısınmanızı sağlıyor. Hastalıklardan kurtulmak ve üşütmeye engel olmak için yapılan bu çorba içerisinde bulunan balık sayesinde uzun süre tok kalmanızı sağlıyor.İskorpit Çorbası’nı denemek istiyorsanız hem yaz hem de kış aylarında yöresel yemekler yapan işletmeleri tercih edebilirsiniz. Ancak ağır bir çorba olması sebebiyle özellikle kış aylarında ve akşam saatlerinde tercih edildiğini dile getirmek gerek.</p>
+                    </div>
+                    <br><br>
+                    8.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fyemek.com%2Ftarif%2F200-gram-kiymayla-patlican-kapama%2F&psig=AOvVaw1lYegxrq5dUXxke9vo8V_-&ust=1716901244775000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNiP-OvxrYYDFQAAAAAdAAAAABAJ
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\patlıcan kapama.jpg" alt="patlıcan kapama">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>patlıcan kapama</b>
+                    <p>Çanakkale’nin yerel halkı bu yemeği özellikle misafirler için tercih ediyor. Sunum esnasında estetik olarak oldukça şık bir görüntü yaratan Patlıcan Kapama; közlenmiş domates, biber ve maydanoz ile servis ediliyor. Hem lezzetli hem doyurucu olmasıyla ilgi gören ve estetik bir görüntü yaratmak isteyenler tarafından tercih edilen bu yemek genellikle kış aylarında hazırlanıyor.</p>
+                    </div>
+                    <br><br>
+                    9.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hurriyet.com.tr%2Flezizz%2Flufer-pilavi-tarifi-42190157&psig=AOvVaw2w6jjjWYI9e_c2PG4iS_5S&ust=1716901363177000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjw1pDyrYYDFQAAAAAdAAAAABAE
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\lüfer pilavı.webp" alt="lüfer pilavı">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Lüfer Pilavı</b>
+                    <p>Deniz ürünleri bakımından oldukça zengin bir şehir olduğu için balığın Çanakkale’de ana yemeklerde yaygın olarak kullanıldığını görmek mümkün. Lüfer balığının başrolü oynadığı bir ana yemek olan Lüfer Pilavı ise görüntüsü ile oldukça ilgi çekici. Lüfer balığının özel bir sos ile fırında ya da yağda kızartılması sonucu hazırlanarak farklı bir pilav ile eşlik edilmesi, Lüfer Pilavı’nın hazırlanmasını sağlıyor. Lüfer Pilavı hazırlanırken genellikle mantar gibi ekstra birçok farklı besin kullanılıyor. Bu sayede hem besleyici hem de sunum açısından zengin bir yemek haline geliyor. Lüfer Pilavı’nı Çanakkale’de meze hazırlayan meyhanelerde kolaylıkla bulabilirsiniz!</p>
+                    </div>
+                    <br><br>
+                    10.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lezzet.com.tr%2Fyemek-tarifleri%2Fsebze-yemekleri%2Fzeytinyaglilar%2Fbulgurlu-pazi-dolmasi&psig=AOvVaw3LzXcWcJ4kOYaLjVOD5Tni&ust=1716903089589000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMD_psr4rYYDFQAAAAAdAAAAABAJ
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\pazı dolması.webp" alt="pazı dolması/sarması">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Pazı Dolması/Sarması</b>
+                    <p>Hem görünümü hem lezzetiyle görenleri adeta büyüleyen Pazı Dolması, isminden de anlaşılacağı üzere pazı yaprakları ile ince bir şekilde sarılarak hazırlanıyor. Genellikle ana yemeklerin yanında atıştırmalık olarak sunulan bu lezzeti yöresel yemekler yapan işletmelerde bulabilirsiniz. İç harcının tamamen farklı olduğu ve genellikle vişne ya da nar gibi lezzetler ile daha aromatik hale getirilen pazı dolması, Çanakkale’nin en sevilen yemeklerinden biri olma özelliğini taşıyor.</p>
+                    </div>
+                    <br><br>
+                    11.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fyemek.com%2Ftarif%2Fmafis-tatlisi%2F&psig=AOvVaw081QbxTdgkgtY0zYXCKosv&ust=1716903448426000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDJ5vH5rYYDFQAAAAAdAAAAABAE
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\mafiş tatlısı.jpg" alt="mafiş tatlısı">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Mafiş Tatlısı</b>
+                    <p>Ceviz ve hamur ile hazırlanan ve şerbetli bir tatlı olan Mafiş Tatlısı, Çanakkale’nin en sevilen tatlı lezzetlerinden biri. Kızgın yağda kızartılarak hazırlanan hamurun içinin ceviz ile doldurulmasıyla sunulan bu tatlı, hem doyurucu hem lezzetli. Kızartmasının ardından şerbet ile buluşturarak sunuma hazır hale getirilen ve sofralarda yerini alan tatlı özellikle zengin akşam yemeklerinden sonra ikram ediliyor. Bunun yanı sıra pastanelerde kiloluk olarak satın almak da mümkün.</p>
+                    </div>
+                    <br><br>
+                    12.YEMEK
+                    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kazancisuturunleri.com%2Fmeshur-canakkale-peynir-helvasi-250g&psig=AOvVaw0lEU-REKkjocWjmbYtecPH&ust=1716903595166000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLD39L76rYYDFQAAAAAdAAAAABAh
+                    <img style="height: 400px;width: 800px;" src="ŞEHİRLER\peynir helvası.jpg" alt="peynir helvası">
+                    <br><br>
+                    <div style="width: 800px;">
+                    <b>Peynir Helvası</b>
+                    <p>Trakya denildiğinde akla gelen ilk tatlılardan biri kuşkusuz ki peynir helvası. Bunun yanı sıra Çanakkale, Tekirdağ ve Edirne gibi şehirlerde de peynir helvasının çok önemli bir rol oynadığını dile getirmek kesinlikle mümkün. Yapımında yalnızca altı malzeme kullanılan ancak diğer helvalar ile karşılaştırıldığında kesinlikle bambaşka bir lezzet haline gelen Peynir Helvası, turistler tarafından da yoğun ilgi görüyor.Peynir Helvası’nın bir tatlı olarak ele alındığını dile getirmek mümkün olsa da ana yemek kadar besleyici olduğunu ve uzun süre tok kalmanızı sağladığını da mutlaka dile getirmek gerekiyor.</p>
+                    </div>
+                    <br><br>
+                -->
+            <!-- **************************************************************************-->
+
+                <!-- https://www.enuygun.com/bilgi/canakkale-de-gezilecek-yerler/ -->
+                <hr style="border-color:darkgreen;width:800px">
+                <h3>ÇANAKKALE TURU</h3>
+                <hr style="border-color:darkgreen;width:800px">
+                <br>
+                <div style="width: 800px;">
+                <b style="color: red;">Not:Konum Linki İçin Resme Tıklayınız.</b>
+                </div>
+                <br>
+                <!-- 1.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fseyyahdefteri.com%2Fcanakkale-sehitler-abidesi-nerede-nasil-gidilir-giris-ucreti%2F&psig=AOvVaw2bzeXncaRxfu_c2-wqc_nw&ust=1716987461193000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICNoPCysIYDFQAAAAAdAAAAABAp -->
+                <a id="x1" href="https://maps.app.goo.gl/ffWGsqbDJ9v4NpXKA"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Çanakkale Şehitleri Anıtı ve Harp Müzesi.webp" alt="Çanakkale Şehitleri Anıtı ve Harp Müzesi"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Çanakkale Şehitleri Anıtı ve Harp Müzesi</b>
+                <p>Çanakkale Savaşı'nın yaşandığı bölgeyi görmek ve şehitlerimizi anmak için ziyaret edebileceğin Çanakkale Şehitleri Anıtı ve Harp Müzesi, 1971 yılında ziyarete açıldı. Morto Koyu, Hisarlık Tepesi üzerinde bulunan ve Çanakkale Savaşı’nın yapıldığı yerleri gösteren krokiler, fotoğraflar, döneme ait savaş malzemeleri, siperler, mermi çekirdekleri, askeri üniformalar ve Şehitler Abidesi gibi etkileyici anıtları inceleyebileceğin açık hava müzesinde 2000’e yakın obje sergileniyor.</p>
+                </div>
+                <br><br>
+                <!-- 2.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.turkishmuseums.com%2Fmuseum%2Fdetail%2F22311-canakkale-namazgah-tabyasi-muzesi%2F22311%2F1&psig=AOvVaw2NbO5Liyz_5QGrpAvJ9uZz&ust=1716987665599000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOiD09CzsIYDFQAAAAAdAAAAABBu -->
+                <a id="x2" href="https://maps.app.goo.gl/9zpkG6HVzkrURBYZ7"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Namazgah Tabyası.jpg" alt="Namazgah Tabyası"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Namazgah Tabyası</b>
+                <p>Çanakkale Boğazı’nın en dar noktasına yapılan ilk ve en büyük tabyasını ziyaret etmeye hazır mısın? Çanakkale’ye düzenlenen tarih ve kültür gezilerinin değişmez adreslerinden biri olan ve 1770 yılında temeli atılan Namazgah Tabyası, Çanakkale Boğazı'nın en dar kısmı olan Kilitbahir Kalesi ile Çimenlik Kalesi arasında uzanıyor. Çanakkale Savaşı sırasında cuma namazlarının kılınmasından ismini alan Namazgah Tabyası, 16 adet kıyı topuyla Çanakkale savunmasında kilit noktalarından biriydi.</p>
+                </div>
+                <br><br>
+                <!-- 3.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.canakkaleharbi.com%2F2019%2F05%2F18%2Frumeli-mecidiye-tabyasi-ve-sehitligi%2F&psig=AOvVaw2rvoqZ_rxNE2E7zydQ44QN&ust=1716987822485000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODx1aC0sIYDFQAAAAAdAAAAABAZ -->
+                <a id="x3" href="https://maps.app.goo.gl/q7cVQ2xRQwTiwpPH8"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Rumeli Mecidiye Tabyası.jpg" alt="Rumeli Mecidiye Tabyası"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Rumeli Mecidiye Tabyası</b>
+                <p>Gelibolu Yarımadası'nda Namazgah Tabyasının hemen yanında yer alan Rumeli Mecidiye Tabyası, 2. Abdülhamit döneminde 1892 yılında inşa edilen etkileyici bir Osmanlı dönemi yapısı. Çarpıcı taş mimarisiyle günümüze kadar sağlam kalmayı başarmış tabya, Çanakkale Boğaz Muharebesi sırasında şehit olan 16 askerin mezarına da ev sahipliği yapıyor. İçerisinde ünlü Seyit Onbaşı Anıtının da bulunduğu Rumeli Mecidiye Tabyasında Alman yapımı 28 santim çapındaki devasa topları yakından görebilirsin.</p>
+                </div>
+                <br><br>
+                <!-- 4.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kulturportali.gov.tr%2Fturkiye%2Fcanakkale%2Fgezilecekyer%2Fkilitbahir-kalesi&psig=AOvVaw3_YJTzNV7TVTQJm0izaYfQ&ust=1716988001002000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLj2ye-0sIYDFQAAAAAdAAAAABAE -->
+                <a id="x4" href="https://maps.app.goo.gl/RAKLdrS3D7sdR8aEA"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Kilitbahir Kalesi.jpg" alt="Kilitbahir Kalesi"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Kilitbahir Kalesi</b>
+                <p>Eceabat ilçesine bağlı küçük bir köy olan Kilitbahir Köyünde yer alan ve Türkiye'nin en güzel kalelerinden biri olarak gösterilen Kilitbahir Kalesi, Fatih Sultan Mehmet tarafından yaptırılmış büyüleyici bir mimari eser. Diğer Osmanlı kalelerinden farklı olarak üç yapraklı yonca biçiminde inşa edilen Kilitbahir Kalesi, İstanbul kuşatması döneminde Bizans'a yardım gitmesini engellemek amacıyla Çanakkale Boğazı'na hakim bir konumda inşa edilmiş.</p>
+                </div>
+                <br><br>
+                <!-- 5.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fsehitlikturu.com%2F57-alay%2F&psig=AOvVaw3eKoKYh4Gb92nQnZzr3idu&ust=1716988092148000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCHn6a1sIYDFQAAAAAdAAAAABAR -->
+                <a id="x5" href="https://maps.app.goo.gl/zD2w9aGTNoy285sp7"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\57. Piyade Alayı Şehitliği.jpg" alt="57. Piyade Alayı Şehitliği"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>57. Piyade Alayı Şehitliği</b>
+                <p>Çanakkale'de yer alan ve çok ziyaret edilen önemli bir şehitlik de Eceabat ilçesi Kocadere mevkiinde bulunan 57. Piyade Alayı Şehitliği. Çanakkale Savaşının başlangıcı kabul edilen 1915 Anzak çıkarması sırasında şehit düşen askerlerimiz için 1992 yılında açılan şehitlikte 628 askerin anıt mezarı ve etkileyici heykellerin yanı sıra Çanakkale gazisi olarak 108 yaşında vefat eden Hüseyin Kaçmaz'ın tasvir edildiği heykel de görülmeye değer. Tarihseverlerin mutlaka görmesi gereken 57. Piyade Alayı Şehitliğinde rehberlerden Anzak çıkarmasıyla ilgili ilginç bilgiler de alabilirsin.</p>
+                </div>
+                <br><br>
+                <!-- 6.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fturbeler.org%2Fdetay%2F1309-akbas-sehitligi&psig=AOvVaw3kiqBEWOzN8UiS6BCNk_Qn&ust=1716988212580000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLj22-a1sIYDFQAAAAAdAAAAABAE
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Akbaş Şehitliği.jpg" alt="Akbaş Şehitliği">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Akbaş Şehitliği</b>
+                <p>Gelibolu-Eceabat yolunun 30. kilometresinde Akbaş mevkiinde yer alan Akbaş Şehitliği, 1945 yılında düzenlenerek ziyarete açıldı. Akbaş Limanının yanında yer alan şehitlik, Çanakkale Savaşı sırasında ağır saldırı altında kalarak batan gemilerde şehit olan askerler anısına yapıldı.459 sembolik mezar taşı ile oldukça duygulandırıcı bir manzaraya sahip Akbaş Şehitliğindeki rölyeflerde 754 şehidimizin ismi anılıyor ve Mustafa Kemal Atatürk’ün ünlü “Türk Kumandanları kumanda etmesini, Türk askeri ölmesini bildi. Harbi kazanışımızın sırrı bundan ibarettir.” sözleri yazıyor. Etkileyici Mehmetçik heykellerinin de bulunduğu alanı rehberlerle gezebilir ve o döneme ait ilginç bilgiler alabilirsin.</p>
+                </div>
+                <br><br>
+                7.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fkulturenvanteri.com%2Ftr%2Fyer%2Fistanbul-arkeoloji-muzesi%2F&psig=AOvVaw2KoCkdR8ZpGx2AlrabiRJa&ust=1716980837506000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJjnj5qasIYDFQAAAAAdAAAAABAR
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Seyit Onbaşı Anıtı.jpg" alt="Seyit Onbaşı Anıtı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Seyit Onbaşı Anıtı</b>
+                <p>Eceabat ilçesindeki Rumeli Mecidiye Tabyasında bulunan Şehit Onbaşı Anıtı, Çanakkale’nin en çok fotoğraflanan anıtlarından biri. Çanakkale Savaşı sırasında 275 kiloluk top mermisini tek başına kaldırmasıyla efsaneleşen Seyit Onbaşı’yı anmak için inşa edilen anıt, Çanakkale Boğazı karşısında etkileyici bir manzara sunuyor. Hem bölgedeki diğer şehitlik ve anıtları ziyaret etmek hem de boğazın çarpıcı manzaralarını izlemek için Seyit Onbaşı Anıtını mutlaka ziyaret etmelisin.</p>
+                </div>
+                <br><br>
+                8.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cnnturk.com%2Fseyahat%2Ftruva-antik-kenti-nerede-truva-antik-kentine-nasil-gidilir-truva-tarihi-ve-ozellikleri&psig=AOvVaw0g3-Oc_wYKFmBkNWk4k05Q&ust=1716988478770000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICn7tW2sIYDFQAAAAAdAAAAABAR
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Troya Antik Kenti.webp" alt="Troya Antik Kenti">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Troya Antik Kenti</b>
+                <p>Homeros’un ünlü İlyada Destanı'nda bahsettiği ve antik dünyanın en büyük savaşlarından biri olan Truva Savaşı'nın yaşandığı kent olan Truva Antik Kenti, 1998 yılında UNESCO Dünya Mirası Listesi’ne dahil edildi. Her yıl dünyanın her yerinden gelen yüz binlerce kişi tarafından ziyaret edilen ve tarihi M.Ö. 3000 yılına kadar uzanan Truva Antik Kenti, aynı zamanda dünyanın en önemli arkeolojik kazı alanlarından biri.</p>
+                </div>
+                <br><br>
+                9.YER
+                https://cdn2.enuygun.com/media/lib/825x620/uploads/image/truva-ati-37580.webp
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Truva Atı.webp" alt="Truva Atı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Truva Atı</b>
+                <p>Çanakkale’nin dünyaca ünlü simgelerinden biri haline gelen ahşap Truva Atı heykeli, Çanakkale Kordon'da hemen dikkatini çekecek bir noktada yer alıyor. Antik dünyanın en önemli savaşlarından biri olan Truva Savaşı'nın geçtiği yer olan Çanakkale toprakları, Troya Antik Kenti için her yıl yüz binlerce yabancı turist tarafından ziyaret ediyor. 10 yıldan fazla süren Truva Savaşı'nın son bulmasını sağlayan Truva Atı fikri ise Athena tarafından sevilen Odysseus tarafından bulunmuş. İçi askerlerle doldurularak şehre hediye edilen ahşap Truva Atının, içerisindeki askerlerin şehri alması ile savaş sona eriyor.</p>
+                </div>
+                <br><br>
+                10.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.neredekal.com%2Fcanakkale-kent-muzesi-gezilecek-yer-detay%2F&psig=AOvVaw25ATosrfSImGwyNFWB517C&ust=1716990034416000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqGAoTCKizt8C8sIYDFQAAAAAdAAAAABCbAQ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Çanakkale Kent Müzesi.webp" alt="Çanakkale Kent Müzesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Çanakkale Kent Müzesi</b>
+                <p>Çanakkale'nin binlerce yıllık tarihini ve kültürünü anlamak için gidebileceğin en güzel yer olan Çanakkale Kent Müzesi, her sene binlerce kişiye ev sahipliği yapıyor. Kemalpaşa ilçesinde yer alan iki katlı tarihi binasında hizmet veren müzede, Çanakkale'nin antik çağlardan Osmanlı dönemi, 1. Dünya Savaşı ve Çanakkale Savaşı'na kadar önemli dönemlerini kapsayan belgeler, görseller, fotoğraflar ve şehir kültürünü yansıtan yöresel ürünler sergileniyor.</p>
+                </div>
+                <br><br>
+                11.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.canakkalekalem.com%2Fgelibolu-kalesi-ve-piri-reis-muzesi-ilgi-goruyor%2F120445%2F&psig=AOvVaw1FyDMN_8XTCydi0sRRPU_X&ust=1716990235573000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCE-5u9sIYDFQAAAAAdAAAAABAZ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Piri Reis Müzesi.jpg" alt="Piri Reis Müzesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Piri Reis Müzesi</b>
+                <p>Türkiye'nin tek deniz bilimleri müzesi olan Çanakkale Piri Reis Müzesi, Çanakkale Onsekiz Mayıs Üniversitesi’ne bağlı olarak hizmet veriyor. Dünyaca ünlü Osmanlı denizcisi Piri Reis'in en ünlü eseri Kitab-ı Bahriye’nin bazı bölümleri, yüzlerce yıllık deniz haritaları, deniz canlıları ile ilgili çizimlerin yanı sıra Karadeniz, Marmara, Ege ve Akdeniz'de yakalanmış 200'den fazla kemikli, kıkırdaklı, omurgalı balık ve kabuklu canlının sergilendiği müzede denizcilik tarihinde kullanılan onlarca ilginç aracı da inceleyebilirsin. Piri Reis Müzesi’nin en ilgi çeken bölümünde ise nesli tükenmekte olan deniz kaplumbağaları ve Akdeniz fokları sergileniyor.</p>
+                </div>
+                <br><br>
+                12.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.canakkalesehitlik.net%2Fhamidiye-tabyasi.html&psig=AOvVaw23bWD-45GcNpr88nrAcPHH&ust=1716990347290000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIjAjdS9sIYDFQAAAAAdAAAAABAx
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Anadolu Hamidiye Tabyası.jpg" alt="Anadolu Hamidiye Tabyası">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Anadolu Hamidiye Tabyası</b>
+                <p>Çanakkale merkezinde Barbaros Mahallesi'nde yer alan ve Çanakkale Boğazı'nın güvenliğinin sağlanması amacıyla 1892 yılında Sultan 2. Abdülhamit tarafından inşa ettirilen Anadolu Hamidiye Tabyası, Çanakkale Savaşları Tarih Müzesi'nin hemen yanı başında görülmeye değer bir manzara sunuyor. Osmanlı döneminin çarpıcı taş mimarileri ile süslü bölümleri bulunan tabya, devasa toplarıyla müzesinin de önemli bir parçası.</p>
+                </div>
+                <br><br>
+                13.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.milliyet.com.tr%2Ftatil%2Fassos-antik-kenti-canakkale-ilinde-nerede-giris-ucreti-tarihcesi-ve-ozellikleri-6315106&psig=AOvVaw0grzqnKQfR-nhIHDwqfZrX&ust=1716990805192000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCR_8-_sIYDFQAAAAAdAAAAABAE
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Assos Antik Kenti.webp" alt="Assos Antik Kenti">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Assos Antik Kenti</b>
+                <p>Antik çağın ünlü düşünürlerden Aristo'nun da yıllarca yaşadığı ve felsefe okulları kurduğu Assos Antik Kenti, döneminin en önemli kültür, sanat ve bilim merkezlerinde biriydi. Kenti gezerken günümüze kadar sağlam kalmış ünlü Athena Tapınağı ve devasa antik tiyatroyu inceleyebilir, geziden sonra antik kentin sahilinde bir mola vererek tarihi manzaralar eşiğinde denizin tadını çıkarabilirsin. Tarih ve kültür gezilerinin yanı sıra doğa yürüyüşü turlarının da değişmez parçası olan Assos Antik Kentine hem tarihi hazineleri hem de doğal güzellikleri için mutlaka uğramalısın.</p>
+                </div>
+                <br><br>
+                14.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3D1a4IMXOWJbk&psig=AOvVaw2Ai7hb-Q3ndTLWLjIZkl_H&ust=1716991083061000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOiqt67AsIYDFQAAAAAdAAAAABAQ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Anzak Koyu.jpg" alt="Anzak Koyu">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Anzak Koyu</b>
+                <p>Gelibolu Yarımadası'nda yer alan küçük Anzak Koyu, Çanakkale Savaşı sırasında 1915 yılında Anzakların çıkartma yapmasından dolayı dünya çapında tanınıyor. 600 metre uzunluğundaki koy, çam ormanlarıyla sarılı Arıburnu tepeleri ile çevrili. Her yıl 25 Nisan'da Anzak Günü anma etkinliklerinin de düzenlendiği Anzak Koyu, tarihi öneminin yanı sıra doğal güzellikleri ile de sessiz ve huzurlu bir atmosferde yüzmek isteyen tatilcilerin sıklıkla ziyaret ettiği yerler arasında.</p>
+                </div>
+                <br><br>
+                15.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kulturportali.gov.tr%2Fturkiye%2Fcanakkale%2Fgezilecekyer%2Fconkbayiri-ataturk-zafer-aniti&psig=AOvVaw3G7D3aGuNtuGNLKbz0ktjs&ust=1716991388463000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJCInr_BsIYDFQAAAAAdAAAAABAE
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Conkbayırı.jpg" alt="Conkbayırı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Conkbayırı</b>
+                <p>Mustafa Kemal Atatürk'ün taarruz emrini verdiği ve Çanakkale Savaşı'nın en önemli noktalarından biri olan Conkbayırı, hem el değmemiş doğal güzelliği hem de tarihi önemi ile Çanakkale'de ilk görmen gereken yerler atasında. Gelibolu Yarımadası’nın batısında Karatepe ile Besim Tepesi arasında yer alan Conkbayırı, aynı zamanda 1915'te taarruz sırasında Atatürk'ün cebindeki saate şarapnel parçasının isabet ettiği ve bu sayesinde Atatürk'ün hayatının kurtulduğu yer olması ile de ayrı bir öneme sahip.</p>
+                </div>
+                <br><br>
+                16.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fgokceadasualtiparki.org%2F&psig=AOvVaw0fOSUe9-YbyYcNcki36Ajz&ust=1716991533896000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPjk-obCsIYDFQAAAAAdAAAAABAJ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Gökçeada.jpg" alt="Gökçeada">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Gökçeada</b>
+                <p>Türkiye'nin en büyük adası olan ve 90 kilometreden uzun sahil şeridi ile Çanakkale'de denize girebileceğin en güzel plajlara ev sahipliği yapan Gökçeada, Saros Körfezi girişinde yer alıyor. Çok sevilen bir tatil cenneti olarak her yıl binlerce kişi tarafından ziyaret edilen Gökçeada, turkuaz renkli berrak denizi ve el değmemiş muhteşem doğası ile huzurlu atmosferde yılın yorgunluğunu atmak için Türkiye'de seçebileceğin en güzel yerlerden.</p>
+                </div>
+                <br><br>
+                17.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aa.com.tr%2Ftr%2Fturkiye%2Fbigali-koyu-evleri-susleyen-turk-bayraklariyla-ilgi-cekiyor%2F535298&psig=AOvVaw1MXvOye4y7GPbUsn0-QB8k&ust=1716991788750000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCnoP_CsIYDFQAAAAAdAAAAABAJ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Biga.jpg" alt="Biga">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Bigalı Köyü</b>
+                <P>Çanakkale merkezine 94 kilometre uzaklıktaki Biga ilçesi, tarihi ve doğal güzellikleri ile Çanakkale'nin en çok ziyaret edilen yerleri arasında. M.Ö. 6. yüzyıla uzanan zengin tarihinden pek çok hazine saklayan ilçede tarih ve kültür turlarına katılarak M.Ö. 8. yüzyılda inşa edilmiş Parion Antik Kenti, 11. yüzyılda Bizanslılar tarafından bölgeye hakim yüksek bir yamaca inşa edilmiş etkileyici Bigadiç Kalesi, Biga merkezinde etkileyici bir manzara sunan 1904 tarihli Biga Tarihi Şadırvanı ve 15. yüzyıl Osmanlı dönemi mimarisini yansıtan Çarşı Camii, mutlaka görmen gereken tarihi hazineler.</P>
+                </div>
+                <br><br>
+                18.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.trthaber.com%2Fhaber%2Fdunya%2Fbozcaada-ingiliz-basininda-avrupanin-en-buyulu-2nci-adasi-694638.html&psig=AOvVaw1ZHSpyaMhdlPBeQ_DYzwXL&ust=1716991637633000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCID34rrCsIYDFQAAAAAdAAAAABAh
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Bozcaada.jpg" alt="Bozcaada">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Bozcaada</b>
+                <p>Ege Denizi'nde Gökçeada’dan sonra en büyük ikinci ada, Türkiye'nin ise en büyük üçüncü adası olan Bozcaada, gidenlerin vazgeçemediği yerler arasında. Tarihi Osmanlı konakları, huzurlu atmosferi, asırlık çınar ağaçları, rengarenk balıkçı teknelerinin sıralandığı sahili şeridi olan Bozcaada, aynı zamanda kaliteli üzüm bağları ve şaraplarıyla da ünlü.</p>
+                </div>
+                <br><br>
+                19.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kucukkuyurehberim.com%2Frehber%2Fkucukkuyu-adatepe-zeus-altari%2F&psig=AOvVaw1a1vki60ckmRO8nNU0q-a0&ust=1716991911700000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCr2bjDsIYDFQAAAAAdAAAAABAE
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Zeus Altarı.jpg" alt="Zeus Altarı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Zeus Altarı</b>
+                <p>Zeus Altarı’nın, diğer adıyla Bergama Zeus Sunağı’nın temelleri bugün Bergama olarak bildiğimiz Pergamon Antik Kentinde atıldı. Dönemde kenti yönetim altına alan Attalos Hanedanı bu sunağı M.Ö. 2. yüzyılda dini bir yapı olarak inşa ettirdiği biliniyor. At nalını andıran bir mimariye sahip olan bu altarın mitolojik hikayesi de oldukça ilgi çekici. Homeros Truva Savaşını konu edinen İlyada Destanında tanrıların İda Dağı’nda yani günümüzün Kaz Dağları’nda yaşadığını anlatır. Efsaneye göre Zeus Truva savaşını izlemek için bu tepeye gelmiş ve yine Hera’yı burada görüp aşık olmuştur. Antik Çağ boyunca kurban törenlerine ev sahipliği yapan Zeus Altarı savaş tehlikesine karşı gözetleme kulesi olarak da kullanılmış.</p>
+                </div>
+                <br><br>
+                20.YER
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.caninsesi.com.tr%2Fhaber%2F19069980%2Fbigali-kalesi-muzesi-ucretsiz-hizmet-verecek&psig=AOvVaw0iG9DwIT8i7IhPWL15JJIb&ust=1716992306683000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLDAoPjEsIYDFQAAAAAdAAAAABAO
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Bigalı Kalesi.webp" alt="Bigalı Kalesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Bigalı Kalesi</b>
+                <p>Birbirinden güzel kaleleri ile ünlü olan Çanakkale’de görmen gereken bir diğer kale ise Eceabat ilçesine 5 kilometre uzaklıkta yer alan Bigalı Kalesi. Yapımında Sestos Antik Kenti'nin taşları kullanılan 3. Selim zamanında yapımına başlanan ve 2. Mahmut döneminde bitirilen kale, Eceabat ile Gelibolu arasındaki sahil şeridinde yer alıyor.Bigalı Kalesi, hemen karşısında yer alan Nara Kalesi ile Çanakkale Boğazı’nı koruyan önemli kaleler olarak biliniyor. Bigalı Kalesi’ni Çanakkale seyahatin sırasında keşfe çıkabilir, kalenin surlarından boğazın en güzel manzaralarının fotoğraflarını çekebilirsin.</p>
+                </div>
+                <br><br> -->
+
+        </center>
+
+    <footer>
+        <center>
+    <table style="padding: 10px;">
+        <tr>    
+            <td><label for="">E-mail:</label></td>        
+            <td><a href="mailto:hazimablak1453@gmail.com"><button class="footerbuton" onclick="eposta()">gezirehberi@gmail.com</button></a></td>
+            <td><label for="">İrtibat No:</label></td>  
+            <td><a href="tel:90530361150"><button class="footerbuton" onclick="telefon()">905789871650</button></a></td>
+            <td><label for="">İnstagram:</label></td>  
+            <td><a href="https://www.instagram.com/hazim.ablak?igsh=MTg0aDFmMnBwcHp3eA=="><button class="footerbuton" onclick="instagram()">@hazim.ablak</button></a></td>
+        </tr>
+    </table>
+        </center>
+    </footer>
+</body>
+</html>

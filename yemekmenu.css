@@ -1,0 +1,169 @@
+*{
+    font-family: sans-serif;
+}
+
+/* Giriş yapma butonu */
+.GirisButonu{
+    margin-right: 15px;
+    position:initial;
+    width: 112px;
+    height: 40px;
+    top: 0px;
+    margin-top:10px;
+    background-color:rgb(238, 169, 8);
+    border-radius: 25px;
+    font-size: 17px;
+    line-height: 2.1;  
+    float: right;
+    text-decoration: none;
+    text-align: center;
+} 
+
+.Siteİsmi{
+   font-size: 25px;
+   padding-left: 10px;
+   margin-left: 0px;
+   padding-top: 18px;
+   color: rgb(238, 169, 8);
+}
+
+.header{
+    position: relative;
+    background-color: rgb(8, 57, 100);
+    opacity: 0.3;
+    width:100%;
+    height: 112px;
+    margin-top: 0;
+}
+
+header:hover{
+opacity: 1;
+}
+
+header a:hover{
+    background-color:rgb(254, 254, 254);
+}
+
+/* menü görünümü */
+.menu{
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    letter-spacing: 1px;
+    font-family:sans-serif;
+    font-size: 18px; 
+    padding-left: 30%;
+}
+
+/* şehirleri gizleme */
+ul.menu li ul{
+    font-size: 15px;
+    display: none;
+    position: absolute;
+
+}
+
+/* menüyü yatay olarak hizalama */
+ul.menu li{
+    float: left;
+    position:relative;
+    width: 150px;
+}
+
+/* menüyü kenardan hizalama */
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+/* menü arka planı */
+ul li a{
+    padding: 0px;
+    display: block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    position: static;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* link üzerine geldiğinde ne olsun */
+ul li a:hover{
+    border-radius: 25px;
+    background-color:rgb(238, 169, 8);
+    color:rgb(237, 234, 228);
+}
+
+/* şehirlerin altında şehirler gözüksün */
+ul.menu li:hover ul{
+    display: block;
+    background-color: rgb(8, 57, 100);
+}
+
+footer{
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    background-color:rgb(8, 57, 100);
+    opacity: 0.3;
+    height: 50px;
+}
+
+footer:hover{
+    opacity: 1;
+}
+
+.footerbuton{
+    background-color: rgb(238, 169, 8);
+}
+
+.arkaplan1{
+    height: 655px;
+    width: 100%;
+    background-image: url(t-TÜGER3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:relative;
+    margin-top: 0px;
+    top: 0;
+}
+
+.hakkımızda{
+    float: right;
+    margin-right: 50%;
+}
+
+p,h1{
+    padding-left: 20px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.sag{
+    /* background-color: blueviolet; */
+    height: 400px;
+    width: 45%;
+    float: right;
+    margin-right: 10%;
+    margin-left: 0px;
+    margin-top: 30px;
+    line-height: 25px;
+    top: 50px;
+    padding-top: 100px;
+}
+
+.sol{
+    /* background-color: blue; */
+    height: 300px;
+    width: 30%;
+    float: right;
+    margin-right: 10%;
+    margin-top: 30px;
+    line-height: 25px;
+    top: 50px;
+    padding-top: 100px;
+}

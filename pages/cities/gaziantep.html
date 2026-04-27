@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="00-ANASAYFA.css">
+    <title>Gaziantep</title>
+
+    <style>
+        p{
+            text-align: left;
+        }
+        body{
+            background-image: url(RESİM\ DOSYALARI/arkaplanşehir.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #yemek-hover:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        #yer-hover:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        .soltaraf{
+            border: 5px;
+            border-width: 10%;
+            border-style: solid;
+            border-color: black;
+            width: 200px;
+            height: 300px;
+            position:fixed;
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 0px;
+            opacity: 0.4;
+        }
+
+        .soltaraf:hover{
+            opacity: 1;
+        }
+        .soltaraf1:hover{
+            opacity: 1;
+        }
+
+        .soltaraf1{
+            margin-left: 84%;
+            border: 5px;
+            border-width: 10%;
+            border-style: solid;
+            border-color: black;
+            width: 200px;
+            height: 300px;
+            position:fixed;
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 0px;
+            margin-top: 4%;
+            opacity: 0.4;
+        }
+        .kısayol{
+            text-decoration: none;
+            color: rgb(238, 169, 8);
+        }
+    </style>
+
+<header class="header">
+   
+    <!-- <a class="GirisButonu" style="float: right;" href="2-girişekranı.html">Giriş Yap</a> -->
+    <h1 class="Siteİsmi">TÜRKİYE GEZİ REHBERİ</h1> 
+  <hr>
+
+<center>
+    <ul class="menu">
+        <li><a href="index
+        .html">Anasayfa</a></li>
+        <li><a href="11-TÜRKİYEHARİTASI.html">Şehirler</a>
+            <ul>
+                <li><a href="ankarasecme.html">Ankara</a></li>
+                <li><a href="MelihinSayfaları/aydın.html">Aydın</a></li>
+                <li><a href="MelihinSayfaları/bursa.html">Bursa</a></li>
+                <li><a href="d-çanakkale.html">Çanakkale</a></li>
+                <li><a href="erzurumsecme.html">Erzurum</a></li>
+                <li><a href="f-gaziantep.html">Gaziantep</a></li>
+                <li><a href="giresunsecme.html">Giresun</a></li>
+                <li><a href="gumushanesecme.html">Gümüşhane</a></li>
+                <li><a href="h-hatay.html">Hatay</a></li>
+                <li><a href="i-istanbul.html">İstanbul</a></li>
+                <li><a href="MelihinSayfaları/konya.html">Konya</a></li>
+                <li><a href="samsunsecme.html">Samsun</a></li>
+                <li><a href="MelihinSayfaları/siirt.html">Siirt</a></li>
+            </ul>
+        </li>
+            <li><a href="12-HAKKIMIZDA.html">Hakkımızda</a></li>
+            <li><a href="11-TÜRKİYEHARİTASI.html">Bölgeler</a></li>
+        </ul>
+    </center>
+    
+</header>
+</head>
+<body>
+
+
+    <br><br><br>
+    <div class="soltaraf1" style="background-color: rgb(8, 57, 100);">
+        <h2 style="color: white;margin-right: 10px;" class="kısayol">Gezilecek Yerler</h2>
+    <a class="kısayol" href="#x1" >Gaziantep Kalesi</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#x2" >Zeugma Mozaik Müzesi</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#x3" >Rumkale</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#x4" >Hayvanat Bahçesi</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#x5" >Yaşayan Müze</a><br>
+    <hr style="margin-right: 20px;">
+    </div>
+    
+
+    <br><br><br>
+    <div class="soltaraf" style="background-color: rgb(8, 57, 100);">
+        <h2 style="color: white;margin-right: 3px;" class="kısayol">Yemekler</h2>
+    <a class="kısayol" href="#y1" >Beyran Çorbası</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#y2" >Börek Çorbası</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#y3" >Yuvalama</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#y4" >Simit Kebabı</a><br>
+    <hr style="margin-right: 20px;">
+    <a class="kısayol" href="#y5" >Ali Nazik</a><br>
+    <hr style="margin-right: 20px;">
+    </div>
+
+
+    <center>
+    <h1 style="text-align: center;">GAZİANTEP</h1>
+                <!-- https://www.gaziantep.bel.tr/tr/gaziantepi-kesfet/gaziantep-hakkinda -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sehirgazetesi.com.tr%2Fgaziantepin-eski-adi-nedir&psig=AOvVaw2s-qC4XzxavuBfSjGNKdRo&ust=1716800123515000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCggv_4qoYDFQAAAAAdAAAAABAg -->
+                <hr style="border-color:darkgreen;width: 800px;">
+                <h3>GENEL BİLGİ</h3>
+                <hr style="border-color:darkgreen;width: 800px;">
+                <br>
+                <img style="height: 400px;width: 800px;" src="RESİM DOSYALARI/gaziantep genel bilgi.webp" alt="gaziantep">
+                <div style="width: 800px;">
+                <p>Türkiye’nin altıncı, Güneydoğu Anadolu Bölgesi’nin ise en büyük kenti olan Gaziantep; nüfusu, ekonomik potansiyeli, kültürel zenginlikleri, tarihi dokusu ve büyükşehir statüsüyle metropol bir kenttir.</p>
+                <p>Anadolu’nun ilk yerleşim merkezlerinden biri olan Mezopotamya ile Akdeniz Bölgesi’nin kesişme noktasında yer alan kent, birçok medeniyete ev sahipliği yapmış ve tarihin her döneminde önemini korumuştur. Farklı uygarlıkların, kültürlerin ve dinlerin bir araya gelerek birbirleri içinde sentezlendiği gizemli bir tarihe sahip olan Gaziantep; Paleolitik, Neolitik, Kalkolitik, Tunç, Hitit, Hurri-Mitanni, Asur, Pers, Büyük İskender, Selevkoslar Krallığı, Roma, Bizans, Selçuklu, Memluklar, Dulkadiroğluları ve Osmanlı dönemlerine ait izleri-eserleri günümüze kadar taşımaktadır. Tarihi İpek Yolu’nun buradan geçmiş olmasından dolayı uygarlıkların uğrak yeri olmuş, tarihin her döneminde kültür ve ticaret merkezi olma özelliğini korumuştur. Gaziantep’te bulunan tarihi eserlerin çeşitliliği kentin kültürel zenginliğinin bir göstergesidir.</p>
+                </div>
+                <br><br>
+
+                <!-- http://www.istanbul.gov.tr/iklim-istanbul#:~:text=Asya%20ve%20Avrupa%20k%C4%B1talar%C4%B1na%20ev,oran%C4%B1%20ise%20%75'tir. -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.trthaber.com%2Ffoto-galeri%2Fgaziantepte-son-10-yilin-en-yuksek-kar-yagisi-goruldu%2F42832.html&psig=AOvVaw3HHpeCkPAMBSnWBRqqDo0G&ust=1716800868017000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDcqev7qoYDFQAAAAAdAAAAABAJ -->
+                <hr style="border-color:darkgreen;width: 800px;">
+                <h3>İKLİMİ</h3>
+                <hr style="border-color:darkgreen;width: 800px;">
+                <br>
+                <img style="height: 400px;width: 800px;" src="RESİM DOSYALARI/gaziantep iklimi.jpg" alt="iklim">
+                <div style="width: 800px;">
+                <p>Konumu sebebiyle Gaziantep'te Akdeniz iklimi ve Karasal iklimin bir karışımı görülmektedir. Hava özellikle Haziran, Temmuz, Ağustos ve Eylül aylarında çok sıcaktır. Aralık, Ocak ve Şubat aylarında ise çok soğuktur. Gaziantep'te ölçülen en yüksek sıcaklık 42 °C, en düşük sıcaklık ise -13 °C'dir.Haziran-Eylül arasında Gaziantep, en az yağışı alır. En çok yağışı ise Aralık-Şubat arasında alır. Mevsim değişirken gündüz ve gece arasında çok büyük bir sıcaklık farkı vardır. Denize kıyısı olmaması sebebiyle kentte nem oranı çok düşüktür. Bu yüzden hava çok sert değildir.</p>
+                </div>
+                <br><br>
+
+                <!-- https://antepyoreselurunler.com/gaziantep-yemekleri/ -->
+                <!-- https://www.enuygun.com/bilgi/antep-yemekleri/ -->
+                <!-- ChatGPT -->
+                <hr style="border-color:darkgreen;width: 800px;">
+                <h3>GAZİANTEP MUTFAĞI</h3>
+                <hr style="border-color:darkgreen;width: 800px;">
+                <br>
+                <div style="width: 800px;">
+                <b style="color: red;">Not:Yemek Tarifi İçin Yemek Resmine Tıklayınız.</b>
+                </div>
+                <br>
+                <!-- 1.YEMEK -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripadvisor.com.tr%2FLocationPhotoDirectLink-g293974-d13566508-i306488546-Bu_Ciger-Istanbul.html&psig=AOvVaw0m0The9Cdr3AN6jf_hsyQ-&ust=1716804766358000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCW7aOKq4YDFQAAAAAdAAAAABA1 -->
+                <a id="y1" href="t-antep-beyrançorbası.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\beyran çorbası.jpg" alt="beyran çorbası"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Beyran Çorbası</b>
+                <p>Kış aylarının vazgeçilmezi olarak bilinen Beyran, Gaziantep’e özgü bir çorba. İçerisinde kuzu eti, sarımsak ve Antep’in doğal baharatlarını bulunduran çorba kış aylarındaki vücut direncini yüksek tutmana yardım sağlıyor. Genellikle sabahları içilen Beyran, baharatlı yiyecekleri tüketiyorsan seveceğin bir lezzet.</p>
+                </div>
+                <br><br>
+                <!-- 2.YEMEK -->
+                <!-- https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.sofra.com.tr%2Ftarifler%2Fcorbalar%2Fsis-borek-corbasi-1638881982&psig=AOvVaw2Rb2LgO5iveVg91erYWKHR&ust=1716806987659000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCR2saSq4YDFQAAAAAdAAAAABAo -->
+                <a id="y2" href="t-antep-börekçorbası.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\börek çorbası.jpg" alt="börek çorbası"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Börek Çorbası</b>
+                <p>Tutmaç denilen eski bir Türk yemeğidir. Açılan yufka içine kıyma konularak, güneşte kurutulup yağda kızartıldıktan sonra yoğurtla yapılır.</p>
+                </div>
+                <br><br>
+                <!-- 3.YEMEK -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hurriyet.com.tr%2Flezizz%2Fgaziantep-usulu-yuvalama-corbasi-41617531&psig=AOvVaw1Pxm6zTsfG1hBZTZdYpinz&ust=1716805597106000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCnz7CNq4YDFQAAAAAdAAAAABAR -->
+                <a id="y3" href="t-antep-yuvalama.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\yuvalama.webp" alt="yuvalama"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Yuvalama</b>
+                <p>Gaziantep’i kış aylarında ziyaret etmeyi düşünürsen tadacaklarından ilki yuvalama çorbası olmalı. Soğuk havaların etkisiyle düşen vücut direncini yükselten bu çorbanın içinde nohut ve minik köfteler bulunuyor. Hem sağlıklı hem içtikten sonra enerji dolu hissedeceğin yuvalama çorbası, Gaziantep’in günlük yemekler kategorisinde.</p>
+                </div>
+                <br><br>
+                <!-- 4.YEMEK -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.yemektekeyifvar.com%2Fetli-tarifler%2Fsimit-kebabi-tarifi&psig=AOvVaw3c0v4h93dBfgXrCd_5e80V&ust=1716805755704000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIC0z_uNq4YDFQAAAAAdAAAAABAY -->
+                <a id="y4" href="t-antep-simitkebabı.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\simit kebabı.webp" alt="simit kebabı"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Simit Kebabı</b>
+                <p>Gaziantep sofralarının yıldızlarından biri de Simit Kebabı. Bulgur, kuzu kıyma, sarımsak ve özel baharatlarla yapılıyor. Şişte hazırlanan kebap bir kez denendiğinde bir daha unutulmayacak cinsten. Gaziantep’e has bir kebap olan bu lezzeti deneyimlemeni öneririm.</p>
+                </div>
+                <br><br>
+                <!-- 5.YEMEK -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sabah.com.tr%2Fyemek-tarifleri%2Fsebze-tarifleri%2F2020%2F07%2F27%2Fmasterchef-ali-nazik-tarifi-ali-nazik-nasil-yapilir&psig=AOvVaw1Mlndqrq9169pgb5qlWkWR&ust=1716806868005000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjgn46Sq4YDFQAAAAAdAAAAABAn -->
+                <a id="y5" href="t-antep-alinazik.html"><img id="yemek-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\ali nazik.webp" alt="ali nazik"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Ali Nazik</b>
+                <p>Türk mutfağının birçok yöresinde görebileceğin ancak kökeni Gaziantep olan bir kebap çeşidi Ali Nazik. Közlenmiş patlıcan,sarımsaklı yoğurt ve kuşbaşı veya tercihine göre kıyma ile servise sunuluyor. Restoranlarda yanına pilav ve mezelerle getirilen Ali Nazik her hali ile on numara.</p>
+                </div>
+                <br><br>
+                <!--6.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fgaziantepetyemekleri.com%2Fbaslangiclar%2Fcorba-tarifleri%2Fantep-pirpirim-asi&psig=AOvVaw1d9mFyUaqG4zakDMtkbIiL&ust=1716807940394000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODBv42Wq4YDFQAAAAAdAAAAABAJ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\pirpirim aşı.webp" alt="pirpirim aşı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Pirpirim Aşı</b>
+                <p>Pirpirimin semizotu olduğunu söyleyerek başlayalım mı? Sebzeli bir öğün tercih ediyorsan bu yemek sana göre. İçine pirpirim, nohut, yeşil mercimek, dövme buğday, börülce, tereyağı ve Gaziantep’in baharatlarını alıyor. Sağlıklı ve doyurucu bir tencere yemeği olan pirpirim aşının telaffuzu da epey keyifli.</p>
+                </div>
+                <br><br>
+                7.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Ftelgraf.net%2Fhaber%2F18903962%2Fgaziantep-usulu-icli-kofte-tarifi-puf-noktasi&psig=AOvVaw0XHR8pbdxRjBY7mDv4LEjf&ust=1716806438446000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNj4isKQq4YDFQAAAAAdAAAAABAJ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\içli köfte.jpg" alt="içli köfte">
+                <br><br>
+                <div style="width: 800px;">
+                <b>İçli Köfte</b>
+                <p>İçli köfte deninde en başta Gaziantep yöremiz akıllara gelmektedir. Birçok yöremizde içliköfte farklı farklı şekillerde yapılmaktadır ama bunların içerisinde en çok beğenilen Gaziantep yöresel yemekleri içerisinde bulunan Antep içli köftesidir. Bölgeye has kuzu etinden yapılması ve iç harcının usta eller tarafından tam kararında olması önemli rol oynamaktadır.</p>
+                </div>
+                <br><br>
+                8.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.haberturk.com%2Fantep-lahmacunu-nasil-yapilir-antep-lahmacunu-tarifi-hbrt-2538121&psig=AOvVaw0q54x4XyQhGg6oMxdjsi9A&ust=1716807984943000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODknqKWq4YDFQAAAAAdAAAAABAg
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\lahmacun.jpg" alt="antep lahmacunu">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Antep Lahmacunu</b>
+                <p>Antep lahmacunu, diğer illerle özdeşmiş lahmacun çeşitlerinden çok daha ön sırada yer almaktadır. Kendine has pide fırını kültürü olan Gaziantep’te,  istediğiniz zaman iç harcını götürüp lahmacun yaptırabilirsiniz. İç harcını yapmak için her hangi bir kasaba başvurmanız yeterli olacaktır. Kültür olarak fırın, kasap ve bakkal yan yana bulunmaktadır. Gaziantep lahmacunu içerisinde kıyma, maydanoz, yeşilbiber, domates, salça; baharatlardan tuz ve kırmızı pul biber bulunmaktadır. Pidesinin ince açılması, odun ateşi fırınında pişmesi sayesinde çıtır çıtır bir lahmacun elde edilmektedir.</p>
+                </div>
+                <br><br>
+                9.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.karar.com%2Fyemek-tarifleri%2Fnefes-almadan-yediriyor-iste-ustasindan-antep-usulu-patlican-kebabi-1684785&psig=AOvVaw3tZUGh2wXoL3DzjT6q9DKt&ust=1716808173343000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCJz_2Wq4YDFQAAAAAdAAAAABAJ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\antep kebabı.jpg" alt="antep kebabı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Antep Kebabı</b>
+                <p>Ateşin üzerinde yanmadan ve sertleşmeden sulu halde pişen Antep kebabı, klasik kebaplardan oldukça farklı. Genellikle tırnaklı bir pide ile servis edilen ve bölgenin en sevilen lezzetlerinden biri olan Antep kebabı oldukça yoğun bir tada sahip. Bu sebeple keyifli akşamların, zengin sofralarında en çok tercih edilen seçeneklerden biri olmayı başarıyor. Bu lezzeti denerken yoğun bir lezzet olduğunu göz önünde bulundurmanız gerekiyor. Genellikle yanında pide ve salata ile servis edilen bu lezzeti deneyimlemek istiyorsanız bölgede hizmet veren restoranları ve esnaf lokantalarını tercih edebilirsiniz.</p>
+                </div>
+                <br><br>
+                10.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fharbiyiyorum.com%2Ffirinda-kolay-sarimsak-kebabi-tarifi-gaziantep-mutfagi%2F&psig=AOvVaw007QlAJqyJoRtCzDEbcmd_&ust=1716809312028000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqGAoTCIiciZybq4YDFQAAAAAdAAAAABCOAQ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\sarımsak kebabı.jpg" alt="sarımsak kebabı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Sarımsak Kebabı</b>
+                <p>Sarımsak kebabı da soğan kebabı gibi çok bilinen bir yemek değildir. Yoğun sarımsak barındıran bu yemek pişince ağır kokusu kalmamaktadır. Mevsimlik bir yemek olmasının nedeniyse taze sarımsaktan yapılıyor olmasıdır. Mevsiminde 1 ay kadar kısıtlı bir zamanda toplanan sarımsaklar ikiye yarılarak arasına kıyma konulmasından ibarettir. Vitamin deposu bu yemeği kesinlikle denemeniz gerekmektedir.</p>
+                </div>
+                <br><br>
+                11.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fbizimtarifler.com%2Ftarifler%2Fetli-firik-pilavi&psig=AOvVaw0pbUYBPo7QBguM-RlTLJRh&ust=1716806042833000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLC4zoSPq4YDFQAAAAAdAAAAABAv
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\firik pilavı.webp" alt="firik pilavı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Firik Pilavı</b>
+                <p>Gaziantep’in her restoranında sana sunulacak bir yemek olan firik pilavı bu yöreye ait. Araştırmalarıma göre pek bilinmeyen bu yemek Antep’i ziyaret edenler tarafından ilgiyle tercih ediliyor. Bulgurun ham olarak koparılmasının ardından tütsülenerek yemeğe katılması çok ilginç ve özel. Arta kalmış pirinç ve bulgur pilavıyla kendini sınırlandırmak istemiyorsan yönün Gaziantep’in esnafları olmalı. </p>
+                </div>
+                <br><br>
+                12.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.sabah.com.tr%2Froza%2Fyemek-tarifleri%2Fet-yemekleri%2Ffistikli-kebap-tarifi&psig=AOvVaw3wbBwh_ZdDsFq1G6IynVbS&ust=1716809140404000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCir8qaq4YDFQAAAAAdAAAAABAE
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\fıstıklı kebap.jpg" alt="fıstıklı kebap">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Fıstıklı Kebap</b>
+                <p>Antep fıstıklı kebap, Gaziantep mutfağının özel bir kebap türüdür. Kuzu kıyması, ince kıyılmış Antep fıstığı, soğan, sarımsak ve baharatlarla hazırlanır. Şişlere geçirilip ızgarada pişirilir. Kendine özgü lezzeti ve dokusuyla ünlüdür.</p>
+                </div>
+                <br><br>
+                13.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sahrapsoysal.com%2Fsiveydiz-tarifi-t-5843&psig=AOvVaw34h8jKi3jqXLAXC4I8EKFL&ust=1716805358662000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOD2mMCMq4YDFQAAAAAdAAAAABAR
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\şiveydiz.jpg" alt="şiveydiz">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Şiveydiz</b>
+                <p>Şiveydiz yemeği yoğurtlu ve taze sarımsaklı bir yemek çeşididir. İçerisinde nohut ve kuzu eti bulunan şife deposu bir Gaziantep yemeğidir. Mevsiminde toplanan yeşil taze sarımsak ile yapılmasından dolayı mevsimlik bir yemektir. Pişme süresine ve malzemelerin eşitliği ve istenildiği şekilde olması, ev yemeği sevmeyenleri bile kendisine hayran bırakacaktır.</p>
+                </div>
+                <br><br>
+                14.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DBKA-0jAJnUw&psig=AOvVaw38k2TJ7VXkIkt3wJZvKPtj&ust=1716809878586000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNj13qmdq4YDFQAAAAAdAAAAABAp
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\nohut dürümü.jpg" alt="nohut dürümü">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Nohut Dürümü</b>
+                <p>Nohut dürümü, Gaziantep ve çevresinde sevilen bir sokak yemeğidir. Haşlanmış nohut, ince doğranmış sebzeler (soğan, domates, biber) ve baharatlarla hazırlanır. Lavaş ekmeğine sarılarak dürüm şeklinde sunulur. Pratik ve doyurucu bir lezzet olarak bilinir.</p>
+                </div>
+                <br><br>
+                15.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.trthaber.com%2Fhaber%2Fekonomi%2Fantep-baklavasinin-unu-sinirlari-asiyor-333686.html&psig=AOvVaw3pla9t3edSe401h98tzOUo&ust=1716807361573000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKDs5_qTq4YDFQAAAAAdAAAAABAZ
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\baklava.png" alt="baklava">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Baklava</b>
+                <p>Gaziantep’e adım attığında göreceğin ilk şeylerden biri her köşede bir baklavacı olduğu. Fıstığı kendilerine ait, şerbetinin özeni ustalarına has Baklavayı tatmadan dönmemek gerekiyor. Ünü sınırları aşan bu tatlının Gazianteplilere göre bir adabı da mevcut. Bu adabı öğrenmek için Gaziantep seni bekliyor.</p>
+                </div>
+                <br><br>
+                16.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.sabah.com.tr%2Froza%2Fyemek-tarifleri%2Ftatlilar%2Fkatmer-tatlisi-tarifi-antep-usulu-katmer-tatlisi-nasil-yapilir&psig=AOvVaw2RZLveY_ODTktrLbdkbTzA&ust=1716810109333000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOC42Zeeq4YDFQAAAAAdAAAAABAR
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\katmer.webp" alt="katmer">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Katmer</b>
+                <p>Katmer, Gaziantep mutfağına ait bir tatlı türüdür. İnce açılmış yufka üzerine kaymak, Antep fıstığı ve şeker konularak hazırlanan katmer, çıtır çıtır ve lezzetli bir hamur işidir. Genellikle sabah kahvaltılarında veya tatlı olarak tüketilir.</p>
+                </div>
+                <br><br>
+                17.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sahrapsoysal.com%2Fcevizli-zeytin-piyazi-tarifi-t-5824&psig=AOvVaw0bE6lV4XUTwbAa8TEXRGmj&ust=1716808687455000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCM2vOYq4YDFQAAAAAdAAAAABAE
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\yeşil zeytin piyazı.jpg" alt="yeşil zeytin piyazı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Yeşil Zeytin Piyazı</b>
+                <p>Antep usulü yeşil zeytin piyazı isminden de anlaşılacağı üzere yeşil zeytinin çeşitli malzemeler ile bir araya getirilmesi ile hazırlanan bir salata. Meze olarak da tüketilen bu lezzet, zengin sofraların vazgeçilmezlerinden biri. Bunun yanı sıra hem sabah kahvaltılarında hem de akşam yemeklerinde tüketilen farklı bir seçenek olduğunu söylemek gerekiyor. İçerisinde ceviz, biber, soğan, maydanoz, kırma yeşil zeytin ve sosunda da zeytin yağı ile doğal nar ekşisi bulunuyor. Hem yaz hem de kış aylarında tüketebileceğiniz bu lezzeti bölgede hizmet veren restoranlarda bulabilirsiniz.</p>
+                </div>
+                <br><br>
+                18.YEMEK
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.otelegidelim.com%2Fcografi-isaretler%2Fgaziantep%2Fsuzek-yapmasi%2F&psig=AOvVaw2ZxqFGZrYv1Dw1c20CtbHU&ust=1716806580082000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLDmgIWRq4YDFQAAAAAdAAAAABAv
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\süzek yapması.webp" alt="süzek yapması">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Süzek Yapması</b>
+                <p>Elle yoğrularak hazırlamanın sanat haline geldiği şehirlerden olan Gaziantep’ özgü bir köfte Süzek Yapması. Kuzu kıyma ve pirinç ana malzeme, baş tacı baharatlar süslemede bulunuyor. Yöresel bir lezzet olan Süzek Yapması, ayran ile de çok yakışıyor.</p>
+                </div>
+                <br><br>
+
+                 ************************************************************************** -->
+
+                <!-- https://www.enuygun.com/bilgi/gaziantep-te-gezilecek-yerler/ -->
+                <hr style="border-color:darkgreen;width:800px">
+                <h3>GAZİANTEP TURU</h3>
+                <hr style="border-color:darkgreen;width:800px">
+                <br>
+                <div style="width: 800px;">
+                <b style="color: red;">Not:Konum Linki İçin Resme Tıklayınız.</b>
+                </div>
+                <br>
+                <!-- 1.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.haber7.com%2Fseyahat%2Fhaber%2F2999578-gaziantep-kalesinin-altinda-hic-gorulmeyen-tuneller-kesfediliyor&psig=AOvVaw0BN4K9tdsFN_ODloOns27_&ust=1716992593727000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMiRkv7FsIYDFQAAAAAdAAAAABAZ -->
+                <a id="x1" href="https://maps.app.goo.gl/sGmh2HSMqKYJriYY8"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Gaziantep Kalesi.webp" alt="Gaziantep Kalesi"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Gaziantep Kalesi</b>
+                <P>Sadece Gaziantep'in değil, Türkiye'nin de en önemli tarihi yapılarından biri olan ve şehrin simgesi haline gelen Gaziantep Kalesi, bölgeye hakim yüksek bir tepede inşa edilmiş büyüleyici bir yapı. Ülkemizin günümüze kadar tamamen sağlam kalmayı başarmış ender kalelerinden biri olan ve yaklaşık 6000 yıl önce Roma döneminde gözetleme kulesi olarak inşa edilen Gaziantep Kalesi, büyüleyici kaleler yapması ile ünlü Bizans İmparatoru Justinianus döneminde günümüzdeki halini aldı.</P>
+                </div>
+                <br><br>
+                <!-- 2.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sixt.com.tr%2Fblog%2Fkultur-sanat-eglence%2Fdunya-mirasi%2Fmutlaka-gormeniz-gereken-zeugma-mozaik-muzesi&psig=AOvVaw0-XF3XMaB5PM4TkpWjMTIZ&ust=1716993079924000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLixzebHsIYDFQAAAAAdAAAAABAE -->
+                <a id="x2" href="https://maps.app.goo.gl/m25rZvYwugqZzUoD7"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Zeugma Mozaik Müzesi.webp" alt="Zeugma Mozaik Müzesi"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Zeugma Mozaik Müzesi</b>
+                <P>Geç Antik, Süryani ve Hristiyan dönemi dini motifleri ile süslü binlerce büyüleyici mozaik eseri yakından görebileceğiniz müzede özellikle Zeugma Antik Kenti’nden çıkarılan ve 2500 m2 gibi devasa bir alanı kapsayan Roma dönemi mozaikleri, heykelleri, sütunları ve çeşmeleri çok ilgi çekiyor. 140 m2 duvar resimleri, tunçtan yapılan Mars heykeli, savaş tanrısı Ares'in bronz heykeli ve gördüğümüzde hemen hatırlayacağınız Zeugma’nın Mona Lisa’sı olarak bilinen çingene kızı mozaiği ise müzenin kesinlikle yakından görmeniz gereken eserleri arasında. </P>
+                </div>
+                <br><br>
+                <!-- 3.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kulturportali.gov.tr%2Fturkiye%2Fgaziantep%2Fgezilecekyer%2Frumkale&psig=AOvVaw2k6eOR93mTqgsPpqxQ5Qkd&ust=1716993255872000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPj69LnIsIYDFQAAAAAdAAAAABAg -->
+                <a id="x3" href="https://maps.app.goo.gl/2DiAxPV8hfpSCYJKA"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Rumkale.jpg" alt="Rumkale"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Rumkale</b>
+                <P>Gaziantep'te başka hiçbir yerde göremeyeceğiniz büyüleyici bir manzara izlemek için Fırat Nehri ile Merzimen Çayı’nın birleştiği konumda bir yarımada üzerinde yer alan Rumkale’ye uğramalısınız. Antik çağlardan beri pek çok medeniyet tarafından kullanılan ve Roma ile Orta Çağ mimari özelliklerini yansıtan Rumkale, sarp kayalar üstündeki büyüleyici manzarasıyla tüm dünyadan fotoğrafçıların da sıkça ziyaret ettiği yerlerden biri.</P>
+                </div>
+                <br><br>
+                <!-- 4.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sehrinrehberi.com%2Fgaziantep-hayvanat-bahcesi%2F&psig=AOvVaw1HtPpbnd23eijZACK074SN&ust=1716994057991000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCcgbjLsIYDFQAAAAAdAAAAABAQ -->
+                <a id="x4" href="https://maps.app.goo.gl/Bj7cKTwf13bE1uM19"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Gaziantep Hayvanat Bahçesi.jpg" alt="Gaziantep Hayvanat Bahçesi"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Gaziantep Hayvanat Bahçesi</b>
+                <P>Kapsadığı 1000 dönümlük alanıyla Avrupa'nın ikinci, Türkiye ve Ortadoğu'nun ise en büyük hayvanat bahçesi olan Gaziantep Hayvanat Bahçesi, özellikle çocuklu ailelere keyifli bir gezi deneyimi yaşatıyor. 325 farklı türden 7000’den fazla hayvanı yakından görme şansı bulabileceğiniz hayvanat bahçesinde aslan, kaplan, kurt, timsah gibi yırtıcılardan su aygırı, fil, ceylan ve dağ keçilerine kadar binlerce farklı hayvanın yanı sıra ender görülen kuş türlerinin fotoğraflarını da çekebilirsiniz.</P>
+                </div>
+                <br><br>
+                <!-- 5.YER -->
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kulturportali.gov.tr%2Fturkiye%2Fankara%2Fgezilecekyer%2Fbeypazari-yasayan-muze&psig=AOvVaw3cVLYTzh9KTCQUXALDj11p&ust=1717059952815000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLDsr_bAsoYDFQAAAAAdAAAAABAE -->
+                <a id="x5" href="https://maps.app.goo.gl/V2dcwtMJdAbQcRsk6"><img id="yer-hover" style="height: 400px;width: 800px;" src="ŞEHİRLER\Yaşayan Müze.png" alt="Yaşayan Müze"></a>
+                <br><br>
+                <div style="width: 800px;">
+                <b>Yaşayan Müze</b>
+                <P>Gaziantep'te tarih ve kültür meraklılarının yanı sıra mimari severlerin de mutlaka ziyaret etmesini önerdiğimiz Yaşayan Müze (Gaziantep Tarihi Gümrük Han), şehir merkezinde Karagöz Mahallesi’nde Güllük Caddesi üzerinde yer alıyor. 1873 ile 1878 yılları arasında yaptırılan 2 katlı bir yolcu hanının 2011 yılında aslına uygun olarak restore edilmesiyle hizmete açılan Yaşayan Müze, geleneksel Osmanlı mimarisinin en güzel örneklerinden biri olarak ilgi çekiyor.</P>
+                </div>
+                <br><br>
+                <!-- 6.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linehaber.com.tr%2Fgaziantepin-hamam-kulturu-muzede-yasatiliyor%2F&psig=AOvVaw2bEZrlhjWXP8mHwgoIC2OD&ust=1717139822811000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOiE2sfqtIYDFQAAAAAdAAAAABAZ 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Gaziantep Hamam Müzesi.jpg" alt="Gaziantep Hamam Müzesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Gaziantep Hamam Müzesi</b>
+                <P>Sadece Gaziantep’in değil, Türkiye'nin de en ilginç müzelerinden biri olan Gaziantep Hamam Müzesi, geleneksel Osmanlı hamam mimarisi ve kültürünü görebileceğiniz en güzel yer. 1577 yılında Lala Mustafa Paşa tarafından yaptırılan devasa külliyenin hamam bölümünde ziyarete açılan Hamam Müzesi, Gaziantep kültüründe de önemli bir yer tutan Türk hamamlarının pek çok dönemdeki örneklerini yakından görmenizi sağlıyor.</P>
+                </div>
+                <br><br>
+                7.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fyoldaolmak.com%2Fzeugma-antik-kenti.html&psig=AOvVaw0xS89--vbc4_YhtmOsIHJY&ust=1717139970512000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMiZ4oTrtIYDFQAAAAAdAAAAABBO 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Zeugma Antik Kenti.jpg" alt="Zeugma Antik Kenti">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Zeugma Antik Kenti</b>
+                <P>Türkiye'nin en bilinen antik kentlerinden biri olan ve Nizip ilçesine 10 kilometre uzaklıkta yüksek bir tepe üzerine inşa edilen Zeugma Antik Kenti, büyüleyici mozaikleri ile tüm dünyadan ilgi görüyor. Büyük İskender'in generallerinden birinin M.Ö. 300 yıllarında kurduğu antik kent, M.Ö. 31 yılında Roma İmparatorluğu'na bağlandı ve en parlak zamanını Roma döneminde yaşadı.</P>
+                </div>
+                <br><br>
+                8.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.karar.com%2Fsehir-haberleri%2Fbuyuk-felaket-kenti-enkaz-altinda-birakmisti-tarihi-magara-depreme-1733854&psig=AOvVaw0ymMoioSfFYziprmeM0ScA&ust=1717140104068000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKjb2MLrtIYDFQAAAAAdAAAAABAw 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Kaleoğlu Mağarası.jpg" alt="Kaleoğlu Mağarası">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Kaleoğlu Mağarası</b>
+                <P>Gaziantep'in en çok ziyaret edilen tarihi hazinelerinden biri olan Kaleoğlu Mağarası, 500 yıllık bir mağara ve içerisindeki büyüleyici manzaradan dolayı çok ilgi görüyor. Yazın en sıcak günlerinde bile ortalama 15 derece sıcaklığa sahip mağaranın tertemiz havasının da özellikle solunum sorunu rahatsızlıklarına iyi geldiği söyleniyor.</P>
+                </div>
+                <br><br>
+                9.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.neredekal.com%2Ftarihi-millet-hani-gezilecek-yer-detay%2F&psig=AOvVaw2fh5zdvQ4SOEH0HOLtRjeQ&ust=1717140223365000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIC_nPvrtIYDFQAAAAAdAAAAABAX 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Millet Hanı.webp" alt="Millet Hanı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Millet Hanı</b>
+                <P>1890 yılında yenilenerek günümüzdeki halini alan ve kayıtlarda Aziziye Hanı olarak geçen han, Atatürk'ün Gaziantep ziyaretinden sonra halk arasında Atatürk Hanı olarak adlandırıldı ama Mustafa Kemal Atatürk’ün “Burası benim değil, milletin hanı olsun” sözünden sonra tarihi yapı Millet Hanı ismini aldı. İçerisinde Gaziantep’e özgü el sanatları ürünleri alabileceğiniz dükkanlar bulunan hanın etkileyici heykeller ve asırlık çınar ağaçlarıyla süslü avlusunda da çayınızı yudumlayarak yorgunluk atabilirsiniz. Millet Hanı, Şekeroğlu Mahallesi’nde Güllük Caddesi üzerinde şehir merkezine kısa bir yürüyüş mesafesinde yer alıyor.</P>
+                </div>
+                <br><br>
+                10.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DMwD5jHturXk&psig=AOvVaw0ZBBtarALlYQt5siI-L94D&ust=1717140364631000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPj16cbstIYDFQAAAAAdAAAAABAE 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Şehreküstü Konakları.jpg" alt="Şehreküstü Konakları">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Şehreküstü Konakları</b>
+                <P>Gaziantep'in tarihi hazineleri ile ünlü ilçesi Şahinbey'de yer alan ve Gaziantep’e özgü etkileyici taş mimarileri ile her mevsim büyüleyici manzaralar sunan Şehreküstü Konakları, hem fotoğrafçılık gezileri hem de kültür ve tarih turlarının değişmez adreslerinden biri. 1900'lü yılların şehir mimarisi yansıtan, 2 veya 3 katlı konakların sıralandığı bölge, 2012 yılında Şahinbey Belediyesi tarafından kamulaştırılarak restore edildi ve 2013 yılında turistik ziyaretlere açıldı. Ahşap ve taş işçilikleriyle öne çıkan bu klasik Gaziantep konaklarının iç mekanlarını da gezebilir, dönem mobilyaları ve antikalar arasında tarihte güzel bir yolculuğa çıkabilirsiniz.  </P>
+                </div>
+                <br><br>
+                11.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fsehitonurozler.meb.k12.tr%2Ficerikler%2Fgaziantep-arkeoloji-muzesini-gezelim_11297174.html&psig=AOvVaw3O1AzsYt6yTckM3Yl1Hqkc&ust=1717140490161000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPja1vnstIYDFQAAAAAdAAAAABAI 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Gaziantep Arkeoloji Müzesi.jpg" alt="Gaziantep Arkeoloji Müzesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Gaziantep Arkeoloji Müzesi</b>
+                <P>Şehrin binlerce yıllık etkileyici tarihinden paha biçilmez hazinelerin sergilendiği Gaziantep Arkeoloji Müzesi, 1944 yılında halkevinde hizmete başlayan Gaziantep’in ilk müzesi. 1969 yılında kendi binasına taşınan müzede Zeugma Antik Kenti gibi Gaziantep çevresindeki pek çok önemli arkeolojik kazı alanından elde edilen 1700’den fazla paha biçilmez tarihi eser sergileniyor.Yerli ve yabancı turistlerin Gaziantep'in tarihi ve kültürünü anlamak için ziyaret ettiği yerlerden olan Gaziantep Arkeoloji Müzesi’nde Jeolojik Dönem fosilleri, ünlü Maraş Fili iskeleti, Neolitik Dönem taş heykellerini incelemenin yanı sıra Bakır Çağı, Eski Tunç Çağı, Demir Çağı, Geç Hitit Dönemi, Pers Dönemi, Kommagene Dönemi, Hellenistik ve Roma Dönemi’nden Cumhuriyet Dönemi’ne kadar uzanan unutulmaz bir yolculuk yapacaksınız.</P>
+                </div>
+                <br><br>
+                12.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sahinbey.bel.tr%2Fproje-d%2F6%2F524%2Fpisirici-kasteli&psig=AOvVaw0tXhB1sikqdKvqNIczvb01&ust=1717140600666000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLj-va7ttIYDFQAAAAAdAAAAABAR 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Pişirici Kasteli ve Mescidi.jpg" alt="Pişirici Kasteli ve Mescidi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Pişirici Kasteli ve Mescidi</b>
+                <P>Gaziantep'in en ünlü ve en çok ziyaret edilen tarihçi hazinelerinden olan Pişirici Kasteli ve Mescidi, Anadolu-Türk mimarisi şaheserlerinden biri olarak görülmeye değer. Osmanlı döneminde şehirdeki evlerin su ihtiyacını karşılayan ve kastel adı verilen su dağıtım sistemleri çok önemliydi ve Pişirici Kasteli, 13. yüzyılda inşa edilerek günümüze kadar sağlam kalmayı başarmış en özel kastellerden biri.Cami altına yapılan ve 40 basamaklı merdivenlerle inilebilen bu etkileyici su kuyuları ve dağıtım kanalları, günümüzde de hala çok ilgi görmeye devam ediyor. Çarpıcı taş mimarisi ve etkileyici mescit bölümleri ile Gaziantep tarih ve kültür gezilerinin değişmez adreslerinden biri haline gelen Pişirici Kasteli ve Mescidi’ni gezerken oyma taşlarla inşa edilmiş tavanı da özellikle incelemenizi öneririz. Hem Osmanlı hem de Selçuklu döneminden mimari izler taşıyan Pişirici Kasteli ve Mescidi, Gaziantep Ağa Camisi'nin hemen karşısında yer alıyor.</P>
+                </div>
+                <br><br>
+                13.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ntv.com.tr%2Fgaleri%2Fseyahat%2Fgaziantepte-unesco-listesinde-bir-acik-hava-muzesi-yesemek%2Cz_P29t_5HUGjCTDFIz4TRQ&psig=AOvVaw0zj6awGw_Oqv8BA0iy1JOV&ust=1717140693735000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPibwtrttIYDFQAAAAAdAAAAABAE 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Yesemek Açık Hava Müzesi.webp" alt="Yesemek Açık Hava Müzesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Yesemek Açık Hava Müzesi</b>
+                <P>2012 yılında UNESCO Dünya Mirası Geçici Listesi’ne eklenen ve şehrin en çok ziyaret edilen yerlerinden olan Yesemek Açık Hava Müzesi’nde antik dönem dağ tanrılarının heykelleri, pek çok farklı döneme ait aslan kafaları, Hitit simgeleri ve Asur dönemine ait büyüleyici heykelleri arasında keyifli bir gezi yaparak benzersiz fotoğraflar çekebilirsiniz. Bölgeye hakim bir tepede yer alan antik kente de uğrayabileceğiniz gezinizde bu tepeden açık hava müzesinin heykellerinin panoramik fotoğraflarını çekebilirsiniz.</P>
+                </div>
+                <br><br>
+                14.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kulturportali.gov.tr%2Fturkiye%2Fgaziantep%2Fgezilecekyer%2Fgaziantep-savas-muzesi&psig=AOvVaw2I_PnjG1e_FzRX3Hn6LJ8N&ust=1717140820884000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKC255jutIYDFQAAAAAdAAAAABAE 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Şahinbey Milli Mücadele Müzesi.jpg" alt="Şahinbey Milli Mücadele Müzesi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Şahinbey Milli Mücadele Müzesi</b>
+                <P>Gaziantep'in en çok ziyaret edilen ve en etkileyici müzelerinden biri olan Şahinbey Milli Mücadele Müzesi, Gaziantep'in Kurtuluş Savaşı dönemindeki benzersiz şehir savunmasını bütün detaylarıyla anlatan etkileyici bir koleksiyona sahip. 12 odalı tarihi bir konak ve konağın altındaki mağaralarda özenle hazırlanmış sergileriyle hizmet veren Şahinbey Milli Mücadele Müzesi’nde şehrin “Gazi” unvanı aldığı çarpıcı savunmayı ve Gaziantep halkının çabalarını anlatan balmumu heykeller, projeksiyon gösterileri, ses efektleri; silah olarak kullanılan satır, kazma, kürek gibi yüzlerce eşyayı görebilir ve Kurtuluş Savaşı dönemine unutulmaz bir yolculuk yapabilirsiniz. Şahinbey Milli Mücadele Müzesi, Şahinbey ilçesine Suyabatmaz Mahallesi'nde yer alıyor ve haftanın her günü 09:00 ile 18:00 saatleri arasında ziyaret edilebilir.</P>
+                </div>
+                <br><br>
+                15.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fgbbmuzeleri%2Fstatus%2F1048469407964573697&psig=AOvVaw3Xn4oxdttFxEm8UtSmrG4i&ust=1717140893815000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOC9urvutIYDFQAAAAAdAAAAABAR 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Kendirli Kilisesi ve Gazi Kültür Merkezi.jpg" alt="Kendirli Kilisesi ve Gazi Kültür Merkezi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Kendirli Kilisesi ve Gazi Kültür Merkezi</b>
+                <P>Günümüzde Kendirli Gazi Kültür Merkezi olarak hizmet veren 1860 yılı yapımı büyüleyici Kendirli Kilisesi, Gaziantep’i şehri gezen yabancı turistlerin en çok ziyaret ettiği tarihi yapılar arasında. 3. Napolyon’un da katkılarıyla inşa edilen ve Kurtuluş Savaşı'ndan önce kilise, sonra ise sinema ve öğretmenevi olarak hizmet vermiş Kendirli Kilisesi; büyüleyici taş mimarisi ve oyma taş süslemeciliği ile hala çok ilgi görüyor.Kültür merkezi olarak gezebileceğiniz kilisede işgal döneminde Gaziantep halkının yaptığı kahramanlıkların anlatıldığı bölümlerin yanı sıra Atatürk'ün ve pek çok önemli komutanın kişisel eşyaları da sergileniyor. Yılın her dönemi seminerler, konferanslar ve atölyelerin düzenlendiği Kendirli Gazi Kültür Merkezi’nde hem etkinliklere katılabilir hem de çarpıcı koleksiyonları inceleyebilirsiniz. </P>
+                </div>
+                <br><br>
+                16.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1IWTiUqXgIw&psig=AOvVaw3eA5dQsMTRougvWdif2JJt&ust=1717141049831000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMiP6IXvtIYDFQAAAAAdAAAAABAE 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Alaüddevle Camii.jpg" alt="Alaüddevle Camii">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Alaüddevle Camii</b>
+                <P>Gaziantep'in en eski camilerinden biri olan ve 1400’lü yılların sonunda Dulkadiroğlu Beyliği döneminde inşa edildiği düşünülen Alaüddevle Camii, şehrin ilgi çeken tarihi yapılarından biri olarak görülmeye değer. Klasik Anadolu camilerinden farklı ilginç bir mimariye sahip cami, Hristiyan kiliselerinin mimari yapılarından etkilenen kemerli pencereleri, işlemeli sütunları ve kapıları ile mimari meraklılarının da ilgisini çekecek bir eser. Dönemin kiliselerinde yaygın olarak kullanılan balık süslemeleri ve mihrabındaki etkileyici taş oymacılığı ile de dikkat çeken Alaüddevle Camii, Şahinbey ilçesi Şekeroğlu Mahallesi’nde yürüyerek ve toplu taşıma araçlarıyla kolayca ulaşabileceğiniz bir konumda yer alıyor.</P>
+                </div>
+                <br><br>
+                17.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Ftr.advisor.travel%2Fpoi%2FSirvan-Camii-23572&psig=AOvVaw2Jj35v8A7RbEmOk1kKXzB0&ust=1717141338416000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNDIvo7wtIYDFQAAAAAdAAAAABAE 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Şirvani Camii.webp" alt="Şirvani Camii">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Şirvani Camii</b>
+                <p>Görkemli Gaziantep Kalesi'nin güneybatı bölümünde inşa edilen Şirvanlı Camii, 14. ile 15. yüzyıllarda Dulkadiroğulları veya Memlük döneminde inşa edildiği tahmin edilen, şehrin önemli tarihi hazinelerinden biri. Kitabesinde 1681 yılında Seyit Mehmet Şirvani tarafından onarıldığı yazan cami; taç kapısı, kubbeli mihrabı ve etkileyici ahşap oymacılığı ile ilgi çekiyor. Gaziantep Kalesi'ni gezen yerli ve yabancı turistlerin mutlaka uğradığı, günümüzde de hizmet vermeye devam eden tarihi Şirvani Camii’ni siz de ziyaret edebilir ve günümüze kadar sağlam kalmış çarpıcı mimariyi inceleyebilirsiniz.</p>
+                </div>
+                <br><br>
+                18.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DfBe5H7KU4u4&psig=AOvVaw32zujuMBxufWpGAqpDOZka&ust=1717141450233000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNDlvMPwtIYDFQAAAAAdAAAAABAJ 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Tahtani Camii.jpg" alt="Tahtani Camii">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Tahtani Camii</b>
+                <p>Şahinbey ilçesinde Uzun Çarşı Caddesi üzerinde yer alan ve şehrin en eski camilerinden biri olan Tahtani Camii’nin kitabesinde 1550 yılında yazmasına rağmen caminin çok daha eski bir tarihte inşa edildiği düşünülüyor. Etkileyici ahşap mimarisinden dolayı halk arasında Tahtalı Camii olarak da bilinen Tahtani Camii; dikdörtgen planlı mimarisi, çapraz tonozları ve benzersiz ahşap işçiliği ile şehrin en güzel camilerinden biri. Günümüze kadar mimari yapısını korumayı başarmış ender camilerimizden olan ve hala hizmet vermeye devam eden Tahtani Camii, özellikle kutsal günler ve dini bayramlarda tamamen doluyor. Gezinizde siz de bu tarihi ahşap camiye size ziyaret edebilir, caminin ilginç mimarisini huzurlu bir atmosferde inceleyebilirsiniz.</p>
+                </div>
+                <br><br>
+                19.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fseyyahdefteri.com%2Fgezegenevi-ve-bilim-merkezi-nerede-nasil-gidilir-giris-ucreti-gaziantep%2F&psig=AOvVaw25J5zc1AQJAOtBVmKBgWo4&ust=1717141631163000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKjysJ_xtIYDFQAAAAAdAAAAABAJ 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Gezegenevi ve Bilim Merkezi.webp" alt="Gezegenevi ve Bilim Merkezi">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Gezegenevi ve Bilim Merkezi</b>
+                <p>Gaziantep'te çocukların ve gençlerin mutlaka uğraması gereken etkileyici bir yer de Şehitkamil ilçesinde Zübeyde Hanım Bulvarı üzerinde, Uzay Parkı içerisinde yer alan Gezegenevi ve Bilim Merkezi. 2010 yılında her yaştan çocuk ve gençlere bilimi eğlenceli bir şekilde öğretmek amacıyla hizmete açılan merkezin içerisinde üç boyutlu projeksiyonların yanı sıra kimya, robotik kodlama, fizik ve biyoloji atölyeleri gibi pek çok farklı bölüm bulunuyor.</p>
+                </div>
+                <br><br>
+                20.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.neredekal.com%2Fomeriye-camii-gezilecek-yer-detay%2F&psig=AOvVaw1VxGojF8xPGD5bslSR-Syt&ust=1717141814824000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDqgvLxtIYDFQAAAAAdAAAAABAh 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Ömeriye Camii.webp" alt="Ömeriye Camii">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Ömeriye Camii</b>
+                <p>Şehir merkezinde Düğmeci Mahallesi üzerinde bulunan ve Gaziantep’in en eski camisi olan Ömeriye Camii’nin 1210 yılında inşa edildiği düşünülüyor. Halife Hz. Ömer döneminde yaptığı tahmin edilen ve ismini de buradan alan Ömeriye Camii; etkileyici taş kapısı, mihrabını süsleyen kara taşlar, oyma taş ve ahşap işçilikleri ile aynı zamanda Gaziantep'in en etkileyici tarihi yapılarından biri.</p>
+                </div>
+                <br><br>
+                21.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Frayhaber.com%2F2021%2F08%2Fzerzevan-kalesi-ve-mithras-tapinagi-nerede-zerzevan-kalesinin-hikayesi-ve-tarihi%2F&psig=AOvVaw3v4cMBoADXEo7ItWGp6lil&ust=1717142135793000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLjtzIvztIYDFQAAAAAdAAAAABAR 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Mitras Tapınağı.webp" alt="Mitras Tapınağı">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Mitras Tapınağı</b>
+                <p>Dünyada yerin altına inşa edilen en büyük tapınak olarak bilinen Mitras Tapınağı, Gaziantep'in ilk yerleşim yeri olan Dülük Antik Kenti içerisinde yer alıyor. Şarklı Mağara olarak da bilinen devasa tapınak, içinde sakladığı binlerce yıllık eserlerden dolayı dünyanın her yerinden arkeoloji ve tarih meraklılarını kendine çekiyor.İran kökenli dini motifler, kalp kabartmaları, çivi yazıları ve Mitras’ın hayvan kurban etme töreni resimleriyle süslü Mitras Tapınağı, aynı zamanda dünyanın en eski tapınaklarından biri olarak kabul ediliyor.</p>
+                </div>
+                <br><br>
+                22.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kulturportali.gov.tr%2Fturkiye%2Fgaziantep%2Fgezilecekyer%2Fali-nacar-camii&psig=AOvVaw1OBJs0SDxT3fljxLIIucIb&ust=1717142284373000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPjshtPztIYDFQAAAAAdAAAAABA4 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Ali Nacar Camii.jpg" alt="Ali Nacar Camii">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Ali Nacar Camii</b>
+                <p>Gaziantep'in merkez ilçesi Şehitkamil'de gezebileceğiniz başka bir tarihi cami de 14. yüzyılda yapıldığı tahmin edilen Ali Nacar Camii. Döneminin önemli marangozlarından Ali Bey tarafından inşa edilen ve etkileyici ahşap oymaları ile Gaziantep'in en güzel tarihi hazineleri arasında yer alan Ali Nacar Camii; binlerce yıldır bozulmamış mimarisi, huzurlu atmosferi ve özellikle benzersiz el oyması tasarımlarıyla ziyaretçilerini büyülüyor. Şehir merkezinden yürüyerek kolayca ulaşabileceğiniz tarihi camiye toplu taşıma araçlarıyla da 10 dakika içinde gidebilirsiniz.</p>
+                </div>
+                <br><br>
+                23.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.trthaber.com%2Fhaber%2Fkultur-sanat%2Fkarkamis-antik-kentinde-kazilar-yeniden-basladi-418985.html&psig=AOvVaw3z49XZkxeud70LRAxWx6Cp&ust=1717142632477000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIiRkfv0tIYDFQAAAAAdAAAAABAR 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Karkamış Antik Kenti.jpg" alt="Karkamış Antik Kenti">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Karkamış Antik Kenti</b>
+                <p>Gaziantep tarih turlarının değişmez adreslerinden biri haline gelen ve hem Türkiye hem de Suriye topraklarında bölümleri bulunan Karkamış Antik Kenti, tarihi Erken Bakır Çağı’na kadar uzanan hazineleri ile görülmeye değer yerlerden biri. Döneminin en büyük kentlerinden biri ve Karkamış Krallığı’nın merkezi olan antik kent, özellikle mozaikleri ve taş kabarmaları ile antik dönemin yaşam tarzı, giyimi ve kültürüne ışık tuttuğu için de ayrı bir öneme sahip. Pek çok arkeolojik kazı çalışmasının yapıldığı Karkamış Antik Kenti’nden çıkarılan paha biçilmez eserler ise Gaziantep Arkeoloji Müzesi ve Ankara Anadolu Medeniyetler Müzesi'nde sergileniyor. Antik kenti rehberli turların yanı sıra kendi başınıza da keşfe çıkabilirsiniz.</p>
+                </div>
+                <br><br>
+                24.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aydinlik.com.tr%2Fhaber%2Fburasi-yaklasik-4-asirdir-kahve-sunuyor-iste-gaziantepin-tarihi-kahvecisi-438036&psig=AOvVaw3B0dRviQcxowLRYkV24MeK&ust=1717143040395000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODG8rn2tIYDFQAAAAAdAAAAABAE 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Tahmis Kahve.webp" alt="Tahmis Kahve">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Tahmis Kahve</b>
+                <p>Gaziantep’in tarihi ve kültürel dokusunu yansıtan önemli mekanlardan biri olan Tahmis Kahve 17. yüzyıldan beri faaliyet gösteriyor. Gaziantep’in tarihi çarşısında yer alan bu kahvehane Türk kahvesi kültürünü yaşatırken şehrin yerel atmosferini  yansıtıyor ve tarihiyle de gelen misafirlerini büyülüyor. Son zamanların gözde mekanlarından olan zarif taş işçiliği ve geleneksel detaylarla dikkat çeken Tahmis kahveye Gaziantep ziyaretinizde uğramanızı öneriyoruz.</p>
+                </div>
+                <br><br>
+                25.YER 
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aa.com.tr%2Ftr%2Fkultur-sanat%2Fduluk-antik-kentindeki-kazilar-farkli-dinlerin-tarihine-isik-tutacak%2F2382231&psig=AOvVaw2khsPANbCwgwtVAgGF_A7G&ust=1717143376174000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKDXv9r3tIYDFQAAAAAdAAAAABAh 
+                <img style="height: 400px;width: 800px;" src="ŞEHİRLER\Dülük Antik Kenti.jpg" alt="Dülük Antik Kenti">
+                <br><br>
+                <div style="width: 800px;">
+                <b>Dülük Antik Kenti</b>
+                <p>Gaziantep merkezine sadece 10 kilometre uzaklıkta yer alan ve tüm dünyadan arkeoloji meraklılarını kendine çeken Dülük Antik Kenti’nin 600.000 yıllık bir yerleşim olduğu tahmin ediliyor. Kent ve kutsal alan olarak 2 parçaya ayrılan antik kent, dünyanın en büyük yer altı tapınağı olan Mitras Tapınağı ile ziyaretçilerini büyülüyor. Dini motifler, çivi yazıları ve taş kabartmalarla süslü tapınakları arasında tarihte bir yolculuğa çıkabileceğiniz Dülük Antik Kenti; Hititler, Asurlular ve Perslere kadar pek çok uygarlık tarafından kullanılmış. Rehberli tarih turlarıyla gezmenizi önerdiğiniz antik kentin benzersiz tapınaklarının fotoğraflarını çekerek güzel bir gün geçirebilirsiniz.</p>
+                </div>
+                <br><br> -->
+    </center>
+
+    <footer>
+        <center>
+    <table style="padding: 10px;">
+        <tr>    
+            <td><label for="">E-mail:</label></td>        
+            <td><a href="mailto:hazimablak1453@gmail.com"><button class="footerbuton" onclick="eposta()">gezirehberi@gmail.com</button></a></td>
+            <td><label for="">İrtibat No:</label></td>  
+            <td><a href="tel:90530361150"><button class="footerbuton" onclick="telefon()">905789871650</button></a></td>
+            <td><label for="">İnstagram:</label></td>  
+            <td><a href="https://www.instagram.com/hazim.ablak?igsh=MTg0aDFmMnBwcHp3eA=="><button class="footerbuton" onclick="instagram()">@hazim.ablak</button></a></td>
+        </tr>
+    </table>
+        </center>
+    </footer>
+    
+    </body>
+</html>
