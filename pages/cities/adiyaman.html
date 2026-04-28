@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adıyaman Gezi Rehberi | Türkiye Gezi Rehberi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <style>
+        .city-detail-header { text-align: center; margin-bottom: 3rem; }
+        .city-detail-header h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--primary-color); }
+        .city-detail-header p { font-size: 1.1rem; color: #555; max-width: 800px; margin: 1rem auto; line-height: 1.8; }
+        .category-title { font-size: 2rem; margin: 3rem 0 1.5rem 0; border-bottom: 2px solid var(--secondary-color); display: inline-block; padding-bottom: 0.5rem;}
+        /* Resimlerin arka planına varsayılan olarak gri bir renk veriyoruz ki resim yüklenene kadar boş durmasın */
+        .image-box img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem; background-color: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="../../index.html" class="logo"><i class="fas fa-map-marked-alt"></i> TÜRKİYE GEZİ REHBERİ</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../../index.html">Ana Sayfa</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active">Popüler Şehirler <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="adana.html">Adana</a></li><li><a href="adiyaman.html">Adıyaman</a></li><li><a href="ankara.html">Ankara</a></li><li><a href="bursa.html">Bursa</a></li><li><a href="canakkale.html">Çanakkale</a></li><li><a href="erzurum.html">Erzurum</a></li><li><a href="gaziantep.html">Gaziantep</a></li><li><a href="hatay.html">Hatay</a></li><li><a href="istanbul.html">İstanbul</a></li><li><a href="konya.html">Konya</a></li><li><a href="siirt.html">Siirt</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../regions/bolgeler.html">Bölgeler</a></li>
+                    <li><a href="../../hakkimizda.html">Hakkımızda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" 
+                 style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Nemrut_Da%C4%9F%C4%B1.jpg/1920px-Nemrut_Da%C4%9F%C4%B1.jpg');">
+            <img src="" onerror="if (this.parentNode.style.backgroundImage.indexOf('1920px') !== -1) { this.parentNode.style.backgroundImage = 'url(../../assets/images/default.jpg)'; }" style="display:none;">
+            <div class="page-hero-overlay"></div>
+            <div class="container page-hero-content">
+                <h1>Adıyaman</h1>
+                <p>Güneşin doğuşunun ve batışının en güzel izlendiği, medeniyetlerin beşiği şehir.</p>
+            </div>
+        </section>
+
+        <section class="container" style="padding: 4rem 0;">
+            <div class="city-detail-header">
+                <h2>Tanrıların Dağındaki Gizem</h2>
+                <p>Mezopotamya'nın kuzey batısında yer alan Adıyaman, Kommagene Krallığı'nın ihtişamlı mirasına ev sahipliği yapar. Dünyanın 8. harikası olarak anılan Nemrut Dağı'ndaki devasa heykelleri, Fırat Nehri'nin dingin suları ve tarihi köprüleriyle mistik bir yolculuk vaat eder.</p>
+            </div>
+
+            <h3 class="category-title"><i class="fas fa-map-signs"></i> Gezilecek Yerler</h3>
+            <div class="bento-grid">
+                <div class="bento-box image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mount_Nemrut_-_West_Terrace_statues_1.jpg/800px-Mount_Nemrut_-_West_Terrace_statues_1.jpg" onerror="this.src='../../assets/images/default.jpg'" alt="Nemrut Dağı Milli Parkı">
+                    <h3>Nemrut Dağı Milli Parkı</h3>
+                    <p>UNESCO Dünya Mirası listesinde yer alan, Kommagene Kralı I. Antiochos'un yaptırdığı 50 metre yüksekliğindeki tümülüs ve devasa tanrı heykelleri.</p>
+                </div>
+                <div class="bento-box image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cendere_Bridge_02.jpg/800px-Cendere_Bridge_02.jpg" onerror="this.src='../../assets/images/default.jpg'" alt="Cendere Köprüsü">
+                    <h3>Cendere Köprüsü</h3>
+                    <p>Romalılar döneminde Cendere Çayı üzerine inşa edilen, harç kullanılmadan 92 muazzam kesme taşın üst üste bindirilmesiyle yapılan tarihi köprü.</p>
+                </div>
+                <div class="bento-box image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Perre_Antik_Kenti_-_Ad%C4%B1yaman.jpg/800px-Perre_Antik_Kenti_-_Ad%C4%B1yaman.jpg" onerror="this.src='../../assets/images/default.jpg'" alt="Perre Antik Kenti">
+                    <h3>Perre Antik Kenti</h3>
+                    <p>Kommagene Krallığı'nın beş büyük kentinden biri olan Perre, kayalara oyulmuş görkemli kaya mezarlarıyla tarihi bir şölendir.</p>
+                </div>
+                <div class="bento-box image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Karaku%C5%9F_T%C3%BCm%C3%BCl%C3%BCs%C3%BC_-_Ad%C4%B1yaman.jpg/800px-Karaku%C5%9F_T%C3%BCm%C3%BCl%C3%BCs%C3%BC_-_Ad%C4%B1yaman.jpg" onerror="this.src='../../assets/images/default.jpg'" alt="Karakuş Tümülüsü">
+                    <h3>Karakuş Tümülüsü</h3>
+                    <p>Kommagene Krallığı kraliçelerine ait olan bu anıt mezar, adını sütun üzerindeki görkemli kartal heykelinden almaktadır.</p>
+                </div>
+                <div class="bento-box image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Nemrut_heykelleri.JPG/800px-Nemrut_heykelleri.JPG" onerror="this.src='../../assets/images/default.jpg'" alt="Kommagene Medeniyeti Müzesi">
+                    <h3>Kommagene Müzesi</h3>
+                    <p>Adıyaman şehir merkezinde bulunan müze, Nemrut Dağı çevresindeki kazılardan çıkarılan eserleri ve bölgedeki arkeolojik tarihi sergiler.</p>
+                </div>
+            </div>
+
+            <h3 class="category-title"><i class="fas fa-utensils"></i> Meşhur Lezzetler</h3>
+            <div class="bento-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="bento-box image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/%C3%87i%C4%9F_k%C3%B6fte.jpg/800px-%C3%87i%C4%9F_k%C3%B6fte.jpg" onerror="this.src='../../assets/images/default.jpg'" alt="Adıyaman Çiğ Köftesi">
+                    <h3>Adıyaman Çiğ Köftesi</h3>
+                    <p>Özel esmer bulgur, isot ve cevizle yoğurularak hazırlanan, Türkiye'nin en bilinen etsiz çiğ köfte geleneğinin ana yurdu.</p>
+                </div>
+                <div class="bento-box image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Besni_Tavas%C4%B1.jpg/800px-Besni_Tavas%C4%B1.jpg" onerror="this.src='../../assets/images/default.jpg'" alt="Besni Tavası">
+                    <h3>Besni Tavası</h3>
+                    <p>Taş fırınlarda odun ateşiyle pişen; domates, biber, sarımsak ve etin güveçte harmanlandığı eşsiz yöresel fırın yemeği.</p>
+                </div>
+                <div class="bento-box image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Meyir_%C3%A7orbas%C4%B1.jpg/800px-Meyir_%C3%A7orbas%C4%B1.jpg" onerror="this.src='../../assets/images/default.jpg'" alt="Meyir Çorbası">
+                    <h3>Meyir Çorbası</h3>
+                    <p>Yoğurt, dövme (buğday), nohut ve patlıcanın birleşimiyle yapılan, hem sıcak hem de soğuk tüketilebilen doyurucu çorba.</p>
+                </div>
+                <div class="bento-box image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Kavurmal%C4%B1_H%C4%B1tap.jpg/800px-Kavurmal%C4%B1_H%C4%B1tap.jpg" onerror="this.src='../../assets/images/default.jpg'" alt="Kavurmalı Hıtap">
+                    <h3>Kavurmalı Hıtap</h3>
+                    <p>İncecik açılan hamurun içine kavurma, soğan ve baharat harcı konularak sac üzerinde pişirilen yöresel kapalı pide çeşidi.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-item"><i class="fas fa-envelope"></i><div><h4>E-Posta</h4><a href="mailto:hazimablak1453@gmail.com">gezirehberi@gmail.com</a></div></div>
+            <div class="footer-item"><i class="fas fa-phone-alt"></i><div><h4>İrtibat No</h4><a href="tel:+905303611650">+90 530 361 16 50</a></div></div>
+            <div class="footer-item"><i class="fab fa-instagram"></i><div><h4>Instagram</h4><a href="https://www.instagram.com/hazim.ablak" target="_blank" rel="noopener noreferrer">@hazim.ablak</a></div></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Türkiye Gezi Rehberi. Tüm Hakları Saklıdır.</p></div>
+    </footer>
+</body>
+</html>

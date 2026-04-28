@@ -1,0 +1,147 @@
+from pathlib import Path
+
+base = Path(__file__).resolve().parent.parent / 'pages' / 'cities'
+
+name_map = {
+    'adana': 'Adana', 'adiyaman': 'Adıyaman', 'afyonkarahisar': 'Afyonkarahisar', 'agri': 'Ağrı',
+    'aksaray': 'Aksaray', 'amasya': 'Amasya', 'ankara': 'Ankara', 'antalya': 'Antalya',
+    'ardahan': 'Ardahan', 'artvin': 'Artvin', 'aydin': 'Aydın', 'balikesir': 'Balıkesir',
+    'bartin': 'Bartın', 'batman': 'Batman', 'bayburt': 'Bayburt', 'bilecik': 'Bilecik',
+    'bingol': 'Bingöl', 'bitlis': 'Bitlis', 'bolu': 'Bolu', 'burdur': 'Burdur',
+    'bursa': 'Bursa', 'cankiri': 'Çankırı', 'corum': 'Çorum', 'denizli': 'Denizli',
+    'diyarbakir': 'Diyarbakır', 'duzce': 'Düzce', 'edirne': 'Edirne', 'elazig': 'Elazığ',
+    'erzincan': 'Erzincan', 'eskisehir': 'Eskişehir', 'hakkari': 'Hakkari', 'igdir': 'Iğdır',
+    'isparta': 'Isparta', 'izmir': 'İzmir', 'kahramanmaras': 'Kahramanmaraş',
+    'karabuk': 'Karabük', 'karaman': 'Karaman', 'kars': 'Kars', 'kastamonu': 'Kastamonu',
+    'kayseri': 'Kayseri', 'kilis': 'Kilis', 'kirikkale': 'Kırıkkale', 'kirklareli': 'Kırklareli',
+    'kirsehir': 'Kırşehir', 'kocaeli': 'Kocaeli', 'kutahya': 'Kütahya', 'malatya': 'Malatya',
+    'manisa': 'Manisa', 'mardin': 'Mardin', 'mersin': 'Mersin', 'mugla': 'Muğla',
+    'mus': 'Muş', 'nevsehir': 'Nevşehir', 'nigde': 'Niğde', 'ordu': 'Ordu',
+    'osmaniye': 'Osmaniye', 'rize': 'Rize', 'sakarya': 'Sakarya', 'sanliurfa': 'Şanlıurfa',
+    'sinop': 'Sinop', 'sirnak': 'Şırnak', 'sivas': 'Sivas', 'tekirdag': 'Tekirdağ',
+    'tokat': 'Tokat', 'trabzon': 'Trabzon', 'tunceli': 'Tunceli', 'usak': 'Uşak',
+    'van': 'Van', 'yalova': 'Yalova', 'yozgat': 'Yozgat', 'zonguldak': 'Zonguldak',
+}
+
+places = [
+    ('Şehir Merkezi', 'Şehrin canlı merkezinde yer alan çarşılar, kafeler ve sokaklar; yerel yaşamı hissetmek için ideal.'),
+    ('Tarihi Mekanlar', 'Kentteki eski mahalleler, anıtlar ve tarihi yapılar; geçmişle bugünü bir arada sunan rotalar.'),
+    ('Doğal Güzellikler', 'Yeşil vadiler, göller ve yürüyüş parkurları; şehir sınırları içindeki doğal kaçamaklar.'),
+    ('Müze ve Kültür', 'Şehrin geçmişini anlatan müzeler, sanat galerileri ve kültür merkezleri; keşif için güçlü duraklar.'),
+    ('Yerel Pazarlar', 'Taze ürünler, hediyelik eşyalar ve yöresel lezzetlerle dolu canlı pazarlar; şehir deneyimini tamamlar.'),
+]
+
+foods = [
+    ('Yöresel Kebap', 'Şehrin en bilinen et yemeği; baharatlı, lezzetli ve her ziyaretçinin tatması gereken bir özel tarif.'),
+    ('Yerel Tatlı', 'Yöresel tatlı çeşidi; şehrin kendine özgü malzemeleri ve sunumuyla farklı bir lezzet sunar.'),
+    ('Geleneksel Çorba', 'Bölgesel malzemelerle hazırlanan çorba; serin akşamlarda içinizi ısıtan bir gelenek.'),
+    ('Hamur İşi', 'Kahvaltıdan akşam yemeğine kadar tercih edilen yerel hamur işi; yöresel peynir, et veya tatlı dolgusuyla hazırlanır.'),
+]
+
+nav_links = '                            <li><a href="adana.html">Adana</a></li><li><a href="adiyaman.html">Adıyaman</a></li><li><a href="ankara.html">Ankara</a></li><li><a href="bursa.html">Bursa</a></li><li><a href="canakkale.html">Çanakkale</a></li><li><a href="erzurum.html">Erzurum</a></li><li><a href="gaziantep.html">Gaziantep</a></li><li><a href="hatay.html">Hatay</a></li><li><a href="istanbul.html">İstanbul</a></li><li><a href="konya.html">Konya</a></li><li><a href="siirt.html">Siirt</a></li>'
+
+for path in sorted(base.glob('*.html')):
+    if path.stat().st_size != 0:
+        continue
+    name = path.stem
+    city = name_map.get(name, name.capitalize())
+    hero_desc = f"{city}, tarih ve doğanın buluştuğu, keşfedilmeyi bekleyen zengin bir Anadolu rotasıdır."
+    headline = f"{city} için Öne Çıkan Noktalar"
+    intro = f"{city}, kendine has kültürü, doğal güzellikleri ve lezzetleriyle Türkiye'nin dikkat çeken şehirlerinden biridir. Bu rehberde, ziyaretçiler için seçilmiş önemli yerler ve tatmanız gereken yöresel lezzetler yer alıyor."
+    html = [
+        '<!DOCTYPE html>',
+        '<html lang="tr">',
+        '<head>',
+        '    <meta charset="UTF-8">',
+        '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        f'    <title>{city} Gezi Rehberi | Türkiye Gezi Rehberi</title>',
+        '    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">',
+        '    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">',
+        '    <link rel="stylesheet" href="../../css/main.css">',
+        '    <style>',
+        '        .city-detail-header { text-align: center; margin-bottom: 3rem; }',
+        '        .city-detail-header h2 { font-family: \'Playfair Display\', serif; font-size: 2.5rem; color: var(--primary-color); }',
+        '        .city-detail-header p { font-size: 1.1rem; color: #555; max-width: 800px; margin: 1rem auto; line-height: 1.8; }',
+        '        .category-title { font-size: 2rem; margin: 3rem 0 1.5rem 0; border-bottom: 2px solid var(--secondary-color); display: inline-block; padding-bottom: 0.5rem;}',
+        '        .image-box img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem; background-color: #f0f0f0; }',
+        '    </style>',
+        '</head>',
+        '<body>',
+        '    <header class="navbar">',
+        '        <div class="container nav-container">',
+        '            <a href="../../index.html" class="logo"><i class="fas fa-map-marked-alt"></i> TÜRKİYE GEZİ REHBERİ</a>',
+        '            <nav class="nav-menu">',
+        '                <ul>',
+        '                    <li><a href="../../index.html">Ana Sayfa</a></li>',
+        '                    <li class="dropdown">',
+        '                        <a href="#" class="active">Popüler Şehirler <i class="fas fa-chevron-down"></i></a>',
+        '                        <ul class="dropdown-content">',
+        nav_links,
+        '                        </ul>',
+        '                    </li>',
+        '                    <li><a href="../regions/bolgeler.html">Bölgeler</a></li>',
+        '                    <li><a href="../../hakkimizda.html">Hakkımızda</a></li>',
+        '                </ul>',
+        '            </nav>',
+        '        </div>',
+        '    </header>',
+        '',
+        '    <main>',
+        '        <section class="page-hero" style="background-image: url(\'../../assets/images/default.jpg\');">',
+        '            <img src="" onerror="this.parentNode.style.backgroundImage = \'url(../../assets/images/default.jpg)\';" style="display:none;">',
+        '            <div class="page-hero-overlay"></div>',
+        '            <div class="container page-hero-content">',
+        f'                <h1>{city}</h1>',
+        f'                <p>{hero_desc}</p>',
+        '            </div>',
+        '        </section>',
+        '',
+        '        <section class="container" style="padding: 4rem 0;">',
+        '            <div class="city-detail-header">',
+        f'                <h2>{headline}</h2>',
+        f'                <p>{intro}</p>',
+        '            </div>',
+        '',
+        '            <h3 class="category-title"><i class="fas fa-map-signs"></i> Gezilecek Yerler</h3>',
+        '            <div class="bento-grid">',
+    ]
+    for title, desc in places:
+        html.extend([
+            '                <div class="bento-box image-box">',
+            '                    <img src="../../assets/images/default.jpg" onerror="this.src=\'../../assets/images/default.jpg\'" alt="' + title + '">',
+            '                    <h3>' + title + '</h3>',
+            '                    <p>' + desc + '</p>',
+            '                </div>',
+        ])
+    html.extend([
+        '            </div>',
+        '',
+        '            <h3 class="category-title"><i class="fas fa-utensils"></i> Meşhur Lezzetler</h3>',
+        '            <div class="bento-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">',
+    ])
+    for title, desc in foods:
+        html.extend([
+            '                <div class="bento-box image-box">',
+            '                    <img src="../../assets/images/default.jpg" onerror="this.src=\'../../assets/images/default.jpg\'" alt="' + title + '">',
+            '                    <h3>' + title + '</h3>',
+            '                    <p>' + desc + '</p>',
+            '                </div>',
+        ])
+    html.extend([
+        '            </div>',
+        '        </section>',
+        '    </main>',
+        '',
+        '    <footer class="footer">',
+        '        <div class="container footer-container">',
+        '            <div class="footer-item"><i class="fas fa-envelope"></i><div><h4>E-Posta</h4><a href="mailto:hazimablak1453@gmail.com">gezirehberi@gmail.com</a></div></div>',
+        '            <div class="footer-item"><i class="fas fa-phone-alt"></i><div><h4>İrtibat No</h4><a href="tel:+905303611650">+90 530 361 16 50</a></div></div>',
+        '            <div class="footer-item"><i class="fab fa-instagram"></i><div><h4>Instagram</h4><a href="https://www.instagram.com/hazim.ablak" target="_blank" rel="noopener noreferrer">@hazim.ablak</a></div></div>',
+        '        </div>',
+        '        <div class="footer-bottom"><p>&copy; 2026 Türkiye Gezi Rehberi. Tüm Hakları Saklıdır.</p></div>',
+        '    </footer>',
+        '</body>',
+        '</html>',
+    ])
+    path.write_text('\n'.join(html), encoding='utf-8')
+    print(f'Filled {path.name}')
